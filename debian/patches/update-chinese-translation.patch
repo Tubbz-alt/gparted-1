@@ -65,7 +65,7 @@ Last-Update: 2019-11-06
  msgid "GParted"
  msgstr "GParted"
  
-@@ -72,6 +71,14 @@ msgstr "创建、重新组织或删除�
+@@ -72,6 +71,14 @@ msgstr "创建、重新组织或删除��
  msgid "Partition;"
  msgstr "分区;"
  
@@ -75,7 +75,7 @@ Last-Update: 2019-11-06
 +
 +#: ../org.gnome.gparted.policy.in.in.h:2
 +msgid "Authentication is required to run the GParted Partition Editor as root"
-+msgstr "需要输入 root用户的密码来启动GParted 分区编辑器"
++msgstr "需要输入系统管理员的密码来启动分区编辑器"
 +
  #: ../include/Utils.h:55
  msgid "(New UUID - will be randomly generated)"
@@ -244,7 +244,7 @@ Last-Update: 2019-11-06
  msgid "Busy (At least one logical partition is mounted)"
  msgstr "忙(至少一个逻辑分区已挂载)"
  
-@@ -252,12 +272,12 @@ msgstr "忙(至少一个逻辑分区已�
+@@ -252,12 +272,12 @@ msgstr "忙(至少一个逻辑分区已�
  #. * means that this linux swap, linux software raid partition, or
  #. * LVM physical volume is enabled and being used by the operating system.
  #.
@@ -286,7 +286,7 @@ Last-Update: 2019-11-06
  msgid "Not active (Not a member of any volume group)"
  msgstr "非活动(不是任何卷组的成员)"
  
-@@ -296,147 +316,148 @@ msgstr "非活动(不是任何卷组的�
+@@ -296,147 +316,148 @@ msgstr "非活动(不是任何卷组的�
  #. * The volume group has also been exported making the LVM physical volumes
  #. * ready for moving to a different computer system.
  #.
@@ -914,7 +914,7 @@ Last-Update: 2019-11-06
  msgid "%1 of unallocated space within the partition."
  msgstr "分区内有 %1 未分配空间。"
  
-@@ -903,17 +940,17 @@ msgstr "分区内有 %1 未分配空间�
+@@ -903,17 +940,17 @@ msgstr "分区内有 %1 未分配空间�
  #. * means that the user can perform a check of the partition which will
  #. * also grow the file system to fill the partition.
  #.

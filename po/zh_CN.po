@@ -54,7 +54,7 @@ msgstr ""
 #: ../src/Win_GParted.cc:79 ../src/Win_GParted.cc:1423
 #: ../src/Win_GParted.cc:1618
 msgid "GParted"
-msgstr "GParted"
+msgstr "分区编辑器"
 
 #: ../gparted.desktop.in.in.h:2
 msgid "Partition Editor"

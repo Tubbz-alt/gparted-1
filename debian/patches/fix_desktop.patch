@@ -1,0 +1,20 @@
+Index: gparted/gparted.desktop
+===================================================================
+--- gparted.orig/gparted.desktop
++++ gparted/gparted.desktop
+@@ -282,4 +282,4 @@ Keywords[uk]=Розділ;
+ Keywords[vi]=Partition;Phân vùng;Phan vung;
+ Keywords[zh_CN]=分区;
+ Keywords[zh_TW]=分割區;
+-StartupNotify=true
++StartupNotify=false
+Index: gparted/gparted.desktop.in.in
+===================================================================
+--- gparted.orig/gparted.desktop.in.in
++++ gparted/gparted.desktop.in.in
+@@ -9,4 +9,4 @@ Terminal=false
+ Type=Application
+ Categories=GNOME;System;Filesystem;
+ _Keywords=Partition;
+-StartupNotify=true
++StartupNotify=false

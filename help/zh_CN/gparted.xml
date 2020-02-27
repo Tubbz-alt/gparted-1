@@ -1,0 +1,1507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY appversion "0.31.0">
+<!ENTITY manrevision "1.12">
+<!ENTITY date "May 2018">
+<!ENTITY app "gparted">
+<!ENTITY appname "GParted">
+<!-- Information about the entities:
+       Use the appversion entity to specify the version of the application.
+       Use the manrevision entity to specify the revision number of this manual.
+       Use the date entity to specify the release date of this manual.
+       Use the app entity to specify the command name of the application.
+       Use the appname entity to specify the formal name of the application.
+  -->]>
+<!-- Remember to update the revision history -->
+<!--
+      To generate a single html file of this document, use the command:
+        xmlto html-nochunks gparted.xml
+
+      To test this document in a viewer, use the command:
+        gnome-help file:/full-path-to-gparted.xml
+ -->
+<!-- ============= Document Header =================================== -->
+<?db.chunk.max_depth 4?>
+<article id="gparted" lang="zh_CN">
+<!-- Please do not change the id. -->
+<!-- For translations, change lang to appropriate code -->
+  <articleinfo>
+    <title>GParted 手册</title>
+    <publisher>
+      <publishername>GParted 项目</publishername>
+    </publisher>
+
+    <abstract role="description">
+      <para>GParted 是用于创建、重组和删除磁盘分区的 GNOME 分区编辑器。GParted 使您能够在保留分区内容的同时更改分区组织。</para>
+    </abstract>
+
+    <copyright>
+      <year>2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017</year>
+      <holder>Curtis Gedak</holder>
+    </copyright>
+    <copyright>
+      <year>2014, 2015, 2017, 2018</year>
+      <holder>Mike Fleetwood</holder>
+    </copyright><copyright><year>2008.</year><holder>甘露（Lu Gan）(rhythm.gan@gmail.com)</holder></copyright><copyright><year>2008.</year><holder>Funda Wang (fundawang@gmail.com)</holder></copyright><copyright><year>2008, 2009, 2011.</year><holder>Aron Xu (aronmalache@163.com)</holder></copyright><copyright><year>2011.</year><holder>YunQiang Su (wzssyqa@gmail.com)</holder></copyright><copyright><year>2011, 2012, 2013.</year><holder>Wylmer Wang (wantinghard@gmail.com)</holder></copyright><copyright><year>2015, 2016.</year><holder>Mingye Wang (arthur2e5@aosc.xyz)</holder></copyright><copyright><year>2020</year><holder>Duanjun Li (liduanjun@uniontech.com)</holder></copyright>
+
+<!-- translators: uncomment this:
+    <copyright>
+      <year>2009</year>
+      <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+-->
+
+    <legalnotice>
+      <para>根据 GNU 自由文档许可证、版本 1.2 或任何自由软件基金会发布的更高版本的条款，允许复制、分发和/或修改本文档;无固定部分、无前盖文本和背盖文本。您可以在此<ulink type="help" url="ghelp:fdl">链接</ulink>或<ulink type="http" url="https://www.fsf.org/licensing/licenses/fdl.html"/>本手册分发的文件 COPYING-DOCS 中找到 GFDL 的副本。</para>
+    </legalnotice>
+
+    <authorgroup>
+      <author role="maintainer">
+        <firstname>Curtis</firstname>
+        <surname>Gedak</surname>
+        <affiliation>
+          <orgname>GParted 项目</orgname>
+          <address>
+            <email>gedakc@users.sf.net</email>
+          </address>
+        </affiliation>
+      </author>
+      <author role="developer">
+        <firstname>Mike</firstname>
+        <surname>Fleetwood</surname>
+        <affiliation>
+          <orgname>GParted 项目</orgname>
+          <address>
+            <email>mike.fleetwood@googlemail.com</email>
+          </address>
+        </affiliation>
+      </author>
+
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+      <othercredit role="translator">
+        <firstname>Latin</firstname>
+        <surname>Translator 1</surname>
+        <affiliation>
+          <orgname>Latin Translation Team</orgname>
+          <address> <email>translator@gnome.org</email> </address>
+        </affiliation>
+        <contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+    <revhistory>
+      <revision>
+        <revnumber>GParted 手册 V1.12</revnumber>
+        <date>2018 年 5 月</date>
+        <revdescription>
+          <para role="author">Mike Fleetwood</para>
+          <para role="publisher">GParted 项目</para>
+          <para role="annotations">描述 GParted 的 0.31.0 版本</para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>GParted 手册 V1.11</revnumber>
+        <date>2017 年 9 月</date>
+        <revdescription>
+          <para role="author">Curtis Gedak &amp; Mike Fleetwood</para>
+          <para role="publisher">GParted 项目</para>
+          <para role="annotations">描述 GParted 的 0.29.0 版本</para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>GParted 手册 V1.10</revnumber>
+        <date>2017 年 1 月</date>
+        <revdescription>
+          <para role="author">Curtis Gedak &amp; Mike Fleetwood</para>
+          <para role="publisher">GParted 项目</para>
+          <para role="annotations">描述 GParted 的 0.28.0 版本</para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>GParted 手册 V1.9</revnumber>
+        <date>2015 年 3 月</date>
+        <revdescription>
+          <para role="author">Curtis Gedak &amp; Mike Fleetwood</para>
+          <para role="publisher">GParted 项目</para>
+          <para role="annotations">描述 GParted 的 0.22.0 版本</para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>GParted 手册 V1.8</revnumber>
+        <date>2014 年 9 月</date>
+        <revdescription>
+          <para role="author">Curtis Gedak</para>
+          <para role="publisher">GParted 项目</para>
+          <para role="annotations">描述 GParted 的 0.20.0 版本</para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>GParted 手册 V1.7</revnumber>
+        <date>2014 年 2 月</date>
+        <revdescription>
+          <para role="author">Curtis Gedak</para>
+          <para role="publisher">GParted 项目</para>
+          <para role="annotations">描述 GParted 的 0.18.0 版本</para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>GParted 手册 V1.6</revnumber>
+        <date>2013 年 12 月</date>
+        <revdescription>
+          <para role="author">Curtis Gedak</para>
+          <para role="publisher">GParted 项目</para>
+          <para role="annotations">描述 GParted 的 0.17.0 版本</para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>GParted 手册 V1.5</revnumber>
+        <date>2013 年 9 月</date>
+        <revdescription>
+          <para role="author">Curtis Gedak</para>
+          <para role="publisher">GParted 项目</para>
+          <para role="annotations">描述 GParted 的 0.16.2 版本</para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>GParted 手册 V1.4</revnumber>
+        <date>2012 年 2 月</date>
+        <revdescription>
+          <para role="author">Curtis Gedak</para>
+          <para role="publisher">GParted 项目</para>
+          <para role="annotations">描述 GParted 的 0.12.0 版本</para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>GParted 手册 V1.3</revnumber>
+        <date>2011 年 1 月</date>
+        <revdescription>
+          <para role="author">Curtis Gedak</para>
+          <para role="publisher">GParted 项目</para>
+          <para role="annotations">描述 GParted 的 0.8.0 版本</para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>GParted 手册 V1.2</revnumber>
+        <date>2010 年 6 月</date>
+        <revdescription>
+          <para role="author">Curtis Gedak</para>
+          <para role="publisher">GParted 项目</para>
+          <para role="annotations">描述 GParted 的 0.6.0 版本</para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>GParted 手册 V1.1</revnumber>
+        <date>2009 年 7 月</date>
+        <revdescription>
+          <para role="author">Curtis Gedak</para>
+          <para role="publisher">GParted 项目</para>
+          <para role="annotations">描述 GParted 的 0.4.6 版本</para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>GParted 手册 V1.0</revnumber>
+        <date>2009 年 1 月</date>
+        <revdescription>
+          <para role="author">Curtis Gedak</para>
+          <para role="publisher">GParted 项目</para>
+          <para role="annotations">描述 GParted 的 0.4.2 版本</para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>GParted 手册 V0.3.9</revnumber>
+        <date>2008 年 9 月</date>
+        <revdescription>
+          <para role="author">Curtis Gedak</para>
+          <para role="publisher">GParted 项目</para>
+          <para role="annotations">描述 GParted 的 0.3.9 版本</para>
+        </revdescription>
+      </revision>
+    </revhistory>
+
+    <releaseinfo>本手册描述了 GParted 的 0.31.0 版本</releaseinfo>
+
+    <legalnotice>
+      <title>反馈</title>
+      <para>要报告 Bug 或提供有关<application>gparted</application>应用程序或本手册的建议，请按照<ulink type="http" url="https://gparted.org/bugs.php"/>中的说明操作。</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+  </articleinfo>
+
+<!-- ============= Document Body ===================================== -->
+<!-- ============= Introduction ====================================== -->
+  <sect1 id="gparted-introduction">
+    <title>介绍</title>
+    <para><application>gparted</application>应用程序是 GNOME 分区编辑器，用于创建、重组和删除磁盘分区。</para>
+    <para>磁盘设备可以细分为一个或多个分区。<application>gparted</application>应用程序使您能够更改磁盘设备上的分区组织，同时保留分区的内容。</para>
+    <para>使用<application>gparted，</application>您可以完成以下任务：<itemizedlist>
+        <listitem>
+          <para>在磁盘设备上创建分区表。</para>
+        </listitem>
+        <listitem>
+          <para>启用和禁用分区标志，如引导和隐藏。</para>
+        </listitem>
+        <listitem>
+          <para>使用分区执行操作，如创建、删除、调整大小、移动、检查、标记、复制和粘贴。</para>
+        </listitem>
+      </itemizedlist></para>
+    <caution>
+      <para>编辑分区有可能导致数据丢失。</para>
+      <para><application>gparted</application>应用程序旨在使您能够编辑分区，同时降低数据丢失的风险。该应用程序经过仔细测试，由 GParted 项目团队使用。但是，由于软件错误、硬件问题或电源故障，可能会丢失数据。</para>
+      <para>在<application>gparted</application>运行期间，如果不在<application>gparted</application>应用程序外部安装或卸载分区，可以帮助降低数据丢失的风险。</para>
+      <para>建议您在使用<application>gparted</application>应用程序之前备份数据。对于加密数据尤其如此，因为所有数据在发生故障后都可能永久无法访问。有关加密数据的备份和恢复建议，请参阅<ulink type="http" url="https://gitlab.com/cryptsetup/cryptsetup/wikis/FrequentlyAskedQuestions">密码设置常见问题</ulink>解答。</para>
+    </caution>
+  </sect1>
+  
+<!-- ============= Getting Started =================================== -->
+  <sect1 id="gparted-getting-started">
+    <title>入门</title>
+    <para>
+    </para>
+
+<!-- ============= To Start gparted ================================== -->
+    <sect2 id="gparted-to-start">
+      <title>开始 gparted</title>
+      <para>您可以通过以下方式开始<application>gparted</application>：</para>
+      <variablelist>
+        <varlistentry>
+          <term><guimenu>应用程序</guimenu>菜单</term>
+          <listitem>
+            <para>选择<menuchoice><guisubmenu>系统工具</guisubmenu><guimenuitem>Gparted 分区编辑器</guimenuitem></menuchoice>。</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>命令行</term>
+          <listitem>
+            <para>执行以下命令：<command>已执行</command></para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+      <para>启动时<application>，gparted</application>将扫描您的计算机上的磁盘设备。</para>
+    </sect2>
+
+<!-- ============= When You Start gparted ============================ -->
+    <sect2 id="gparted-when-you-start">
+
+      <title>GParted 窗口</title>
+      <para>启动<application>gparted</application>时，将显示以下窗口：</para>
+
+      <!-- ==== Figure ==== -->
+      <!-- The GNOME Documentation Project recommends a maximum image
+           width of 510 pixels.
+           http://library.gnome.org/devel/gdp-style-guide/stable/screenshot-4.html.en
+      -->
+      <figure id="gparted-window">
+        <title>gparted 窗口</title>
+        <screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="figures/gparted_window.png" format="PNG"/>
+              </imageobject>
+            <textobject>
+              <phrase>显示已分装的主窗口。</phrase>
+            </textobject>
+          </mediaobject>
+        </screenshot>
+      </figure>
+
+      <para><application>Gparted</application>窗口包含以下元素：</para>
+      <variablelist>
+        <varlistentry>
+          <term>菜单栏</term>
+          <listitem>
+            <para>菜单栏上的菜单包含处理<application>gparted</application>中的磁盘设备和分区所需的所有命令。</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>工具栏</term>
+          <listitem>
+            <para>工具栏包含可以从菜单栏访问的命令的子集。</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>图形显示区域</term>
+          <listitem>
+            <para>图形显示区域包含所选磁盘设备上分区的可视表示形式。</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>文本显示区域</term>
+          <listitem>
+            <para>文本显示区域包含所选磁盘设备上分区的文本列表。</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>状态栏</term>
+          <listitem>
+            <para>状态栏显示有关当前<application>gparted</application>活动或挂起的操作数的信息。</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>设备信息窗格</term>
+          <listitem>
+            <para>设备信息窗格显示有关所选磁盘设备的详细信息。</para>
+            <para>默认情况下，不会显示设备信息窗格。要显示设备信息窗格，请选择"<menuchoice><guimenu>查看</guimenu><guimenuitem>设备信息</guimenuitem></menuchoice>"。</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>挂起的操作窗格</term>
+          <listitem>
+            <para>挂起的操作窗格显示队列中的分区操作的当前列表。</para>
+            <para>默认情况下，当存在 0 个挂起的操作时，不会显示挂起的操作窗格。要显示挂起的操作窗格，请选择"<menuchoice><guimenu>查看</guimenu><guimenuitem>挂起的操作</guimenuitem></menuchoice>"。</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+      <para>在任一显示区域中左键单击时，将选择用于分区编辑操作的分区。</para>
+      <para>当您在任一显示区域右键单击时，应用程序将显示一个弹出菜单。弹出式菜单包含最常见的分区编辑操作。</para>
+
+      <para>与其他 GNOME 应用程序一样<application>，gparted</application>中的操作可以通过多种方式执行：使用菜单、使用工具栏或使用快捷键。</para>
+    </sect2>
+
+<!-- ============= To Specify Devices on the Command Line ============ -->
+    <sect2 id="gparted-run-from-cmd-line">
+      <title>从命令行运行 gpart</title>
+      <para>可以从命令行运行<application>gparted</application>并指定一个或多个磁盘设备。</para>
+      <para>要使用命令行中的多个磁盘设备，请键入以下命令，然后按<keycap>Enter</keycap>：</para>
+      <para>
+      <screen><prompt>$</prompt><command>&app; <replaceable>/路径到您的设备1 /路径到您的设备2</replaceable></command></screen>
+      </para>
+    </sect2>
+  </sect1>
+
+<!-- ============= Usage ============================================= -->
+<!-- ============= Viewing File System Support ======================= -->
+  <sect1 id="gparted-usage">
+    <title>查看文件系统支持</title>
+      <para>要查看文件系统上支持的操作，请选择：<menuchoice><guimenu>查看</guimenu><guimenuitem>文件系统支持</guimenuitem></menuchoice>。应用程序显示<guilabel>文件系统支持</guilabel>对话框。</para>
+      <para>如果在<application>gparted</application>运行时已安装软件，请单击"<guibutton>重新扫描支持的操作</guibutton>"以刷新图表。应用程序刷新图表的显示。</para>
+      <para>要关闭<guilabel>文件系统支持</guilabel>对话框，请单击"<guibutton>关闭</guibutton>"。</para>
+  </sect1>
+
+<!-- ============= Working With Devices ============================== -->
+  <sect1 id="gparted-devices">
+    <title>使用设备</title>
+
+<!-- ============= To Select a Device ================================ -->
+    <sect2 id="gparted-select-device">
+      <title>选择设备</title>
+      <para>要选择磁盘设备，请选择<menuchoice><guimenu>：GParted</guimenu><guimenuitem>设备</guimenuitem></menuchoice>并从列表中选择设备。应用程序在<application>gparted</application>窗口中显示设备分区布局。</para>
+    </sect2>
+
+<!-- ============= To View Device Information ======================== -->
+    <sect2 id="gparted-view-device-information">
+      <title>查看设备信息</title>
+      <para>要查看有关磁盘设备的信息，<orderedlist>
+          <listitem>
+            <para>选择磁盘设备。请参阅<xref linkend="gparted-select-device"/>。</para>
+          </listitem>
+          <listitem>
+            <para>选择：<menuchoice><guimenu>查看</guimenu><guimenuitem>设备信息</guimenuitem></menuchoice>。应用程序在<application>gparted</application>窗口中打开一个侧窗格，并显示有关设备的信息。</para>
+         </listitem>
+       </orderedlist></para>
+      <para>要关闭<guilabel>"设备信息</guilabel>"侧窗格，请取消选择：<menuchoice><guimenu>查看</guimenu><guimenuitem>设备信息</guimenuitem></menuchoice>。</para>
+    </sect2>
+
+<!-- ============= To Refresh a Device =============================== -->
+    <sect2 id="gparted-refresh-device">
+      <title>刷新所有设备</title>
+      <para>要刷新所有磁盘设备，请选择<menuchoice><guimenu>：GParted</guimenu><guimenuitem>刷新设备</guimenuitem></menuchoice>。应用程序重新扫描所有磁盘设备，并在<application>gparted</application>窗口中刷新设备分区布局。</para>
+    </sect2>
+
+<!-- ============= To Create a New Partition Table =================== -->
+    <sect2 id="gparted-create-partition-table">
+      <title>创建新分区表</title>
+      <para>要在磁盘设备上创建新分区表，<orderedlist>
+          <listitem>
+            <para>选择磁盘设备。请参阅<xref linkend="gparted-select-device"/>。</para>
+          </listitem>
+          <listitem>
+            <para>选择：<menuchoice><guimenu>设备</guimenu><guimenuitem>创建分区表</guimenuitem></menuchoice>。应用程序<guilabel>在<replaceable>/路径到设备</replaceable>对话框上显示"创建分区表</guilabel>"。</para>
+          </listitem>
+          <listitem>
+            <para>可以选择从列表中选择不同的分区表类型。</para>
+            <note>
+              <para>默认分区表类型是小于 2 TB 大小的磁盘的<guimenuitem>msdos（</guimenuitem>假设 512 字节扇区大小），以及 2 TB 和更大磁盘的<guimenuitem>gpt</guimenuitem>。</para>
+              <para>有关<xref linkend="gparted-specify-partition-type"/> <guimenuitem>msdos</guimenuitem>分区表限制，请参阅。</para>
+            </note>
+            <note>
+              <para>要使用没有分区表的磁盘，请选择<guimenuitem>循环</guimenuitem>以创建跨该磁盘的虚拟分区。然后格式化到所需的文件系统。</para>
+              <para>请参阅<xref linkend="gparted-format-partition"/>使用文件系统格式化虚拟分区。</para>
+            </note>
+            <caution>
+              <para>许多操作系统可识别<guimenuitem>gpt</guimenuitem>和<guimenuitem>msdos</guimenuitem>分区表，但无法识别所有类型的文件系统。这种缺少文件系统识别意味着使用没有分区表的磁盘涉及更大的风险。例如，如果无法识别文件系统，某些操作系统可能会提示格式化未分区的磁盘。</para>
+            </caution>
+          </listitem>
+          <listitem>
+            <para>单击<guibutton>"应用</guibutton>"以创建新分区表。应用程序将新分区表写入磁盘设备。应用程序刷新<application>gparted</application>窗口中的设备分区布局。</para>
+          </listitem>
+        </orderedlist></para>
+      <caution>
+        <para>警告： 这将擦除所有数据上的所有数据。</para>
+        <para>如果不小心覆盖分区表，请参阅<xref linkend="gparted-recover-partition-table"/>。</para>
+      </caution>
+    </sect2>
+
+<!-- ============= To Attempt Data Rescue =================== -->
+    <sect2 id="gparted-attempt-data-rescue">
+      <title>尝试数据救援</title>
+      <para>要尝试从磁盘设备中进行数据救援，应：<orderedlist>
+          <listitem>
+            <para>选择磁盘设备。请参阅<xref linkend="gparted-select-device"/>。</para>
+          </listitem>
+          <listitem>
+            <para>选择：<menuchoice><guimenu>设备</guimenu><guimenuitem>尝试数据救援</guimenuitem></menuchoice>。应用程序<guilabel>在<replaceable>/路径到设备</replaceable>对话框上显示"对文件系统的搜索</guilabel>"。</para>
+          </listitem>
+          <listitem>
+            <para>单击<guibutton>"确定</guibutton>"以开始完整磁盘扫描。</para>
+            <tip>
+              <para>大型磁盘设备可能需要很长时间才能进行扫描。如果您没有时间等待完整的磁盘扫描，请单击"<guibutton>取消</guibutton>"。</para>
+            </tip>
+            <note>
+              <para>最多可以发现 4 个带有文件系统的分区。如果要发现 4 个以上分区并还原分区表，请参阅<xref linkend="gparted-recover-partition-table"/>。</para>
+            </note>
+          </listitem>
+          <listitem>
+            <para>当完整磁盘扫描完成时，将显示两个可能的对话框之一：<itemizedlist>
+                <listitem>
+                  <para>
+                  <guilabel>未找到文件系统<replaceable>/路径到设备</replaceable></guilabel>
+                  </para>
+                  <para>如果没有找到文件系统，您有其他选项来尝试挽救您的数据。<application>photorec</application>应用程序旨在帮助恢复许多不同类型的丢失文件。有关<application>photorec</application>的详细信息，请参阅<ulink type="http" url="https://www.cgsecurity.org/wiki/PhotoRec"/>。</para>
+                  <para>单击<guibutton>"确定</guibutton>"关闭对话框，然后结束此尝试以挽救数据。</para>
+                </listitem>
+                <listitem>
+                  <para>
+                  <guilabel>在<replaceable>/路径到设备</replaceable></guilabel>
+                  </para>
+                  <para>如果找到文件系统，则每个文件系统都会与<guibutton>"视图"</guibutton>按钮一起显示在列表中。该对话框将指示是否有数据不一致。数据中的不一致可能会阻止您查看数据。</para>
+                </listitem>
+              </itemizedlist></para>
+          </listitem>
+          <listitem>
+            <para>要抢救数据，请使用每个文件系统的以下步骤：<orderedlist numeration="upperalpha">
+                <listitem>
+                  <para>单击<guibutton>"查看"</guibutton>以装载和显示文件系统。将打开默认文件管理器并显示文件系统的只读视图。</para>
+                  <note>
+                    <para>如果显示"<guilabel>无法打开默认文件管理器</guilabel>"对话框，则需要打开文件管理器并导航到文件系统的装载点。</para>
+                    <para>装载点显示在对话框中，例如"/tmp/gparted-roview-XXXXXX"。</para>
+                    <para>单击<guibutton>"确定</guibutton>"可<guilabel>关闭"无法打开默认文件管理器</guilabel>"对话框。</para>
+                  </note>
+                </listitem>
+                <listitem>
+                  <para>使用文件管理器将数据复制到其他存储介质。</para>
+                </listitem>
+                <listitem>
+                  <para>复制完数据后，关闭文件管理器。</para>
+                </listitem>
+              </orderedlist></para>
+          </listitem>
+          <listitem>
+            <para>完成抢救数据后，单击<guibutton>"关闭"</guibutton>以结束此尝试以挽救数据。应用程序将安装用于查看的任何文件系统进行安装。然后，应用程序重新扫描所有磁盘设备，并在<application>gparted</application>窗口中刷新设备分区布局。</para>
+          </listitem>
+        </orderedlist></para>
+    </sect2>
+
+  </sect1>
+
+<!-- ============= Working with Partitions =========================== -->
+  <sect1 id="gparted-partitions">
+    <title>使用分区</title>
+
+<!-- ============= Basic Partition Actions =========================== -->
+    <sect2 id="gparted-basic-partition-actions">
+      <title>基本分区操作</title>
+      <para>这些操作不会更改磁盘设备上的分区。</para>
+
+<!-- ============= To Select a Partition ============================= -->
+      <sect3 id="gparted-select-partition">
+        <title>选择分区</title>
+        <para>要选择分区，请使用以下项之一：<itemizedlist>
+            <listitem>
+              <para>单击图形显示区域中的分区。</para>
+            </listitem>
+            <listitem>
+              <para>单击文本显示区域中的分区。</para>
+            </listitem>
+          </itemizedlist></para>
+        <para>应用程序突出显示图形显示区域中的分区和<application>gparted</application>窗口中的文本显示区域。</para>
+        <note>
+          <para>分区操作（如删除、移动、复制、格式化、检查、标签和经常调整大小）要求卸载分区。请参阅<xref linkend="gparted-unmount-partition"/>。</para>
+        </note>
+      </sect3>
+
+<!-- ============= To Select Unallocated Space ======================= -->
+      <sect3 id="gparted-select-unallocated">
+        <title>选择未分配的空间</title>
+        <para>要选择未分配的空间，请使用以下之一：<itemizedlist>
+            <listitem>
+              <para>单击图形显示区域中<guilabel>未分配的</guilabel>图形。</para>
+            </listitem>
+            <listitem>
+              <para>单击文本显示区域中<guilabel>未分配的</guilabel>。</para>
+            </listitem>
+          </itemizedlist></para>
+        <para>应用程序突出显示图形显示区域中的未分配空间和<application>gparted</application>窗口中的文本显示区域。</para>
+        <tip>
+          <para>如果您没有任何磁盘设备具有未分配的空间，可以尝试以下操作：</para>
+          <itemizedlist>
+            <listitem>
+              <para>向计算机添加新磁盘设备。</para>
+            </listitem>
+            <listitem>
+              <para>收缩包含未使用空间的分区。请参阅<xref linkend="gparted-resize-partition"/>。</para>
+            </listitem>
+          </itemizedlist>
+        </tip>
+      </sect3>
+
+<!-- ============= To View Partition Information ===================== -->
+    <sect3 id="gparted-view-partition-information">
+        <title>查看分区信息</title>
+        <para>要查看有关分区的信息，<orderedlist>
+            <listitem>
+              <para>选择分区。请参阅<xref linkend="gparted-select-partition"/>。</para>
+            </listitem>
+            <listitem>
+              <para>选择：<menuchoice><guimenu>分区</guimenu><guimenuitem>信息</guimenuitem></menuchoice>。应用程序将打开<guilabel>有关<replaceable>/路径到分区</replaceable>对话框的信息</guilabel>。</para>
+            </listitem>
+          </orderedlist></para>
+        <para>要关闭<guilabel>有关<replaceable>/路径到分区</replaceable></guilabel>的信息对话框，请单击"<guibutton>关闭</guibutton>"。</para>
+      </sect3>
+
+<!-- ============= To Mount a Partition ============================== -->
+      <sect3 id="gparted-mount-partition">
+        <title>安装分区</title>
+        <para>要装入分区：<orderedlist>
+            <listitem>
+              <para>选择未安装的分区。请参阅<xref linkend="gparted-select-partition"/>。</para>
+            </listitem>
+            <listitem>
+              <para>选择：<menuchoice><guimenu>分区</guimenu><guimenuitem>装载</guimenuitem></menuchoice>并从列表中选择一个装载点。应用程序在装载点上装载分区，并在<application>gparted</application>窗口中刷新设备分区布局。</para>
+            </listitem>
+          </orderedlist></para>
+        <note>
+          <para>如果<menuchoice><guimenu>分区</guimenu><guimenuitem>装载</guimenuitem></menuchoice>不可见，则<application>gparted</application>不知道分区应该安装在何处。</para>
+        </note>
+      </sect3>
+
+<!-- ============= To Unmount a Partition ============================ -->
+      <sect3 id="gparted-unmount-partition">
+        <title>卸载分区</title>
+        <para>要卸载分区：<orderedlist>
+            <listitem>
+              <para>选择已装载的分区。请参阅<xref linkend="gparted-select-partition"/>。</para>
+            </listitem>
+            <listitem>
+              <para>选择：<menuchoice><guimenu>分区</guimenu><guimenuitem>取消安装</guimenuitem></menuchoice>。应用程序从装载点卸载分区，并在<application>gparted</application>窗口中刷新设备分区布局。</para>
+            </listitem>
+          </orderedlist></para>
+        <tip>
+          <para>如果<menuchoice><guimenu>分区</guimenu><guimenuitem>卸载</guimenuitem></menuchoice>不成功，则分区可能正在使用中。</para>
+          <para>要卸载所有分区并可用于分区编辑操作，请使用实时 CD 启动并使用<application>gparted</application>。看到<xref linkend="gparted-acquire-livecd"/></para>
+        </tip>
+      </sect3>
+
+<!-- ============= To Open an Encrypted Partition ==================== -->
+      <sect3 id="gparted-open-encrypted-partition">
+        <title>打开加密分区</title>
+        <para>要打开 LUKS 加密分区：<orderedlist>
+            <listitem>
+              <para>选择已关闭的 LUKS 加密分区。请参阅<xref linkend="gparted-select-partition"/>。</para>
+            </listitem>
+            <listitem>
+              <para>选择：<menuchoice><guimenu>分区</guimenu><guimenuitem>开放加密</guimenuitem></menuchoice>。</para>
+              <para>如果<application>gparted</application>还不知道 LUKS 密码短语，它将打开<guilabel>LUKS 密码<replaceable>/路径到分区</replaceable></guilabel>对话框。在<guilabel>密码</guilabel>文本框中键入 LUKS 密码，然后单击"<guibutton>解锁</guibutton>"。</para>
+              <para>应用程序打开加密分区，并在<application>gparted</application>窗口中刷新设备分区布局。</para>
+            </listitem>
+          </orderedlist></para>
+        <note>
+          <para><application>gparted</application>会记住计算机内存中的每个 LUKS 密码短语，只要它正在运行。这样，在重新打开同一加密分区时，就不必提示。当<application>gparted</application>被关闭时，所有记住的LUKS密码从内存中清除并被遗忘。</para>
+        </note>
+      </sect3>
+
+
+<!-- ============= To Close an Encrypted Partition =================== -->
+      <sect3 id="gparted-close-encrypted-partition">
+        <title>关闭加密分区</title>
+        <para>要关闭 LUKS 加密分区，<orderedlist>
+            <listitem>
+              <para>选择未安装的和 LUKS 加密分区。请参阅<xref linkend="gparted-select-partition"/>。</para>
+            </listitem>
+            <listitem>
+              <para>选择：<menuchoice><guimenu>分区</guimenu><guimenuitem>关闭加密</guimenuitem></menuchoice>。应用程序关闭了 LUKS 加密，并在<application>gparted</application>窗口中刷新设备分区布局。</para>
+            </listitem>
+          </orderedlist></para>
+      </sect3>
+
+    </sect2>
+<!-- ============= End of Basic Partition Actions ==================== -->
+
+<!-- ============= Intermediate Partition Actions ==================== -->
+    <sect2 id="gparted-intermediate-partition-actions">
+      <title>中间分区操作</title>
+      <para>这些操作将更改磁盘设备上的分区。这些操作不会修改现有分区的起始或结束边界。</para>
+
+<!-- ============= Creating a New Partition ========================== -->
+      <sect3 id="gparted-create-new-partition">
+        <title>创建新分区</title>
+        <para>要创建新分区，<orderedlist>
+            <listitem>
+              <para>选择磁盘设备上的未分配空间。请参阅<xref linkend="gparted-select-unallocated"/>。</para>
+            </listitem>
+            <listitem>
+              <para>选择：<menuchoice><guimenu>分区</guimenu><guimenuitem>新建</guimenuitem></menuchoice>。应用程序将显示<guilabel>"创建新分区</guilabel>"对话框。</para>
+            </listitem>
+            <listitem>
+              <para>指定分区的大小和位置。请参阅<xref linkend="gparted-specify-partition-size-and-location"/>。</para>
+            </listitem>
+            <listitem>
+              <para>指定分区的对齐方式。请参阅<xref linkend="gparted-specify-partition-alignment"/>。</para>
+            </listitem>
+            <listitem>
+              <para>指定分区的类型。请参阅<xref linkend="gparted-specify-partition-type"/>。</para>
+            </listitem>
+            <listitem>
+              <para>启用该字段时指定分区的名称。请参阅<xref linkend="gparted-specify-partition-name"/>。</para>
+            </listitem>
+            <listitem>
+              <para>指定分区的文件系统类型。请参阅<xref linkend="gparted-specify-partition-file-system"/>。</para>
+            </listitem>
+            <listitem>
+              <para>指定分区的文件系统标签。请参阅<xref linkend="gparted-specify-partition-file-system-label"/>。</para>
+            </listitem>
+            <listitem>
+              <para>单击<guibutton>"添加</guibutton>"将创建分区操作添加到操作队列。应用程序在<application>gparted</application>窗口中的"<guilabel>挂起操作</guilabel>"窗格中显示创建分区操作。</para>
+            </listitem>
+          </orderedlist></para> 
+      </sect3>
+
+<!-- ============= To Delete a Partition ============================= -->
+      <sect3 id="gparted-delete-partition">
+        <title>删除分区</title>
+        <para>要删除分区：<orderedlist>
+            <listitem>
+              <para>选择未安装的分区。请参阅<xref linkend="gparted-select-partition"/>。</para>
+            </listitem>
+            <listitem>
+              <para>选择：<menuchoice><guimenu>分区</guimenu><guimenuitem>删除</guimenuitem></menuchoice>。应用程序在"<guilabel>挂起的操作</guilabel>"窗格中显示删除分区操作。</para>
+            </listitem>
+          </orderedlist></para>
+        <caution>
+          <para>如果删除逻辑分区，则删除的逻辑分区后的所有现有逻辑分区都将在设备名称中遇到更改。</para>
+          <para>例如，扩展分区包含四个逻辑分区 A、B、C 和 D。这些逻辑分区由操作系统访问，如下所示：</para>
+          <itemizedlist>
+            <listitem>
+              <para>分区 A 为 /dev/sda5。</para>
+            </listitem>
+            <listitem>
+              <para>分区 B 为 /dev/sda6。</para>
+            </listitem>
+            <listitem>
+              <para>分区 C 为 /dev/sda7。</para>
+            </listitem>
+            <listitem>
+              <para>分区 D 为 /dev/sda8。</para>
+            </listitem>
+          </itemizedlist>
+          <para>如果删除分区 B，则操作系统将访问其余逻辑分区，如下所示：</para>
+          <itemizedlist>
+            <listitem>
+              <para>分区 A 为 /dev/sda5。</para>
+            </listitem>
+            <listitem>
+              <para>分区 C 为 /dev/sda6。请注意设备名称的更改。</para>
+            </listitem>
+            <listitem>
+              <para>分区 D 为 /dev/sda7。请注意设备名称的更改。</para>
+            </listitem>
+          </itemizedlist>
+          <para>如果使用设备名称装载分区，则设备名称中的更改可能会导致问题。安装分区时，可以使用分区的文件系统标签或通用唯一标识符 （UUID） 来避免此问题。</para>
+          <para>设备名称中的更改可能会对以下文件产生负面影响：<itemizedlist>
+              <listitem>
+                <para>/etc/fstab - 包含要装载的文件系统列表。</para>
+              </listitem>
+              <listitem>
+                <para>/引导/grub/菜单.lst - 包含<application>grub</application>引导加载程序的操作系统启动说明。</para>
+              </listitem>
+            </itemizedlist></para>
+        </caution>
+        <note>
+          <para>具有<guimenuitem>循环</guimenuitem>或<guimenuitem>无</guimenuitem>分区表的磁盘不包含分区表，并且不包含分区。没有分区表的磁盘上的文件系统在 GParted 中由虚拟分区表示。</para>
+          <para>要删除文件系统和虚拟分区，请选择<guimenuitem>要清除</guimenuitem>的格式。</para>
+          <para>请参阅<xref linkend="gparted-format-partition"/>。</para>
+        </note>
+      </sect3>
+
+<!-- ============= To Name a Partition =============================== -->
+      <sect3 id="gparted-name-partition">
+        <title>命名分区</title>
+        <note>
+          <para>分区命名仅适用于 GUID 分区表 （GPT）。</para>
+          <para>另请参阅<xref linkend="gparted-create-partition-table"/>。</para>
+        </note>
+        <para>要设置分区的名称：</para>
+          <orderedlist>
+            <listitem>
+              <para>选择未安装的分区。请参阅<xref linkend="gparted-select-partition"/>。</para>
+            </listitem>
+            <listitem>
+              <para>选择：<menuchoice><guimenu>分区</guimenu><guimenuitem>名称分区</guimenuitem></menuchoice>。应用程序<guilabel>在<replaceable>/路径到分区</replaceable>对话框上打开 Set 分区名称</guilabel>。</para>
+            </listitem>
+            <listitem>
+              <para>在<guilabel>"名称</guilabel>"文本框中键入分区名称。</para>
+            </listitem>
+            <listitem>
+              <para>单击<guibutton>"确定</guibutton>"。应用程序在"<guilabel>操作挂起</guilabel>"窗格中显示设置分区名称操作。</para>
+            </listitem>
+          </orderedlist>
+      </sect3>
+
+<!-- ============= To Format a Partition ============================= -->
+      <sect3 id="gparted-format-partition">
+        <title>设置分区的格式</title>
+        <para>要设置分区的格式：<orderedlist>
+            <listitem>
+              <para>选择未安装的分区。请参阅<xref linkend="gparted-select-partition"/>。</para>
+            </listitem>
+            <listitem>
+              <para>选择：<menuchoice><guimenu>分区</guimenu><guimenuitem>格式到</guimenuitem></menuchoice>，并从列表中选择文件系统类型。应用程序在"<guilabel>操作挂起</guilabel>"窗格中显示格式分区操作。</para>
+              <para>有关<xref linkend="gparted-specify-partition-file-system"/><guimenuitem>已清除</guimenuitem>文件系统类型的含义，请参阅。</para>
+            </listitem>
+          </orderedlist></para>
+      </sect3>
+
+<!-- ============= To Set a Partition File System Label ============== -->
+      <sect3 id="gparted-setting-partition-file-system-label">
+        <title>设置分区文件系统标签</title>
+        <para>要在分区中设置文件系统的标签或卷名称，应：<orderedlist>
+            <listitem>
+              <para>选择未安装的分区。请参阅<xref linkend="gparted-select-partition"/>。</para>
+            </listitem>
+            <listitem>
+              <para>选择：<menuchoice><guimenu>分区</guimenu><guimenuitem>标签文件系统</guimenuitem></menuchoice>。应用程序<guilabel>在<replaceable>/路径到分区</replaceable>对话框上打开"设置文件系统"标签</guilabel>。</para>
+            </listitem>
+            <listitem>
+              <para>在<guilabel>"标签</guilabel>"文本框中键入标签名称。</para>
+            </listitem>
+            <listitem>
+              <para>单击<guibutton>"确定</guibutton>"。应用程序在"<guilabel>操作挂起</guilabel>"窗格中显示设置文件系统标签操作。</para>
+            </listitem>
+          </orderedlist></para>
+      </sect3>
+
+<!-- ============= To Change a Partition's UUID ========================== -->
+      <sect3 id="gparted-changing-partition-uuid">
+        <title>更改分区 UUID</title>
+        <para>要更改分区的通用唯一标识符 （UUID），应：<orderedlist>
+            <listitem>
+              <para>选择未安装的分区。请参阅<xref linkend="gparted-select-partition"/>。</para>
+            </listitem>
+            <listitem>
+              <para>选择：<menuchoice><guimenu>分区</guimenu><guimenuitem>新 UUID</guimenuitem></menuchoice>。应用程序在"<guilabel>操作挂起</guilabel>"窗格中显示该集新的随机 UUID 操作。</para>
+              <warning>
+                <para>更改 UUID 可能会使 Windows 产品激活密钥 （WPA） 失效。</para>
+                <para>在 FAT 和 NTFS 文件系统上，卷序列号用作 UUID。更改 Windows 系统分区上的卷序列号（通常为 C：）可能会使 WPA 密钥失效。无效的 WPA 密钥将阻止登录，直到您重新激活 Windows。</para>
+                <para>为了避免 WPA 密钥无效，在 NTFS 文件系统上，只有一半的 UUID 设置为新的随机值。在 FAT 文件系统上，无法采取此类预防措施。</para>
+                <para>不应更改数据分区或可移动媒体分区的 UUID 影响 WPA 密钥。在极少数情况下，启动时存在的分区可能是此规则的例外。</para>
+              </warning>
+              <warning>
+                <para>在不需要更改 UUID 时，更改 UUID 可能会导致 GNU/Linux 系统无法启动或无法装载文件系统。</para>
+                <para>仅在复制分区后需要更改 UUID。当在同一台计算机上同时使用源和分区副本时，需要 UUID 更改以防止重复 UUID。</para>
+                <para>如果出现引导或装载问题，您可能需要编辑配置文件（如 /etc/fstab）并重新生成 grub 菜单以确保指定了正确的 UUID。</para>
+              </warning>
+            </listitem>
+          </orderedlist></para>
+      </sect3>
+
+<!-- ============= Specifying Partition Details ====================== -->
+      <sect3 id="gparted-specify-partition-details">
+        <title>指定分区详细信息</title>
+        <para>指定分区详细信息在执行创建、调整大小和移动等操作时非常有用。</para>
+
+<!-- ============= To Specify a Partition Size and Location ========== -->
+        <sect4 id="gparted-specify-partition-size-and-location">
+          <title>指定分区大小和位置</title>
+          <para>要指定分区的大小和位置，请使用以下一种或组合：<itemizedlist>
+              <listitem>
+                <para>单击并按住图形区域两端的箭头。在显示范围内向左或向右拖动箭头。</para>
+              </listitem>
+              <listitem>
+                <para>单击并按住图形区域中的分区中间。在显示范围内向左或向右拖动分区。</para>
+              </listitem>
+              <listitem>
+                <para>单击旋转按钮箭头，或键入数值以调整以下字段：<itemizedlist>
+                    <listitem>
+                      <para>
+                      <guilabel>前空空间</guilabel>
+                      </para>
+                    </listitem>
+                    <listitem>
+                      <para>
+                      <guilabel>新尺寸</guilabel>
+                      </para>
+                    </listitem>
+                    <listitem>
+                      <para>
+                      <guilabel>自由空间关注</guilabel>
+                      </para>
+                    </listitem>
+                  </itemizedlist></para>
+              </listitem>
+            </itemizedlist></para>
+          <para>应用程序刷新图形区域和三个字段标签旁边的数字。</para>
+        </sect4>
+
+<!-- ============= To Specify a Partition Alignment ================== -->
+        <sect4 id="gparted-specify-partition-alignment">
+          <title>指定分区对齐</title>
+          <para>要指定分区的对齐方式，请单击"<guilabel>对齐到</guilabel>箭头"按钮，然后从列表中选择。</para>
+          <itemizedlist>
+            <listitem>
+              <para>对现代操作系统使用<guilabel>MiB</guilabel>对齐。此设置对齐分区以在精确的字节 （1，048，576 字节） 边界上开始和结束。当与 RAID 系统和固态驱动器（如 USB 闪存驱动器）配合时，MiB 对齐可提供增强的性能。</para>
+            </listitem>
+            <listitem>
+              <para>使用<guilabel>气缸</guilabel>对齐来保持与 2000 年之前发布的操作系统（如 DOS）的兼容性。此设置对齐分区以在磁盘圆柱体边界上开始和结束。</para>
+              <tip>
+                <para>现代磁盘设备报告的圆柱形/头/扇区值不再与磁盘设备上存储的数据有直接的物理关系。因此，使用此对齐设置来增强性能不再有效。</para>
+              </tip>
+            </listitem>
+            <listitem>
+              <para>仅当对磁盘结构、分区表和引导记录有深入的了解时，才使用<guilabel>"无</guilabel>"。此设置相对于磁盘设备上任何紧邻前面的分区的末尾放置分区边界。此设置不保证保留或尊重引导记录所需的空间。</para>
+            </listitem>
+          </itemizedlist>
+        </sect4>
+
+<!-- ============= To Specify a Partition Type ======================= -->
+        <sect4 id="gparted-specify-partition-type">
+          <title>指定分区类型</title>
+          <para>要指定分区类型，请单击<guilabel>"创建为</guilabel>箭头"按钮，然后从列表中选择。</para>
+          <note>
+            <para>msdos 分区表限制分区，如下所示：<itemizedlist>
+                <listitem>
+                  <para>最多 4 个主分区。</para>
+                </listitem>
+                <listitem>
+                  <para>最多 3 个主分区和 1 个扩展分区。</para>
+                  <para>扩展分区可以包含多个逻辑分区。某些 GNU/Linux 发行版支持在磁盘设备上最多访问 15 个分区。</para>
+                </listitem>
+                <listitem>
+                  <para>分区的最大大小是 2 TB，扇区大小为 512 字节。分区还必须在磁盘设备的前 2 TB 内启动。</para>
+                </listitem>
+              </itemizedlist></para>
+          </note>
+          <tip>
+            <para>主分区提供更好的数据可恢复性，因为分区边界存储在磁盘设备上的已知位置。</para>
+          </tip>
+        </sect4>
+
+<!-- ============= To Specify a Partition Name ======================= -->
+        <sect4 id="gparted-specify-partition-name">
+          <title>指定分区名称</title>
+          <note>
+            <para>分区命名仅适用于 GUID 分区表 （GPT）。因此，仅在使用 GPT 分区的磁盘设备上启用该字段。</para>
+            <para>另请参阅<xref linkend="gparted-create-partition-table"/>。</para>
+          </note>
+          <para>要指定分区名称，请在<guilabel>"分区名称</guilabel>文本"框中键入该名称。</para>
+        </sect4>
+
+<!-- ============= To Specify a Partition File System ================ -->
+        <sect4 id="gparted-specify-partition-file-system">
+          <title>指定分区文件系统</title>
+          <para>要指定分区的文件系统类型，请单击<guilabel>"文件系统</guilabel>"箭头按钮，然后从列表中选择。</para>
+          <note>
+            <para>某些文件系统的使用示例如下：<itemizedlist>
+                <listitem>
+                  <para><guimenuitem>ext2，ext3</guimenuitem><guimenuitem/>和<guimenuitem>ext4</guimenuitem>文件系统可用于安装GNU/Linux和数据。</para>
+                </listitem>
+                <listitem>
+                  <para><guimenuitem>linux交换</guimenuitem>可以与GNU/Linux一起使用，以增加计算机的虚拟内存。</para>
+                </listitem>
+                <listitem>
+                  <para><guimenuitem>fat16</guimenuitem>和<guimenuitem>fat32</guimenuitem>文件系统可用于在自由操作系统和商业操作系统之间共享数据。</para>
+                </listitem>
+                <listitem>
+                  <para><guimenuitem>清除</guimenuitem>可用于清除任何现有的文件系统签名，并确保分区被识别为空。</para>
+                </listitem>
+                <listitem>
+                  <para><guimenuitem>未格式化</guimenuitem>可用于仅创建分区而不写入文件系统。</para>
+                </listitem>
+              </itemizedlist></para>
+          </note>
+        </sect4>
+
+<!-- ============= To Specify a Partition Label ====================== -->
+        <sect4 id="gparted-specify-partition-file-system-label">
+          <title>指定分区文件系统标签</title>
+          <para>要在分区中指定文件系统标签（也称为卷标签），请在<guilabel>Label</guilabel>文本框中键入标签名称。</para>
+          <tip>
+            <para>文件系统标签可用于帮助您记住分区中存储的内容。</para>
+            <para>独特的标签可用于将文件系统与 GNU/Linux 操作系统一起安装。</para>
+          </tip>
+        </sect4>
+
+      </sect3>
+<!-- ============= End of Specifying Partition Details =============== -->
+
+    </sect2>
+<!-- ============= End of Intermediate Partition Actions ============= -->
+
+<!-- ============= Advanced Partition Actions ======================== -->
+    <sect2 id="gparted-advanced-partition-actions">
+      <title>高级分区操作</title>
+      <para>这些操作将更改磁盘设备上的分区。这些操作可能会修改现有分区的起始或结束边界。这些操作可能导致操作系统无法启动。</para>
+
+<!-- ============= To Resize a Partition ============================= -->
+      <sect3 id="gparted-resize-partition">
+        <title>调整分区大小</title>
+        <para>调整分区大小和移动分区可以由单个<application>gparted</application>操作执行。</para>
+        <para>要调整分区的大小：<orderedlist>
+            <listitem>
+              <para>选择分区。请参阅<xref linkend="gparted-select-partition"/>。</para>
+              <tip>
+                <para>未安装或非活动分区启用最多调整大小的选项。</para>
+                <para>支持可以在线调整某些已装载或其他活动分区的大小。然而，这种支持往往仅限于增长。</para>
+              </tip>
+            </listitem>
+            <listitem>
+              <para>选择：<menuchoice><guimenu>分区</guimenu><guimenuitem>调整大小/移动</guimenuitem></menuchoice>。应用程序显示<guilabel>"调整大小/移动<replaceable>/路径到分区"</replaceable></guilabel>对话框。</para>
+            </listitem>
+            <listitem>
+              <para>调整分区的大小。请参阅<xref linkend="gparted-specify-partition-size-and-location"/>。</para>
+              <tip>
+                <para>如果不希望移动现有分区的开头，则不要更改值<guilabel>前面的可用空间</guilabel>。如果分区已装载或以其他方式处于活动状态，则您将无法更改<guilabel>值前面的可用空间</guilabel>。</para>
+              </tip>
+            </listitem>
+            <listitem>
+              <para>指定分区的对齐方式。请参阅<xref linkend="gparted-specify-partition-alignment"/>。</para>
+            </listitem>
+            <listitem>
+              <para>单击<guibutton>"调整大小/移动</guibutton>"。应用程序在"<guilabel>挂起的操作</guilabel>"窗格中显示调整大小/移动分区操作。</para>
+            </listitem>
+            <listitem>
+              <para>检查已添加到"<guilabel>挂起的操作</guilabel>"窗格中的操作。</para>
+              <para>如果操作涉及移动步骤，请考虑以下事项：<itemizedlist>
+                  <listitem>
+                    <para>移动步骤可能需要很长时间才能完成。</para>
+                  </listitem>
+                  <listitem>
+                    <para>如果分区是操作系统引导分区，则移动步骤可能会导致操作系统无法启动。</para>
+                  </listitem>
+                </itemizedlist></para>
+              <para>如果不准备等待或修复潜在的操作系统启动问题，则可能需要撤消操作。请参阅<xref linkend="gparted-undo-last-operation"/>。</para>
+            </listitem>
+          </orderedlist></para>
+        <tip>
+          <para>要增大或移动分区，未分配的空间必须在分区旁边可用。</para>
+          <para>如果要增长逻辑分区，则未分配的空间必须位于扩展分区内。</para>
+          <para>如果要种植主分区，则未分配的空间不得位于扩展分区内。</para>
+          <para>通过调整扩展分区边界大小，可以将未分配的空间移动到扩展分区内部或外部。</para>
+        </tip>
+        <tip>
+          <para>仅当加密映射打开时，才能调整 LUKS 加密分区和 中的文件系统的大小。</para>
+        </tip>
+        <tip>
+          <para>为了提高收缩 NTFS 分区的能力，可以考虑以下一项或多项：<itemizedlist>
+              <listitem>
+                <para>对文件系统进行碎片整理。</para>
+                <para>使用使用 NTFS 的商业操作系统引导到安全模式可以提高对文件系统进行碎片整理的能力。要进入安全模式，请在计算机启动操作系统时按<keycap>F8</keycap>。</para>
+              </listitem>
+              <listitem>
+                <para>使用以下命令检查分区是否存在错误<screen><prompt>：C：&gt; </prompt> <command>chkdsk</command> /f /r</screen>记住重新启动回使用 NTFS 以允许<command>chkdsk</command>命令执行的商业操作系统。</para>
+              </listitem>
+              <listitem>
+                <para>暂时禁用分页文件。分页文件在分区中占用碎片整理进程无法移动的固定位置。</para>
+              </listitem>
+              <listitem>
+                <para>临时将大文件移动到其他分区或磁盘设备。大型文件定义为大于几百兆字节 （MB）。</para>
+              </listitem>
+              <listitem>
+                <para>在调整 NTFS 分区大小之前，确保正确关闭使用 NTFS 的商业操作系统</para>
+              </listitem>
+              <listitem>
+                <para>在 NTFS 分区中保留至少 10% 的未使用空间。如果分区收缩过多，则商业操作系统可能无法正常运行。</para>
+              </listitem>
+              <listitem>
+                <para>在收缩 NTFS 分区后，重新启动两次到使用 NTFS 的商业操作系统。</para>
+              </listitem>
+            </itemizedlist></para>
+        </tip>
+      </sect3>
+
+<!-- ============= To Move a Partition =============================== -->
+      <sect3 id="gparted-move-partition">
+        <title>移动分区</title>
+        <para>移动分区并调整分区大小，可以由单个<application>gparted</application>操作执行。</para>
+        <para>要移动分区：<orderedlist>
+            <listitem>
+              <para>选择未安装的分区。请参阅<xref linkend="gparted-select-partition"/>。</para>
+            </listitem>
+            <listitem>
+              <para>选择：<menuchoice><guimenu>分区</guimenu><guimenuitem>调整大小/移动</guimenuitem></menuchoice>。应用程序显示<guilabel>"调整大小/移动<replaceable>/路径到分区"</replaceable></guilabel>对话框。</para>
+            </listitem>
+            <listitem>
+              <para>调整分区的位置。请参阅<xref linkend="gparted-specify-partition-size-and-location"/>。</para>
+            </listitem>
+            <listitem>
+              <para>指定分区的对齐方式。请参阅<xref linkend="gparted-specify-partition-alignment"/>。</para>
+            </listitem>
+            <listitem>
+              <para>单击<guibutton>"调整大小/移动</guibutton>"。应用程序在"<guilabel>挂起的操作</guilabel>"窗格中显示调整大小/移动分区操作。</para>
+            </listitem>
+          </orderedlist></para>
+        <tip>
+          <para>如果分区是操作系统启动分区，则操作系统在应用移动操作后可能无法启动。</para>
+          <para>如果操作系统无法启动，请参阅<xref linkend="gparted-fix-operating-system-boot-problems"/>。</para>
+        </tip>
+        <tip>
+          <para>仅当加密映射关闭时，才能移动 LUKS 加密分区。</para>
+        </tip>
+      </sect3>
+
+<!-- ============= To Copy and Paste a Partition ===================== -->
+      <sect3 id="gparted-copy-and-paste-partition">
+        <title>复制和粘贴分区</title>
+        <para>要复制分区：<orderedlist>
+            <listitem>
+              <para>选择未安装的分区。请参阅<xref linkend="gparted-select-partition"/>。</para>
+            </listitem>
+            <listitem>
+              <para>选择：<menuchoice><guimenu>分区</guimenu><guimenuitem>复制</guimenuitem></menuchoice>。应用程序将分区标记为源分区。</para>
+            </listitem>
+          </orderedlist></para>
+        <para>要粘贴分区：<orderedlist>
+            <listitem>
+              <para>选择磁盘设备上的未分配空间。请参阅<xref linkend="gparted-select-unallocated"/>。</para>
+            </listitem>
+            <listitem>
+              <para>选择：<menuchoice><guimenu>分区</guimenu><guimenuitem>粘贴</guimenuitem></menuchoice>。应用程序显示粘贴<guilabel><replaceable>/路径到分区</replaceable></guilabel>对话框。</para>
+            </listitem>
+            <listitem>
+              <para>如果需要，可以调整分区的大小和位置。请参阅<xref linkend="gparted-specify-partition-size-and-location"/>。</para>
+            </listitem>
+            <listitem>
+              <para>如果需要，可以指定分区的对齐方式。请参阅<xref linkend="gparted-specify-partition-alignment"/>。</para>
+            </listitem>
+            <listitem>
+              <para>单击<guibutton>"粘贴</guibutton>"。应用程序在"<guilabel>挂起的操作</guilabel>"窗格中显示复制分区操作。</para>
+            </listitem>
+          </orderedlist></para>
+        <caution>
+          <para>分区的副本与源分区具有相同的文件系统标签和通用唯一标识符 （UUID）。这可能导致在引导时出现问题，或者装载操作时使用文件系统标签或 UUID 标识分区。</para>
+          <para>问题是操作系统将随机选择装载源或分区副本。例如，在第一个装载操作中，可能会装载源分区。在下一个装载操作中，可能会装载分区的副本。随着时间的推移，分区安装的这种随机性质可能会使文件似乎神秘地出现或消失，具体取决于安装哪个分区。随机安装源或分区副本也可能导致严重的数据损坏或丢失。</para>
+          <para>为了避免此问题，建议您执行以下操作之一：<itemizedlist>
+              <listitem>
+                <para>排队或应用复制操作后：<orderedlist>
+                    <listitem>
+                      <para>更改源或分区副本的 UUID。请参阅<xref linkend="gparted-changing-partition-uuid"/>。</para>
+                    </listitem>
+                    <listitem>
+                      <para>如果文件系统标签不为空，请更改源或分区副本的文件系统标签。请参阅<xref linkend="gparted-setting-partition-file-system-label"/>。</para>
+                    </listitem>
+                  </orderedlist></para>
+              </listitem>
+              <listitem>
+                <para>应用复制操作后，请删除或重新格式化源分区。</para>
+              </listitem>
+              <listitem>
+                <para>使用其他方法确保源分区和分区副本不在同一台计算机上同时使用。例如，如果分区的副本位于单独的驱动器上，则从计算机中删除该驱动器。</para>
+              </listitem>
+            </itemizedlist></para>
+        </caution>
+        <tip>
+          <para>仅当加密映射打开时，才能复制 LUKS 加密分区中的文件系统。</para>
+        </tip>
+        <note>
+          <para>为了防止意外解密数据，不允许粘贴到创建新分区的未分配空间。但是，可以将 LUKS 加密分区粘贴到维护加密的现有打开的 LUKS 加密分区中，也可以粘贴到纯分区中，从而创建文件系统的未加密副本。</para>
+        </note>
+      </sect3>
+
+<!-- ============= To Manage Partition Flags ========================= -->
+      <sect3 id="gparted-manage-partition-flags">
+        <title>管理分区标志</title>
+        <para>要管理分区标志：<orderedlist>
+            <listitem>
+              <para>选择分区。请参阅<xref linkend="gparted-select-partition"/>。</para>
+            </listitem>
+            <listitem>
+              <para>选择：<menuchoice><guimenu>分区</guimenu><guimenuitem>管理标志</guimenuitem></menuchoice>。应用程序<guilabel>在<replaceable>/path 到分区</replaceable>对话框上打开"管理"标志</guilabel>。</para>
+              <para>
+                <itemizedlist>
+                  <listitem>
+                    <para>要启用标志，请选择标志旁边的复选框。应用程序将启用的标志写入分区，并在<guilabel><replaceable>/path 到分区</replaceable>对话框上刷新"管理"标志</guilabel>。</para>
+                  </listitem>
+                  <listitem>
+                    <para>要禁用标志，请取消选中标志旁边的复选框。应用程序将禁用的标志写入分区，并刷新<guilabel><replaceable>/路径到分区</replaceable>对话框上的"管理"标志</guilabel>。</para>
+                  </listitem>
+                </itemizedlist>
+              </para>
+              <note>
+                <para><guimenuitem>管理标志</guimenuitem>仅适用于具有分区表的磁盘。具有<guimenuitem>循环</guimenuitem>或<guimenuitem>无</guimenuitem>分区表的磁盘不包含分区表，并且没有分区标志。</para>
+                <para>请参阅<xref linkend="gparted-view-device-information"/>查看分区表的类型。</para>
+              </note>
+            </listitem>
+          </orderedlist></para>
+        <para>要关闭<guilabel><replaceable>/路径到分区</replaceable>对话框上的"管理"标志</guilabel>，请单击"<guibutton>关闭</guibutton>"。</para>
+        <note>
+          <para>msdos 分区表中的标志描述如下：<itemizedlist>
+              <listitem>
+                <para>引导由某些商业操作系统引导加载程序使用。引导标志指示分区处于活动状态或可启动。磁盘设备上的一个分区只能处于活动状态。</para>
+              </listitem>
+              <listitem>
+                <para>诊断用于指示分区用于诊断/恢复。</para>
+              </listitem>
+              <listitem>
+                <para>ESP 表示用于启动具有统一可扩展固件接口 （UEFI） 类 2 的计算机的 EFI 系统分区，该接口包括对 BIOS 功能（包括 MBR 分区结构）的兼容性支持。</para>
+              </listitem>
+              <listitem>
+                <para>隐藏被一些商业操作系统使用。隐藏标志使分区对操作系统不可见。</para>
+              </listitem>
+              <listitem>
+                <para>Irst 标识英特尔快速启动技术分区。</para>
+              </listitem>
+              <listitem>
+                <para>LBA 由某些商业操作系统引导加载程序使用。LBA 标志指示应使用逻辑块寻址 （LBA） 而不是气缸头扇区 （CHS） 寻址访问分区。</para>
+              </listitem>
+              <listitem>
+                <para>LVM 用于指示分区由逻辑卷管理器 （LVM） 使用。</para>
+              </listitem>
+              <listitem>
+                <para>帕洛由精密架构 - 减少指令集计算 （PA-RISC） 引导加载程序使用， 帕洛.</para>
+              </listitem>
+              <listitem>
+                <para>准备用于指示电源性能计算 （PowerPC） 硬件上的启动分区。</para>
+              </listitem>
+              <listitem>
+                <para>RAID 用于指示分区用于廉价磁盘的冗余阵列 （RAID）。</para>
+              </listitem>
+            </itemizedlist></para>
+        </note>
+        <note>
+          <para>以下是 gpt 分区表中的标志的说明：<itemizedlist>
+              <listitem>
+                <para>Atvrecv 用于指示 Apple TV 恢复分区。</para>
+              </listitem>
+              <listitem>
+                <para>BIOS_GRUB指示 GRUB 2 引导加载程序经常使用的 BIOS 引导分区。</para>
+              </listitem>
+              <listitem>
+                <para>引导由某些商业操作系统引导加载程序使用。引导标志指示分区处于活动状态或可启动。磁盘设备上的一个分区只能处于活动状态。</para>
+              </listitem>
+              <listitem>
+                <para>诊断表示分区用于诊断或恢复。</para>
+              </listitem>
+              <listitem>
+                <para>ESP 表示用于启动具有可扩展固件接口 （EFI） 类 1 或统一可扩展固件接口 （UEFI） 类 2 或 UEFI 类 3 的计算机的 EFI 系统分区。</para>
+              </listitem>
+              <listitem>
+                <para>隐藏被一些商业操作系统使用。隐藏标志使分区对操作系统不可见。</para>
+              </listitem>
+              <listitem>
+                <para>HP 服务用于指示惠普服务分区。</para>
+              </listitem>
+              <listitem>
+                <para>Irst 标识英特尔快速启动技术分区。</para>
+              </listitem>
+              <listitem>
+                <para>Legacy_boot被一些特殊用途的软件用于指示分区可能是可启动的。</para>
+              </listitem>
+              <listitem>
+                <para>LVM 表示分区由逻辑卷管理器 （LVM） 使用。</para>
+              </listitem>
+              <listitem>
+                <para>Msftdata 标识包含 Microsoft 文件系统（如 NTFS 或 FAT）的分区。</para>
+              </listitem>
+              <listitem>
+                <para>Msftres 用于指示 Microsoft 保留分区。</para>
+              </listitem>
+              <listitem>
+                <para>准备用于指示电源性能计算 （PowerPC） 硬件上的启动分区。</para>
+              </listitem>
+              <listitem>
+                <para>RAID 指示分区用于廉价磁盘的冗余阵列 （RAID）。</para>
+              </listitem>
+            </itemizedlist></para>
+        </note>
+      </sect3>
+
+<!-- ============= To Check a Partition ============================== -->
+      <sect3 id="gparted-Check-partition">
+        <title>检查分区</title>
+        <para>检查分区将尝试查找并修复文件系统中的问题。检查分区将尝试使文件系统增大以填充分区。</para>
+        <para>要检查分区：<orderedlist>
+            <listitem>
+              <para>选择未安装的分区。请参阅<xref linkend="gparted-select-partition"/>。</para>
+            </listitem>
+            <listitem>
+              <para>选择：<menuchoice><guimenu>分区</guimenu><guimenuitem>检查</guimenuitem></menuchoice>。应用程序在"<guilabel>挂起的操作</guilabel>"窗格中显示检查分区操作。</para>
+            </listitem>
+          </orderedlist></para>
+      </sect3>
+
+<!-- ============= End of Advanced Partition Actions ================= -->
+    </sect2>
+
+<!-- ============= Working with the Operation Queue ================== -->
+    <sect2 id="gparted-operation-queue">
+      <title>使用操作队列</title>
+
+<!-- ============= To Undo Last Operation ============================ -->
+      <sect3 id="gparted-undo-last-operation">
+        <title>撤消上次操作</title>
+        <para>要撤消操作队列中的最后一个操作，请选择：<menuchoice><guimenu>编辑</guimenu><guimenuitem>撤消上次操作</guimenuitem></menuchoice>。应用程序从"<guilabel>挂起的操作</guilabel>"窗格中显示的队列中删除最后一个操作。如果队列中未剩下任何操作，则应用程序将关闭<guilabel>"挂起的操作"</guilabel>窗格。</para>
+      </sect3>
+
+<!-- ============= To Clear All Operations =========================== -->
+      <sect3 id="gparted-clear-all-operations">
+        <title>清除所有操作</title>
+        <para>要清除操作队列中的所有操作，请选择：<menuchoice><guimenu>编辑</guimenu><guimenuitem>清除所有操作</guimenuitem></menuchoice>。应用程序从队列中删除所有操作并关闭<guilabel>"挂起的操作</guilabel>"窗格。</para>
+      </sect3>
+
+<!-- ============= To Apply All Operations =========================== -->
+      <sect3 id="gparted-apply-all-operations">
+        <title>应用所有操作</title>
+        <para>要应用所有操作：<orderedlist>
+            <listitem>
+              <para>选择：<menuchoice><guimenu>编辑</guimenu><guimenuitem>应用所有操作</guimenuitem></menuchoice>。应用程序显示"<guilabel>应用于设备"</guilabel>对话框。</para>
+              <caution>
+                <para>编辑分区有可能导致数据丢失。建议您在应用分区编辑操作之前备份数据。</para>
+              </caution>
+            </listitem>
+            <listitem>
+              <para>单击<guibutton>"应用</guibutton>"。应用程序显示<guilabel>"应用挂起的操作</guilabel>"对话框。应用程序按您创建操作的顺序应用每个挂起的操作。每个操作完成后，应用程序都会显示状态更新。<itemizedlist>
+                  <listitem>
+                    <para>要查看详细信息，请单击"<guibutton>详细信息</guibutton>"。应用程序显示有关操作的更多详细信息。</para>
+                    <para>要查看有关每个操作中的步骤的详细信息，请单击每个步骤旁边的箭头按钮。</para>
+                  </listitem>
+                  <listitem>
+                    <para>要在执行操作时停止操作，请单击"<guibutton>取消</guibutton>"。应用程序显示禁用<guibutton>的强制取消 （5）</guibutton>按钮，并倒计时 5 秒。</para>
+                    <note>
+                      <para><guibutton>取消</guibutton>指示应用程序根据需要停止或回滚操作，以确保数据完整性。</para>
+                    </note>
+                    <para>如果操作在 5 秒后未停止，则应用程序启用<guibutton>强制取消</guibutton>按钮。</para>
+                    <para>要强制停止操作，请单击<guibutton>"强制取消</guibutton>"。应用程序将显示一个警告对话框。</para>
+                    <para>单击"<guibutton>继续操作</guibutton>"以允许回滚操作完成，或单击"<guibutton>取消操作</guibutton>"以取消回滚操作。</para>
+                    <warning>
+                      <para><guibutton>取消操作</guibutton>将终止操作的安全回滚，并可能导致 SEVERE 文件系统损坏和数据丢失。建议您单击"<guibutton>继续操作</guibutton>"以允许回滚完成。</para>
+                    </warning>
+                    <para>当应用程序完成执行操作时，应用程序将显示<guibutton>"保存详细信息</guibutton>"按钮和<guibutton>"关闭</guibutton>"按钮。</para>
+                  </listitem>
+                </itemizedlist></para>
+            </listitem>
+            <listitem>
+              <para>如果要从应用所有操作中保存详细信息，请单击"<guibutton>保存详细信息</guibutton>"。应用程序显示<guilabel>"保存详细信息</guilabel>"对话框。<orderedlist numeration="loweralpha">
+                  <listitem>
+                    <para>如果要更改默认文件名，则在<guilabel>"名称</guilabel>"文本框中键入文件名。</para>
+                  </listitem>
+                  <listitem>
+                    <para>如果要将文件保存在与 /root 不同的文件夹中，请单击"<guibutton>浏览"其他文件夹</guibutton>。应用程序显示文件系统导航器。</para>
+                    <para>使用文件系统导航器选择文件夹。</para>
+                  </listitem>
+                  <listitem>
+                    <para>单击<guibutton>"保存</guibutton>"以保存文件。应用程序保存详细信息文件。</para>
+                  </listitem>
+                </orderedlist></para>
+              <caution>
+                <para>如果使用来自实时 CD 的<application>gparted，</application>则根文件系统存在于 RAM 内存中。关闭计算机后，保存到实时 CD 根文件系统的所有文件都将丢失。</para>
+                <para>如果将 gparted 详细信息保存到 Live CD 根文件系统，则需要将文件复制到更永久的存储。更永久存储的示例包括硬盘驱动器或 USB 闪存驱动器。</para>
+              </caution>
+            </listitem>
+            <listitem>
+              <para>单击<guibutton>"关闭</guibutton>"。应用程序将关闭<guilabel>"应用挂起的操作</guilabel>"对话框。应用程序重新扫描所有磁盘设备，并在<application>gparted</application>窗口中刷新设备分区布局。</para>
+            </listitem>
+          </orderedlist></para>
+      </sect3>
+
+<!-- ============= End of Working with the Operation Queue =========== -->
+    </sect2>
+
+  </sect1>
+
+<!-- ============= Acquiring GParted on Live CD ====================== -->
+  <sect1 id="gparted-acquire-livecd">
+    <title>在实时 CD 上获取 Gparted</title>
+    <para>实时 CD 是包含可引导操作系统的光盘。使用实时 CD 可以从 CD 启动计算机。</para>
+    <para>使用从实时 CD<application>中分离</application>具有以下优点：<itemizedlist>
+        <listitem>
+          <para>您可以编辑所有分区，因为分区未装载。</para>
+        </listitem>
+        <listitem>
+          <para>您可以在没有可引导操作系统的计算机上编辑分区。</para>
+        </listitem>
+      </itemizedlist></para>
+    <para><application>Gparted</application>应用程序在许多实时 CD 发行版上可用。</para>
+    <para>可以从以下网站下载包含<application>gparted</application>的实时 CD 映像：<itemizedlist>
+        <listitem>
+          <para>GParted 生活 CD<ulink type="http" url="https://gparted.org/livecd.php"/></para>
+        </listitem>
+        <listitem>
+          <para>系统救援 CD<ulink type="http" url="http://www.system-rescue-cd.org"/></para>
+        </listitem>
+      </itemizedlist></para>
+    <tip>
+      <para>GParted 实时 CD 映像可以写入 USB 闪存驱动器。</para>
+      <para>如果您的计算机可以从通用串行总线 （USB） 启动，那么您可能更喜欢从 USB 闪存驱动器启动和使用<application>gparted</application>。</para>
+    </tip>
+    <tip>
+      <para>为避免在刻录 CD 映像文件时浪费空白 CD，请使用以下提示：</para>
+      <itemizedlist>
+        <listitem>
+          <para>确保下载文件的校验和与在下载页上发布的校验和匹配。</para>
+        </listitem>
+        <listitem>
+          <para>请确保将 .iso 文件作为映像刻录到空白 CD。如果将 .iso 文件作为数据刻录到空白 CD，则 CD 将不会在计算机中启动。</para>
+        </listitem>
+      </itemizedlist>
+    </tip>
+  </sect1>
+
+<!-- ============= Fixing Operating System Boot Problems ============= -->
+  <sect1 id="gparted-fix-operating-system-boot-problems">
+    <title>修复操作系统启动问题</title>
+    <para>执行以下操作之一时，计算机可能无法启动操作系统：<itemizedlist>
+        <listitem>
+          <para>删除分区。</para>
+        </listitem>
+        <listitem>
+          <para>移动分区。</para>
+        </listitem>
+        <listitem>
+          <para>安装其他操作系统并覆盖主引导记录 （MBR）。</para>
+        </listitem>
+      </itemizedlist></para>
+    <para>幸运的是，启动失败经常被修复。</para>
+    <para>如果您的计算机使用 GRUB 引导加载程序，<xref linkend="gparted-fix-grub-boot-problem"/>请参阅还原引导功能。</para>
+    <para>如果您的计算机不使用 GRUB，则建议您查阅引导加载程序的文档，了解如何解决问题。你可以查阅<ulink type="http" url="https://gparted.org/faq.php">"GParted常见问题解答</ulink>"或<ulink type="http" url="https://gparted.org/forum.php">"GParted论坛</ulink>"。您也可以搜索互联网，了解其他人如何解决类似的问题。</para>
+
+<!-- ============= Fixing GRUB Boot Problem ========================== -->
+    <sect2 id="gparted-fix-grub-boot-problem">
+      <title>修复 GRUB 启动问题</title>
+      <para>大统一引导加载程序 （GRUB） 被许多 GNU/Linux 发行版使用。要修复 GRUB 引导问题，请首先确定使用了 GRUB 的主要版本。</para>
+      <para>GRUB 有两个主要版本：<itemizedlist>
+          <listitem>
+            <para>GRUB，也称为 GRUB 2，涵盖版本 1.98 及更高版本。GRUB 2 适用于 GUID 分区表 （GPT） 和 msdos 分区表。</para>
+          </listitem>
+          <listitem>
+            <para>GRUB 遗产，传统上称为 GRUB，涵盖版本 0.9x 及更早版本。GRUB 旧版仅适用于 msdos 分区表。</para>
+          </listitem>
+        </itemizedlist></para>
+      <para>GRUB 2 用作以下 GNU/Linux 发行版中的默认引导加载程序：<itemizedlist>
+          <listitem>
+            <para>CentOS 7 及更高版本</para>
+          </listitem>
+          <listitem>
+            <para>Debian 6 （挤压） 和更高</para>
+          </listitem>
+          <listitem>
+            <para>费多拉 16 （凡尔纳） 及以上</para>
+          </listitem>
+          <listitem>
+            <para>打开SUSE 12.2及以上</para>
+          </listitem>
+          <listitem>
+            <para>乌本图 9.10 （卡米奇考拉） 及更高</para>
+          </listitem>
+        </itemizedlist></para>
+      <para>如果您不确定您的计算机是使用 GRUB 2 还是 GRUB 旧版，可以尝试在互联网上搜索答案。</para>
+
+<!-- ============= To Restore GRUB 2 ================================= -->
+      <sect3 id="gparted-restore-grub-2">
+        <title>还原 GRUB 2 引导加载程序</title>
+        <para>使用以下步骤还原 GRUB 2 引导加载程序：<orderedlist>
+            <listitem>
+              <para>从实时媒体（如 GParted Live 或 GNU/Linux 分发映像）启动。打开终端窗口。</para>
+            </listitem>
+            <listitem>
+              <para>确定哪个分区包含 GNU/Linux 分发的 / 文件系统。</para>
+              <para>使用"选择"列出磁盘设备上的分区。查找包含 GNU/Linux /文件系统的分区。此 Linux 分区可能会使用文件系统，如 ext2、ext3、ext4 或 btrfs。</para>
+              <note>
+                <para>如果 /分区位于 LVM 上，则逻辑卷管理器必须处于活动状态。LVM 可以使用以下命令启动： <screen> <prompt>= </prompt> <command>vgchange</command> -a y</screen></para>
+                <para>对于 LVM，磁盘分区的等效项是逻辑卷。逻辑卷可以使用以下命令列出： <screen> <prompt>@ </prompt> <command>lvscan</command></screen></para>
+              </note>
+              <note>
+                <para>如果 / 分区位于 RAID 上，则 RAID 必须处于活动状态。Linux 软件 RAID 可以使用以下命令启动<screen><command>：@mdadm</command> --组装 --扫描<prompt/></screen></para>
+              </note>
+            </listitem>
+            <listitem>
+              <para>通过输入（作为根）创建装载点目录： <screen> <prompt>= </prompt> <command>mkdir</command> /tmp/mydir</screen></para>
+            </listitem>
+            <listitem>
+              <para>将 /分区装载到装载点目录上。例如，假设 /文件系统包含在 /dev/sda5 分区中。输入（作为根）： <screen> <prompt>= </prompt><command>装载</command> <replaceable>/dev/sda5</replaceable> /tmp/mydir</screen></para>
+            </listitem>
+            <listitem>
+              <para>如果您有单独的 /boot 分区（例如在 /dev/sda3），则需要执行额外的步骤。通过输入（作为根）在 /tmp/mydir/boot 处安装 /引导分区： <screen> <prompt>= </prompt><command>装载</command> <replaceable>/dev/sda3</replaceable> /tmp/mydir/引导</screen></para>
+              <note>
+                <para>如果您不知道是否有单独的引导分区，则可能没有，可以忽略此步骤。</para>
+              </note>
+            </listitem>
+            <listitem>
+              <para>准备通过输入（作为根）来更改根环境： <screen> <prompt>_ </prompt><command>装载</command>- 绑定 /dev /tmp/mydir/dev</screen><screen><prompt>= </prompt><command>装载</command>- 绑定 /proc /tmp/mydir/proc</screen><screen><prompt>= </prompt><command>装载</command>-- 绑定 /sys /tmp/mydir/sys</screen></para>
+            </listitem>
+            <listitem>
+              <para>通过输入（作为根）更改根环境： <screen> <prompt>= </prompt> <command>chroot</command> /tmp/mydir</screen></para>
+            </listitem>
+            <listitem>
+              <para>在引导设备上重新安装 GRUB 2。请注意，使用设备名称而不是分区名称。例如，如果 /分区是 /dev/sda5，则设备为 /dev/sda。</para>
+              <para>对于 Debian、Ubuntu 和其他分支 GNU/Linux 发行版，输入命令（作为根）： <screen> <prompt>= </prompt> <command>grub 安装</command> <replaceable>/dev/sda</replaceable></screen></para>
+              <para>对于 CentOS、Fedora、openSUSE 和其他分支 GNU/Linux 发行版，输入命令（作为根）： <screen> <prompt># </prompt> <command>grub2 安装</command> <replaceable>/dev/sda</replaceable></screen></para>
+            </listitem>
+            <listitem>
+              <para>通过输入（作为根）退出 chroot 环境： <screen> <prompt>= </prompt><command>退出</command></screen></para>
+            </listitem>
+            <listitem>
+              <para>重新启动计算机。</para>
+            </listitem>
+          </orderedlist></para>
+      </sect3>
+
+<!-- ============= To Restore GRUB Legacy ============================ -->
+      <sect3 id="gparted-restore-grub-legacy">
+        <title>还原 GRUB 旧引导加载程序</title>
+        <para>使用以下步骤还原 GRUB 旧版引导加载程序：<orderedlist>
+            <listitem>
+              <para>从实时媒体（如 GNU/Linux 分发映像）启动。打开终端窗口。</para>
+              <note>
+                <para>实时媒体必须包含 GRUB 旧版引导加载程序。如果您的 GNU/Linux 发行版使用 GRUB 旧版，则分发实时媒体也将包含 GRUB 旧版。</para>
+              </note>
+            </listitem>
+            <listitem>
+              <para>从命令行启动<application>grub</application>应用程序（作为根）。<screen> <prompt>• </prompt> <command>grub</command> </screen></para>
+            </listitem>
+            <listitem>
+              <para>使用以下之一查找<application>grub</application> stage1 的位置：</para>
+              <para>如果 /boot 文件夹存储在 /分区中，请使用命令<screen><prompt>：grub&gt;</prompt><command>查找</command>/boot/grub/stage1</screen>如果 /boot 文件夹存储在与 /分区不同的分区中，请使用命令<screen><prompt>：grub&gt;</prompt><command>查找</command>/grub/stage1</screen></para>
+              <para><command>find</command>命令的输出可能如下所示<screen><computeroutput><replaceable>：（hd0，0）</replaceable></computeroutput></screen>如果命令输出中列出了多行，则需要决定用于<application>grub</application>的设备。</para>
+            </listitem>
+            <listitem>
+              <para>通过指定<command>find</command>命令返回的设备来设置<application>grub</application>根设备。这应该是包含引导目录的分区。<screen> <prompt>grub&gt;</prompt>根<replaceable>（hd0，0）</replaceable> </screen></para>
+            </listitem>
+            <listitem>
+              <para>将<application>grub</application>引导加载程序重新安装到主引导记录 （MBR） 中，使用<screen><prompt>：grub&gt;</prompt>设置<replaceable>（hd0）</replaceable> </screen></para>
+              <para>如果要将<application>Grub</application>船加载程序安装到分区的引导扇区，请改为指定具有<screen><prompt>：grub&gt;</prompt>设置<replaceable>（hd0，0）</replaceable></screen>的分区</para>
+            </listitem>
+            <listitem>
+              <para>退出<application>grub</application>.<screen> <prompt>grub&gt;</prompt>退出</screen></para>
+            </listitem>
+            <listitem>
+              <para>重新启动计算机。</para>
+            </listitem>
+          </orderedlist></para>
+      </sect3>
+    </sect2>
+
+<!-- ============= End of Fixing Operating System Boot Problems ====== -->
+  </sect1>
+
+<!-- ============= Recovering Partition Tables ======================= -->
+  <sect1 id="gparted-recover-partition-table">
+    <title>正在恢复分区表</title>
+    <para>如果您不小心覆盖了分区表，则有可能恢复分区表。</para>
+    <para><application>testdisk</application>应用程序旨在帮助恢复丢失的分区。有关<application>testdisk</application>的详细信息，请参阅<ulink type="http" url="https://www.cgsecurity.org/wiki/TestDisk"/>。</para>
+    <para><application>测试磁盘</application>应用程序包含在<xref linkend="gparted-acquire-livecd"/></para>
+  </sect1>
+
+</article>

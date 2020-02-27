@@ -1,0 +1,3203 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2020-02-26 18:24+0800\n"
+"PO-Revision-Date: 2020-02-26 22:46+0800\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3\n"
+"Last-Translator: Duanjun Li <liduanjun@uniontech.com>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: zh_CN\n"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: gparted.xml:382(None)
+msgid ""
+"@@image: 'figures/gparted_window.png'; md5=c0fa71cbc3c7914ddcebb6f1780c55d5"
+msgstr ""
+"@@image: 'figures/gparted_window.png'; md5=c0fa71cbc3c7914ddcebb6f1780c55d5"
+
+#: gparted.xml:34(title)
+msgid "GParted Manual"
+msgstr "GParted 手册"
+
+#: gparted.xml:36(publishername) gparted.xml:82(orgname)
+#: gparted.xml:92(orgname) gparted.xml:121(para) gparted.xml:130(para)
+#: gparted.xml:139(para) gparted.xml:148(para) gparted.xml:157(para)
+#: gparted.xml:166(para) gparted.xml:175(para) gparted.xml:184(para)
+#: gparted.xml:193(para) gparted.xml:202(para) gparted.xml:211(para)
+#: gparted.xml:220(para) gparted.xml:229(para) gparted.xml:238(para)
+msgid "GParted Project"
+msgstr "GParted 项目"
+
+#: gparted.xml:40(para)
+msgid ""
+"GParted is the GNOME Partition Editor for creating, reorganizing, and "
+"deleting disk partitions. GParted enables you to change the partition "
+"organization while preserving the partition contents."
+msgstr ""
+"GParted 是用于创建、重组和删除磁盘分区的 GNOME 分区编辑器。GParted 使您能够在"
+"保留分区内容的同时更改分区组织。"
+
+#: gparted.xml:49(year)
+msgid "2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017"
+msgstr "2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017"
+
+#: gparted.xml:50(holder) gparted.xml:156(para) gparted.xml:165(para)
+#: gparted.xml:174(para) gparted.xml:183(para) gparted.xml:192(para)
+#: gparted.xml:201(para) gparted.xml:210(para) gparted.xml:219(para)
+#: gparted.xml:228(para) gparted.xml:237(para)
+msgid "Curtis Gedak"
+msgstr "Curtis Gedak"
+
+#: gparted.xml:53(year)
+msgid "2014, 2015, 2017, 2018"
+msgstr "2014, 2015, 2017, 2018"
+
+#: gparted.xml:54(holder) gparted.xml:120(para)
+msgid "Mike Fleetwood"
+msgstr "Mike Fleetwood"
+
+#: gparted.xml:65(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License, Version 1.2 or any later "
+"version published by the Free Software Foundation; with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"at <ulink type=\"http\" url=\"https://www.fsf.org/licensing/licenses/fdl.html"
+"\"/> or in the file COPYING-DOCS distributed with this manual."
+msgstr ""
+"根据 GNU 自由文档许可证、版本 1.2 或任何自由软件基金会发布的更高版本的条款，"
+"允许复制、分发和/或修改本文档;无固定部分、无前盖文本和背盖文本。您可以在此"
+"<ulink type=\"help\" url=\"ghelp:fdl\">链接</ulink>或<ulink type=\"http\" "
+"url=\"https://www.fsf.org/licensing/licenses/fdl.html\"></ulink>本手册分发的"
+"文件 COPYING-DOCS 中找到 GFDL 的副本。"
+
+#: gparted.xml:79(firstname)
+msgid "Curtis"
+msgstr "Curtis"
+
+#: gparted.xml:80(surname)
+msgid "Gedak"
+msgstr "Gedak"
+
+#: gparted.xml:84(email)
+msgid "gedakc@users.sf.net"
+msgstr "gedakc@users.sf.net"
+
+#: gparted.xml:89(firstname)
+msgid "Mike"
+msgstr "Mike"
+
+#: gparted.xml:90(surname)
+msgid "Fleetwood"
+msgstr "Fleetwood"
+
+#: gparted.xml:94(email)
+msgid "mike.fleetwood@googlemail.com"
+msgstr "mike.fleetwood@googlemail.com"
+
+#: gparted.xml:117(revnumber)
+msgid "GParted Manual V1.12"
+msgstr "GParted 手册 V1.12"
+
+#: gparted.xml:118(date)
+msgid "May 2018"
+msgstr "2018 年 5 月"
+
+#: gparted.xml:122(para)
+msgid "Describes version 0.31.0 of GParted"
+msgstr "描述 GParted 的 0.31.0 版本"
+
+#: gparted.xml:126(revnumber)
+msgid "GParted Manual V1.11"
+msgstr "GParted 手册 V1.11"
+
+#: gparted.xml:127(date)
+msgid "September 2017"
+msgstr "2017 年 9 月"
+
+#: gparted.xml:129(para) gparted.xml:138(para) gparted.xml:147(para)
+msgid "Curtis Gedak &amp; Mike Fleetwood"
+msgstr "Curtis Gedak &amp; Mike Fleetwood"
+
+#: gparted.xml:131(para)
+msgid "Describes version 0.29.0 of GParted"
+msgstr "描述 GParted 的 0.29.0 版本"
+
+#: gparted.xml:135(revnumber)
+msgid "GParted Manual V1.10"
+msgstr "GParted 手册 V1.10"
+
+#: gparted.xml:136(date)
+msgid "January 2017"
+msgstr "2017 年 1 月"
+
+#: gparted.xml:140(para)
+msgid "Describes version 0.28.0 of GParted"
+msgstr "描述 GParted 的 0.28.0 版本"
+
+#: gparted.xml:144(revnumber)
+msgid "GParted Manual V1.9"
+msgstr "GParted 手册 V1.9"
+
+#: gparted.xml:145(date)
+msgid "March 2015"
+msgstr "2015 年 3 月"
+
+#: gparted.xml:149(para)
+msgid "Describes version 0.22.0 of GParted"
+msgstr "描述 GParted 的 0.22.0 版本"
+
+#: gparted.xml:153(revnumber)
+msgid "GParted Manual V1.8"
+msgstr "GParted 手册 V1.8"
+
+#: gparted.xml:154(date)
+msgid "September 2014"
+msgstr "2014 年 9 月"
+
+#: gparted.xml:158(para)
+msgid "Describes version 0.20.0 of GParted"
+msgstr "描述 GParted 的 0.20.0 版本"
+
+#: gparted.xml:162(revnumber)
+msgid "GParted Manual V1.7"
+msgstr "GParted 手册 V1.7"
+
+#: gparted.xml:163(date)
+msgid "February 2014"
+msgstr "2014 年 2 月"
+
+#: gparted.xml:167(para)
+msgid "Describes version 0.18.0 of GParted"
+msgstr "描述 GParted 的 0.18.0 版本"
+
+#: gparted.xml:171(revnumber)
+msgid "GParted Manual V1.6"
+msgstr "GParted 手册 V1.6"
+
+#: gparted.xml:172(date)
+msgid "December 2013"
+msgstr "2013 年 12 月"
+
+#: gparted.xml:176(para)
+msgid "Describes version 0.17.0 of GParted"
+msgstr "描述 GParted 的 0.17.0 版本"
+
+#: gparted.xml:180(revnumber)
+msgid "GParted Manual V1.5"
+msgstr "GParted 手册 V1.5"
+
+#: gparted.xml:181(date)
+msgid "September 2013"
+msgstr "2013 年 9 月"
+
+#: gparted.xml:185(para)
+msgid "Describes version 0.16.2 of GParted"
+msgstr "描述 GParted 的 0.16.2 版本"
+
+#: gparted.xml:189(revnumber)
+msgid "GParted Manual V1.4"
+msgstr "GParted 手册 V1.4"
+
+#: gparted.xml:190(date)
+msgid "February 2012"
+msgstr "2012 年 2 月"
+
+#: gparted.xml:194(para)
+msgid "Describes version 0.12.0 of GParted"
+msgstr "描述 GParted 的 0.12.0 版本"
+
+#: gparted.xml:198(revnumber)
+msgid "GParted Manual V1.3"
+msgstr "GParted 手册 V1.3"
+
+#: gparted.xml:199(date)
+msgid "January 2011"
+msgstr "2011 年 1 月"
+
+#: gparted.xml:203(para)
+msgid "Describes version 0.8.0 of GParted"
+msgstr "描述 GParted 的 0.8.0 版本"
+
+#: gparted.xml:207(revnumber)
+msgid "GParted Manual V1.2"
+msgstr "GParted 手册 V1.2"
+
+#: gparted.xml:208(date)
+msgid "June 2010"
+msgstr "2010 年 6 月"
+
+#: gparted.xml:212(para)
+msgid "Describes version 0.6.0 of GParted"
+msgstr "描述 GParted 的 0.6.0 版本"
+
+#: gparted.xml:216(revnumber)
+msgid "GParted Manual V1.1"
+msgstr "GParted 手册 V1.1"
+
+#: gparted.xml:217(date)
+msgid "July 2009"
+msgstr "2009 年 7 月"
+
+#: gparted.xml:221(para)
+msgid "Describes version 0.4.6 of GParted"
+msgstr "描述 GParted 的 0.4.6 版本"
+
+#: gparted.xml:225(revnumber)
+msgid "GParted Manual V1.0"
+msgstr "GParted 手册 V1.0"
+
+#: gparted.xml:226(date)
+msgid "January 2009"
+msgstr "2009 年 1 月"
+
+#: gparted.xml:230(para)
+msgid "Describes version 0.4.2 of GParted"
+msgstr "描述 GParted 的 0.4.2 版本"
+
+#: gparted.xml:234(revnumber)
+msgid "GParted Manual V0.3.9"
+msgstr "GParted 手册 V0.3.9"
+
+#: gparted.xml:235(date)
+msgid "September 2008"
+msgstr "2008 年 9 月"
+
+#: gparted.xml:239(para)
+msgid "Describes version 0.3.9 of GParted"
+msgstr "描述 GParted 的 0.3.9 版本"
+
+#: gparted.xml:244(releaseinfo)
+msgid "This manual describes version 0.31.0 of GParted"
+msgstr "本手册描述了 GParted 的 0.31.0 版本"
+
+#: gparted.xml:249(title)
+msgid "Feedback"
+msgstr "反馈"
+
+#: gparted.xml:250(para)
+msgid ""
+"To report a bug or make a suggestion regarding the <application>gparted</"
+"application> application or this manual, follow the directions at <ulink "
+"type=\"http\" url=\"https://gparted.org/bugs.php\"/>."
+msgstr ""
+"要报告 Bug 或提供有关<application>gparted</application>应用程序或本手册的建"
+"议，请按照<ulink type=\"http\" url=\"https://gparted.org/bugs.php\"></ulink>"
+"中的说明操作。"
+
+#: gparted.xml:264(title)
+msgid "Introduction"
+msgstr "介绍"
+
+#: gparted.xml:265(para)
+msgid ""
+"The <application>gparted</application> application is the GNOME Partition "
+"Editor for creating, reorganizing, and deleting disk partitions."
+msgstr ""
+"<application>gparted</application>应用程序是 GNOME 分区编辑器，用于创建、重组"
+"和删除磁盘分区。"
+
+#: gparted.xml:269(para)
+msgid ""
+"A disk device can be subdivided into one or more partitions. The "
+"<application>gparted</application> application enables you to change the "
+"partition organization on a disk device while preserving the contents of the "
+"partition."
+msgstr ""
+"磁盘设备可以细分为一个或多个分区。<application>gparted</application>应用程序"
+"使您能够更改磁盘设备上的分区组织，同时保留分区的内容。"
+
+#: gparted.xml:280(para)
+msgid "Create a partition table on a disk device."
+msgstr "在磁盘设备上创建分区表。"
+
+#: gparted.xml:285(para)
+msgid "Enable and disable partition flags such as boot and hidden."
+msgstr "启用和禁用分区标志，如引导和隐藏。"
+
+#: gparted.xml:290(para)
+msgid ""
+"Perform actions with partitions such as create, delete, resize, move, check, "
+"label, copy, and paste."
+msgstr ""
+"使用分区执行操作，如创建、删除、调整大小、移动、检查、标记、复制和粘贴。"
+
+#: gparted.xml:275(para)
+msgid ""
+"With <application>gparted</application> you can accomplish the following "
+"tasks: <placeholder-1/>"
+msgstr ""
+"使用<application>gparted，</application>您可以完成以下任务：<placeholder-1/>"
+
+#: gparted.xml:298(para)
+msgid "Editing partitions has the potential to cause LOSS of DATA."
+msgstr "编辑分区有可能导致数据丢失。"
+
+#: gparted.xml:301(para)
+msgid ""
+"The <application>gparted</application> application is designed to enable you "
+"to edit partitions while reducing the risk of data loss. The application is "
+"carefully tested and is used by the GParted project team. However, loss of "
+"data might occur due to software bugs, hardware problems, or power failure."
+msgstr ""
+"<application>gparted</application>应用程序旨在使您能够编辑分区，同时降低数据"
+"丢失的风险。该应用程序经过仔细测试，由 GParted 项目团队使用。但是，由于软件错"
+"误、硬件问题或电源故障，可能会丢失数据。"
+
+#: gparted.xml:310(para)
+msgid ""
+"You can help to reduce the risk of data loss by not mounting or unmounting "
+"partitions outside of the <application>gparted</application> application "
+"while <application>gparted</application> is running."
+msgstr ""
+"在<application>gparted</application>运行期间，如果不在<application>gparted</"
+"application>应用程序外部安装或卸载分区，可以帮助降低数据丢失的风险。"
+
+#: gparted.xml:316(para)
+msgid ""
+"You are advised to BACKUP your DATA before using the <application>gparted</"
+"application> application. This is especially true for encrypted data where "
+"all of the data can become permanently inaccessible after a failure. Please "
+"refer to <ulink type=\"http\" url=\"https://gitlab.com/cryptsetup/cryptsetup/"
+"wikis/FrequentlyAskedQuestions\">The Cryptsetup FAQ</ulink> for backup and "
+"recovery advice of encrypted data."
+msgstr ""
+"建议您在使用<application>gparted</application>应用程序之前备份数据。对于加密"
+"数据尤其如此，因为所有数据在发生故障后都可能永久无法访问。有关加密数据的备份"
+"和恢复建议，请参阅<ulink type=\"http\" url=\"https://gitlab.com/cryptsetup/"
+"cryptsetup/wikis/FrequentlyAskedQuestions\">密码设置常见问题</ulink>解答。"
+
+#: gparted.xml:329(title)
+msgid "Getting Started"
+msgstr "入门"
+
+#: gparted.xml:335(title)
+msgid "Starting gparted"
+msgstr "开始 gparted"
+
+#: gparted.xml:336(para)
+msgid "You can start <application>gparted</application> in the following ways:"
+msgstr "您可以通过以下方式开始<application>gparted</application>："
+
+#: gparted.xml:341(term)
+msgid "<guimenu>Applications</guimenu> menu"
+msgstr "<guimenu>应用程序</guimenu>菜单"
+
+#: gparted.xml:343(para)
+msgid ""
+"Choose <menuchoice><guisubmenu>System Tools</guisubmenu><guimenuitem>GParted "
+"Partition Editor</guimenuitem></menuchoice>."
+msgstr ""
+"选择<menuchoice><guisubmenu>系统工具</guisubmenu><guimenuitem>Gparted 分区编"
+"辑器</guimenuitem></menuchoice>。"
+
+#: gparted.xml:349(term)
+msgid "Command line"
+msgstr "命令行"
+
+#: gparted.xml:351(para)
+msgid "Execute the following command: <command>gparted</command>"
+msgstr "执行以下命令：<command>已执行</command>"
+
+#: gparted.xml:357(para)
+msgid ""
+"On startup, <application>gparted</application> will scan your computer for "
+"disk devices."
+msgstr ""
+"启动时<application>，gparted</application>将扫描您的计算机上的磁盘设备。"
+
+#: gparted.xml:366(title)
+msgid "The gparted Window"
+msgstr "GParted 窗口"
+
+#: gparted.xml:367(para)
+msgid ""
+"When you start <application>gparted</application>, the following window is "
+"displayed:"
+msgstr "启动<application>gparted</application>时，将显示以下窗口："
+
+#: gparted.xml:378(title)
+msgid "gparted Window"
+msgstr "gparted 窗口"
+
+#: gparted.xml:385(phrase)
+msgid "Shows gparted main window."
+msgstr "显示已分装的主窗口。"
+
+#: gparted.xml:391(para)
+msgid ""
+"The <application>gparted</application> window contains the following "
+"elements:"
+msgstr "<application>Gparted</application>窗口包含以下元素："
+
+#: gparted.xml:397(term)
+msgid "Menubar"
+msgstr "菜单栏"
+
+#: gparted.xml:399(para)
+msgid ""
+"The menus on the menubar contain all of the commands you need to work with "
+"disk devices and partitions in <application>gparted</application>."
+msgstr ""
+"菜单栏上的菜单包含处理<application>gparted</application>中的磁盘设备和分区所"
+"需的所有命令。"
+
+#: gparted.xml:407(term)
+msgid "Toolbar"
+msgstr "工具栏"
+
+#: gparted.xml:409(para)
+msgid ""
+"The toolbar contains a subset of the commands that you can access from the "
+"menubar."
+msgstr "工具栏包含可以从菜单栏访问的命令的子集。"
+
+#: gparted.xml:416(term)
+msgid "Graphic Display Area"
+msgstr "图形显示区域"
+
+#: gparted.xml:418(para)
+msgid ""
+"The graphic display area contains the visual representation of the "
+"partitions on the selected disk device."
+msgstr "图形显示区域包含所选磁盘设备上分区的可视表示形式。"
+
+#: gparted.xml:425(term)
+msgid "Text Display Area"
+msgstr "文本显示区域"
+
+#: gparted.xml:427(para)
+msgid ""
+"The text display area contains the text list of the partitions on the "
+"selected disk device."
+msgstr "文本显示区域包含所选磁盘设备上分区的文本列表。"
+
+#: gparted.xml:434(term)
+msgid "Statusbar"
+msgstr "状态栏"
+
+#: gparted.xml:436(para)
+msgid ""
+"The statusbar displays information about current <application>gparted</"
+"application> activity or the number of operations pending."
+msgstr ""
+"状态栏显示有关当前<application>gparted</application>活动或挂起的操作数的信"
+"息。"
+
+#: gparted.xml:444(term)
+msgid "Device Information Pane"
+msgstr "设备信息窗格"
+
+#: gparted.xml:446(para)
+msgid ""
+"The device information pane displays details about the selected disk device."
+msgstr "设备信息窗格显示有关所选磁盘设备的详细信息。"
+
+#: gparted.xml:450(para)
+msgid ""
+"By default the device information pane is not shown. To show the device "
+"information pane, choose <menuchoice><guimenu>View</"
+"guimenu><guimenuitem>Device Information</guimenuitem></menuchoice>."
+msgstr ""
+"默认情况下，不会显示设备信息窗格。要显示设备信息窗格，请选择"
+"\"<menuchoice><guimenu>查看</guimenu><guimenuitem>设备信息</guimenuitem></"
+"menuchoice>\"。"
+
+#: gparted.xml:458(term)
+msgid "Pending Operations Pane"
+msgstr "挂起的操作窗格"
+
+#: gparted.xml:460(para)
+msgid ""
+"The pending operations pane displays the current list of partition "
+"operations in the queue."
+msgstr "挂起的操作窗格显示队列中的分区操作的当前列表。"
+
+#: gparted.xml:464(para)
+msgid ""
+"By default the pending operations pane is not shown when there are 0 pending "
+"operations. To show the pending operations pane, choose "
+"<menuchoice><guimenu>View</guimenu><guimenuitem>Pending Operations</"
+"guimenuitem></menuchoice>."
+msgstr ""
+"默认情况下，当存在 0 个挂起的操作时，不会显示挂起的操作窗格。要显示挂起的操作"
+"窗格，请选择\"<menuchoice><guimenu>查看</guimenu><guimenuitem>挂起的操作</"
+"guimenuitem></menuchoice>\"。"
+
+#: gparted.xml:473(para)
+msgid ""
+"When you left-click in either display area, you select a partition to use "
+"for partition editing actions."
+msgstr "在任一显示区域中左键单击时，将选择用于分区编辑操作的分区。"
+
+#: gparted.xml:477(para)
+msgid ""
+"When you right-click in either display area, the application displays a "
+"popup menu. The popup menu contains the most common partition editing "
+"actions."
+msgstr ""
+"当您在任一显示区域右键单击时，应用程序将显示一个弹出菜单。弹出式菜单包含最常"
+"见的分区编辑操作。"
+
+#: gparted.xml:483(para)
+msgid ""
+"Like other GNOME applications, actions in <application>gparted</application> "
+"can be performed in several ways: with the menu, with the toolbar, or with "
+"shortcut keys."
+msgstr ""
+"与其他 GNOME 应用程序一样<application>，gparted</application>中的操作可以通过"
+"多种方式执行：使用菜单、使用工具栏或使用快捷键。"
+
+#: gparted.xml:491(title)
+msgid "Running gparted from a Command Line"
+msgstr "从命令行运行 gpart"
+
+#: gparted.xml:492(para)
+msgid ""
+"You can run <application>gparted</application> from a command line and "
+"specify one or more disk devices."
+msgstr ""
+"可以从命令行运行<application>gparted</application>并指定一个或多个磁盘设备。"
+
+#: gparted.xml:496(para)
+msgid ""
+"To work with multiple disk devices from a command line, type the following "
+"command, then press <keycap>Enter</keycap>:"
+msgstr ""
+"要使用命令行中的多个磁盘设备，请键入以下命令，然后按<keycap>Enter</keycap>："
+
+#: gparted.xml:501(prompt)
+msgid "$"
+msgstr "$"
+
+#: gparted.xml:501(replaceable)
+msgid "/path-to-your-device1 /path-to-your-device2"
+msgstr "/路径到您的设备1 /路径到您的设备2"
+
+#: gparted.xml:509(title)
+msgid "Viewing File System Support"
+msgstr "查看文件系统支持"
+
+#: gparted.xml:510(para)
+msgid ""
+"To view the actions supported on file systems, choose: "
+"<menuchoice><guimenu>View</guimenu><guimenuitem>File System Support</"
+"guimenuitem></menuchoice>. The application displays the <guilabel>File "
+"System Support</guilabel> dialog."
+msgstr ""
+"要查看文件系统上支持的操作，请选择：<menuchoice><guimenu>查看</"
+"guimenu><guimenuitem>文件系统支持</guimenuitem></menuchoice>。应用程序显示"
+"<guilabel>文件系统支持</guilabel>对话框。"
+
+#: gparted.xml:516(para)
+msgid ""
+"If you have installed software while <application>gparted</application> is "
+"running, click <guibutton>Rescan For Supported Actions</guibutton> to "
+"refresh the chart. The application refreshes the display of the chart."
+msgstr ""
+"如果在<application>gparted</application>运行时已安装软件，请单击\"<guibutton>"
+"重新扫描支持的操作</guibutton>\"以刷新图表。应用程序刷新图表的显示。"
+
+#: gparted.xml:523(para)
+msgid ""
+"To close the <guilabel>File System Support</guilabel> dialog, click "
+"<guibutton>Close</guibutton>."
+msgstr ""
+"要关闭<guilabel>文件系统支持</guilabel>对话框，请单击\"<guibutton>关闭</"
+"guibutton>\"。"
+
+#: gparted.xml:531(title)
+msgid "Working with Devices"
+msgstr "使用设备"
+
+#: gparted.xml:535(title)
+msgid "Selecting a Device"
+msgstr "选择设备"
+
+#: gparted.xml:536(para)
+msgid ""
+"To select a disk device, choose: <menuchoice><guimenu>GParted</"
+"guimenu><guimenuitem>Devices</guimenuitem></menuchoice> and select a device "
+"from the list. The application displays the device partition layout in the "
+"<application>gparted</application> window."
+msgstr ""
+"要选择磁盘设备，请选择<menuchoice><guimenu>：GParted</guimenu><guimenuitem>设"
+"备</guimenuitem></menuchoice>并从列表中选择设备。应用程序在"
+"<application>gparted</application>窗口中显示设备分区布局。"
+
+#: gparted.xml:547(title)
+msgid "Viewing Device Information"
+msgstr "查看设备信息"
+
+#: gparted.xml:552(para) gparted.xml:593(para) gparted.xml:679(para)
+msgid "Select a disk device. See <xref linkend=\"gparted-select-device\"/>."
+msgstr "选择磁盘设备。请参阅<xref linkend=\"gparted-select-device\"></xref>。"
+
+#: gparted.xml:558(para)
+msgid ""
+"Select: <menuchoice><guimenu>View</guimenu><guimenuitem>Device Information</"
+"guimenuitem></menuchoice>. The application opens a side pane in the "
+"<application>gparted</application> window and displays information about the "
+"device."
+msgstr ""
+"选择：<menuchoice><guimenu>查看</guimenu><guimenuitem>设备信息</"
+"guimenuitem></menuchoice>。应用程序在<application>gparted</application>窗口中"
+"打开一个侧窗格，并显示有关设备的信息。"
+
+#: gparted.xml:548(para)
+msgid "To view information about a disk device: <placeholder-1/>"
+msgstr "要查看有关磁盘设备的信息，<placeholder-1/>"
+
+#: gparted.xml:568(para)
+msgid ""
+"To close the <guilabel>Device Information</guilabel> side pane, deselect: "
+"<menuchoice><guimenu>View</guimenu><guimenuitem>Device Information</"
+"guimenuitem></menuchoice>."
+msgstr ""
+"要关闭<guilabel>\"设备信息</guilabel>\"侧窗格，请取消选择："
+"<menuchoice><guimenu>查看</guimenu><guimenuitem>设备信息</guimenuitem></"
+"menuchoice>。"
+
+#: gparted.xml:577(title)
+msgid "Refreshing All Devices"
+msgstr "刷新所有设备"
+
+#: gparted.xml:578(para)
+msgid ""
+"To refresh all disk devices, choose: <menuchoice><guimenu>GParted</"
+"guimenu><guimenuitem>Refresh Devices</guimenuitem></menuchoice>. The "
+"application rescans all the disk devices and refreshes the device partition "
+"layout in the <application>gparted</application> window."
+msgstr ""
+"要刷新所有磁盘设备，请选择<menuchoice><guimenu>：GParted</"
+"guimenu><guimenuitem>刷新设备</guimenuitem></menuchoice>。应用程序重新扫描所"
+"有磁盘设备，并在<application>gparted</application>窗口中刷新设备分区布局。"
+
+#: gparted.xml:588(title)
+msgid "Creating a New Partition Table"
+msgstr "创建新分区表"
+
+#: gparted.xml:599(para)
+msgid ""
+"Choose: <menuchoice><guimenu>Device</guimenu><guimenuitem>Create Partition "
+"Table</guimenuitem></menuchoice>. The application displays a "
+"<guilabel>Create partition table on <replaceable>/path-to-device</"
+"replaceable></guilabel> dialog."
+msgstr ""
+"选择：<menuchoice><guimenu>设备</guimenu><guimenuitem>创建分区表</"
+"guimenuitem></menuchoice>。应用程序<guilabel>在<replaceable>/路径到设备</"
+"replaceable>对话框上显示\"创建分区表</guilabel>\"。"
+
+#: gparted.xml:608(para)
+msgid "Optionally select a different partition table type from the list."
+msgstr "可以选择从列表中选择不同的分区表类型。"
+
+#: gparted.xml:613(para)
+msgid ""
+"The default partition table type is <guimenuitem>msdos</guimenuitem> for "
+"disks smaller than 2 Tebibytes in size (assuming a 512 byte sector size) and "
+"<guimenuitem>gpt</guimenuitem> for disks 2 Tebibytes and larger."
+msgstr ""
+"默认分区表类型是小于 2 TB 大小的磁盘的<guimenuitem>msdos（</guimenuitem>假设 "
+"512 字节扇区大小），以及 2 TB 和更大磁盘的<guimenuitem>gpt</guimenuitem>。"
+
+#: gparted.xml:620(para)
+msgid ""
+"See <xref linkend=\"gparted-specify-partition-type\"/> for "
+"<guimenuitem>msdos</guimenuitem> partition table limitations."
+msgstr ""
+"有关<xref linkend=\"gparted-specify-partition-type\"></xref> "
+"<guimenuitem>msdos</guimenuitem>分区表限制，请参阅。"
+
+#: gparted.xml:627(para)
+msgid ""
+"To use a disk without a partition table, choose <guimenuitem>loop</"
+"guimenuitem> to create a virtual partition that spans the disk. Then format "
+"to the desired file system."
+msgstr ""
+"要使用没有分区表的磁盘，请选择<guimenuitem>循环</guimenuitem>以创建跨该磁盘的"
+"虚拟分区。然后格式化到所需的文件系统。"
+
+#: gparted.xml:633(para)
+msgid ""
+"See <xref linkend=\"gparted-format-partition\"/> to format a virtual "
+"partition with a file system."
+msgstr ""
+"请参阅<xref linkend=\"gparted-format-partition\"></xref>使用文件系统格式化虚"
+"拟分区。"
+
+#: gparted.xml:639(para)
+msgid ""
+"Many operating systems recognize <guimenuitem>gpt</guimenuitem> and "
+"<guimenuitem>msdos</guimenuitem> partition tables, but do not recognize all "
+"types of file systems. This lack of file system recognition means that using "
+"a disk without a partition table involves more risk. For example, some "
+"operating systems might prompt to format an unpartitioned disk if the file "
+"system is not recognized."
+msgstr ""
+"许多操作系统可识别<guimenuitem>gpt</guimenuitem>和<guimenuitem>msdos</"
+"guimenuitem>分区表，但无法识别所有类型的文件系统。这种缺少文件系统识别意味着"
+"使用没有分区表的磁盘涉及更大的风险。例如，如果无法识别文件系统，某些操作系统"
+"可能会提示格式化未分区的磁盘。"
+
+#: gparted.xml:652(para)
+msgid ""
+"Click <guibutton>Apply</guibutton> to create the new partition table. The "
+"application writes the new partition table to the disk device. The "
+"application refreshes the device partition layout in the "
+"<application>gparted</application> window."
+msgstr ""
+"单击<guibutton>\"应用</guibutton>\"以创建新分区表。应用程序将新分区表写入磁盘"
+"设备。应用程序刷新<application>gparted</application>窗口中的设备分区布局。"
+
+#: gparted.xml:589(para)
+msgid "To create a new partition table on a disk device: <placeholder-1/>"
+msgstr "要在磁盘设备上创建新分区表，<placeholder-1/>"
+
+#: gparted.xml:662(para)
+msgid "WARNING: This will ERASE ALL DATA on the ENTIRE DISK DEVICE."
+msgstr "警告： 这将擦除所有数据上的所有数据。"
+
+#: gparted.xml:665(para)
+msgid ""
+"If you accidentally overwrite your partition table, see <xref linkend="
+"\"gparted-recover-partition-table\"/>."
+msgstr ""
+"如果不小心覆盖分区表，请参阅<xref linkend=\"gparted-recover-partition-table"
+"\"></xref>。"
+
+#: gparted.xml:674(title)
+msgid "Attempting Data Rescue"
+msgstr "尝试数据救援"
+
+#: gparted.xml:685(para)
+msgid ""
+"Choose: <menuchoice><guimenu>Device</guimenu><guimenuitem>Attempt Data "
+"Rescue</guimenuitem></menuchoice>. The application displays a "
+"<guilabel>Search for file systems on <replaceable>/path-to-device</"
+"replaceable></guilabel> dialog."
+msgstr ""
+"选择：<menuchoice><guimenu>设备</guimenu><guimenuitem>尝试数据救援</"
+"guimenuitem></menuchoice>。应用程序<guilabel>在<replaceable>/路径到设备</"
+"replaceable>对话框上显示\"对文件系统的搜索</guilabel>\"。"
+
+#: gparted.xml:694(para)
+msgid "Click <guibutton>OK</guibutton> to start the full disk scan."
+msgstr "单击<guibutton>\"确定</guibutton>\"以开始完整磁盘扫描。"
+
+#: gparted.xml:698(para)
+msgid ""
+"Large disk devices can take a very long time to scan. If you do not have the "
+"time to wait for a full disk scan then click <guibutton>Cancel</guibutton>."
+msgstr ""
+"大型磁盘设备可能需要很长时间才能进行扫描。如果您没有时间等待完整的磁盘扫描，"
+"请单击\"<guibutton>取消</guibutton>\"。"
+
+#: gparted.xml:705(para)
+msgid ""
+"A maximum of 4 partitions with file systems might be discovered. If you want "
+"to discover more than 4 partitions and restore the partition table, see "
+"<xref linkend=\"gparted-recover-partition-table\"/>."
+msgstr ""
+"最多可以发现 4 个带有文件系统的分区。如果要发现 4 个以上分区并还原分区表，请"
+"参阅<xref linkend=\"gparted-recover-partition-table\"></xref>。"
+
+#: gparted.xml:721(replaceable) gparted.xml:742(replaceable)
+msgid "/path-to-device"
+msgstr "/路径到设备"
+
+#: gparted.xml:720(guilabel)
+msgid "No file systems found on <placeholder-1/>"
+msgstr "未找到文件系统<placeholder-1/>"
+
+#: gparted.xml:724(para)
+msgid ""
+"If no file systems are found, you have other options to try to rescue your "
+"data. The <application>photorec</application> application is designed to "
+"help recover many different types of lost files. For more information about "
+"<application>photorec</application>, see <ulink type=\"http\" url=\"https://"
+"www.cgsecurity.org/wiki/PhotoRec\"/>."
+msgstr ""
+"如果没有找到文件系统，您有其他选项来尝试挽救您的数据。<application>photorec</"
+"application>应用程序旨在帮助恢复许多不同类型的丢失文件。有关"
+"<application>photorec</application>的详细信息，请参阅<ulink type=\"http\" "
+"url=\"https://www.cgsecurity.org/wiki/PhotoRec\"></ulink>。"
+
+#: gparted.xml:734(para)
+msgid ""
+"Click <guibutton>OK</guibutton> to close the dialog box, and end this "
+"attempt to rescue data."
+msgstr ""
+"单击<guibutton>\"确定</guibutton>\"关闭对话框，然后结束此尝试以挽救数据。"
+
+#: gparted.xml:741(guilabel)
+msgid "File systems found on <placeholder-1/>"
+msgstr "在<placeholder-1/>"
+
+#: gparted.xml:745(para)
+msgid ""
+"If file systems are found, each file system is displayed in a list along "
+"with a <guibutton>View</guibutton> button. The dialog will indicate if there "
+"are data inconsistencies. Inconsistencies in the data might prevent you from "
+"viewing the data."
+msgstr ""
+"如果找到文件系统，则每个文件系统都会与<guibutton>\"视图\"</guibutton>按钮一起"
+"显示在列表中。该对话框将指示是否有数据不一致。数据中的不一致可能会阻止您查看"
+"数据。"
+
+#: gparted.xml:714(para)
+msgid ""
+"When the full disk scan completes one of two possible dialogs is displayed: "
+"<placeholder-1/>"
+msgstr "当完整磁盘扫描完成时，将显示两个可能的对话框之一：<placeholder-1/>"
+
+#: gparted.xml:762(para)
+msgid ""
+"Click <guibutton>View</guibutton> to mount and display the file system. Your "
+"default file manager is opened and displays a read-only view of the file "
+"system."
+msgstr ""
+"单击<guibutton>\"查看\"</guibutton>以装载和显示文件系统。将打开默认文件管理器"
+"并显示文件系统的只读视图。"
+
+#: gparted.xml:768(para)
+msgid ""
+"If the dialog <guilabel>Unable to open the default file manager</guilabel> "
+"is displayed, then you will need to open a file manager and navigate to the "
+"mount point for the file system."
+msgstr ""
+"如果显示\"<guilabel>无法打开默认文件管理器</guilabel>\"对话框，则需要打开文件"
+"管理器并导航到文件系统的装载点。"
+
+#: gparted.xml:774(para)
+msgid ""
+"The mount point is shown in the dialog, for example \"/tmp/gparted-roview-"
+"XXXXXX\"."
+msgstr "装载点显示在对话框中，例如\"/tmp/gparted-roview-XXXXXX\"。"
+
+#: gparted.xml:778(para)
+msgid ""
+"Click <guibutton>OK</guibutton> to close the <guilabel>Unable to open the "
+"default file manager</guilabel> dialog."
+msgstr ""
+"单击<guibutton>\"确定</guibutton>\"可<guilabel>关闭\"无法打开默认文件管理器</"
+"guilabel>\"对话框。"
+
+#: gparted.xml:786(para)
+msgid "Use the file manager to copy your data to other storage media."
+msgstr "使用文件管理器将数据复制到其他存储介质。"
+
+#: gparted.xml:792(para)
+msgid "When you are finished copying your data, close the file manager."
+msgstr "复制完数据后，关闭文件管理器。"
+
+#: gparted.xml:758(para)
+msgid ""
+"To rescue data, use the following steps for each file system: <placeholder-1/"
+">"
+msgstr "要抢救数据，请使用每个文件系统的以下步骤：<placeholder-1/>"
+
+#: gparted.xml:801(para)
+msgid ""
+"When you are finished rescuing data, click <guibutton>Close</guibutton> to "
+"end this attempt to rescue data. The application umounts any file systems "
+"that were mounted for viewing. Then the application rescans all the disk "
+"devices and refreshes the device partition layout in the "
+"<application>gparted</application> window."
+msgstr ""
+"完成抢救数据后，单击<guibutton>\"关闭\"</guibutton>以结束此尝试以挽救数据。应"
+"用程序将安装用于查看的任何文件系统进行安装。然后，应用程序重新扫描所有磁盘设"
+"备，并在<application>gparted</application>窗口中刷新设备分区布局。"
+
+#: gparted.xml:675(para)
+msgid "To attempt data rescue from a disk device: <placeholder-1/>"
+msgstr "要尝试从磁盘设备中进行数据救援，应：<placeholder-1/>"
+
+#: gparted.xml:819(title)
+msgid "Working with Partitions"
+msgstr "使用分区"
+
+#: gparted.xml:823(title)
+msgid "Basic Partition Actions"
+msgstr "基本分区操作"
+
+#: gparted.xml:824(para)
+msgid "These actions will not alter partitions on your disk device."
+msgstr "这些操作不会更改磁盘设备上的分区。"
+
+#: gparted.xml:830(title)
+msgid "Selecting a Partition"
+msgstr "选择分区"
+
+#: gparted.xml:835(para)
+msgid "Click on a partition in the graphic display area."
+msgstr "单击图形显示区域中的分区。"
+
+#: gparted.xml:840(para)
+msgid "Click on a partition in the text display area."
+msgstr "单击文本显示区域中的分区。"
+
+#: gparted.xml:831(para)
+msgid "To select a partition, use one of the following: <placeholder-1/>"
+msgstr "要选择分区，请使用以下项之一：<placeholder-1/>"
+
+#: gparted.xml:846(para)
+msgid ""
+"The application highlights the partition in both the graphic display area "
+"and the text display area in the <application>gparted</application> window."
+msgstr ""
+"应用程序突出显示图形显示区域中的分区和<application>gparted</application>窗口"
+"中的文本显示区域。"
+
+#: gparted.xml:852(para)
+msgid ""
+"Partition operations such as delete, move, copy, format, check, label, and "
+"often resize require the partition to be unmounted. See <xref linkend="
+"\"gparted-unmount-partition\"/>."
+msgstr ""
+"分区操作（如删除、移动、复制、格式化、检查、标签和经常调整大小）要求卸载分"
+"区。请参阅<xref linkend=\"gparted-unmount-partition\"></xref>。"
+
+#: gparted.xml:863(title)
+msgid "Selecting Unallocated Space"
+msgstr "选择未分配的空间"
+
+#: gparted.xml:868(para)
+msgid "Click on <guilabel>unallocated</guilabel> in the graphic display area."
+msgstr "单击图形显示区域中<guilabel>未分配的</guilabel>图形。"
+
+#: gparted.xml:873(para)
+msgid "Click on <guilabel>unallocated</guilabel> in the text display area."
+msgstr "单击文本显示区域中<guilabel>未分配的</guilabel>。"
+
+#: gparted.xml:864(para)
+msgid "To select unallocated space, use one of the following: <placeholder-1/>"
+msgstr "要选择未分配的空间，请使用以下之一：<placeholder-1/>"
+
+#: gparted.xml:879(para)
+msgid ""
+"The application highlights the unallocated space in both the graphic display "
+"area and the text display area in the <application>gparted</application> "
+"window."
+msgstr ""
+"应用程序突出显示图形显示区域中的未分配空间和<application>gparted</"
+"application>窗口中的文本显示区域。"
+
+#: gparted.xml:885(para)
+msgid ""
+"If you do not have any disk devices with unallocated space, you might try "
+"the following:"
+msgstr "如果您没有任何磁盘设备具有未分配的空间，可以尝试以下操作："
+
+#: gparted.xml:891(para)
+msgid "Add a new disk device to your computer."
+msgstr "向计算机添加新磁盘设备。"
+
+#: gparted.xml:896(para)
+msgid ""
+"Shrink a partition that contains unused space. See <xref linkend=\"gparted-"
+"resize-partition\"/>."
+msgstr ""
+"收缩包含未使用空间的分区。请参阅<xref linkend=\"gparted-resize-partition\"></"
+"xref>。"
+
+#: gparted.xml:907(title)
+msgid "Viewing Partition Information"
+msgstr "查看分区信息"
+
+#: gparted.xml:912(para) gparted.xml:1732(para) gparted.xml:2127(para)
+msgid "Select a partition. See <xref linkend=\"gparted-select-partition\"/>."
+msgstr "选择分区。请参阅<xref linkend=\"gparted-select-partition\"/>。"
+
+#: gparted.xml:918(para)
+msgid ""
+"Choose: <menuchoice><guimenu>Partition</guimenu><guimenuitem>Information</"
+"guimenuitem></menuchoice>. The application opens an <guilabel>Information "
+"about <replaceable>/path-to-partition</replaceable></guilabel> dialog."
+msgstr ""
+"选择：<menuchoice><guimenu>分区</guimenu><guimenuitem>信息</guimenuitem></"
+"menuchoice>。应用程序将打开<guilabel>有关<replaceable>/路径到分区</"
+"replaceable>对话框的信息</guilabel>。"
+
+#: gparted.xml:908(para)
+msgid "To view information about a partition: <placeholder-1/>"
+msgstr "要查看有关分区的信息，<placeholder-1/>"
+
+#: gparted.xml:927(para)
+msgid ""
+"To close the <guilabel>Information about <replaceable>/path-to-partition</"
+"replaceable></guilabel> dialog, click <guibutton>Close</guibutton>."
+msgstr ""
+"要关闭<guilabel>有关<replaceable>/路径到分区</replaceable></guilabel>的信息对"
+"话框，请单击\"<guibutton>关闭</guibutton>\"。"
+
+#: gparted.xml:936(title)
+msgid "Mounting a Partition"
+msgstr "安装分区"
+
+#: gparted.xml:941(para) gparted.xml:1165(para) gparted.xml:1295(para)
+#: gparted.xml:1331(para) gparted.xml:1361(para) gparted.xml:1398(para)
+#: gparted.xml:1923(para) gparted.xml:1984(para) gparted.xml:2372(para)
+msgid ""
+"Select an unmounted partition. See <xref linkend=\"gparted-select-partition"
+"\"/>."
+msgstr "选择未安装的分区。请参阅<xref linkend=\"gparted-select-partition\"/>。"
+
+#: gparted.xml:947(para)
+msgid ""
+"Choose: <menuchoice><guimenu>Partition</guimenu><guimenuitem>Mount</"
+"guimenuitem></menuchoice> and select a mount point from the list. The "
+"application mounts the partition on the mount point and refreshes the device "
+"partition layout in the <application>gparted</application> window."
+msgstr ""
+"选择：<menuchoice><guimenu>分区</guimenu><guimenuitem>装载</guimenuitem></"
+"menuchoice>并从列表中选择一个装载点。应用程序在装载点上装载分区，并在"
+"<application>gparted</application>窗口中刷新设备分区布局。"
+
+#: gparted.xml:937(para)
+msgid "To mount a partition: <placeholder-1/>"
+msgstr "要装入分区：<placeholder-1/>"
+
+#: gparted.xml:959(para)
+msgid ""
+"If <menuchoice><guimenu>Partition</guimenu><guimenuitem>Mount</guimenuitem></"
+"menuchoice> is not visible, then <application>gparted</application> does not "
+"know where the partition should be mounted."
+msgstr ""
+"如果<menuchoice><guimenu>分区</guimenu><guimenuitem>装载</guimenuitem></"
+"menuchoice>不可见，则<application>gparted</application>不知道分区应该安装在何"
+"处。"
+
+#: gparted.xml:970(title)
+msgid "Unmounting a Partition"
+msgstr "卸载分区"
+
+#: gparted.xml:975(para)
+msgid ""
+"Select a mounted partition. See <xref linkend=\"gparted-select-partition\"/>."
+msgstr "选择已装载的分区。请参阅<xref linkend=\"gparted-select-partition\"/>。"
+
+#: gparted.xml:981(para)
+msgid ""
+"Choose: <menuchoice><guimenu>Partition</guimenu><guimenuitem>Unmount</"
+"guimenuitem></menuchoice>. The application unmounts the partition from the "
+"mount point and refreshes the device partition layout in the "
+"<application>gparted</application> window."
+msgstr ""
+"选择：<menuchoice><guimenu>分区</guimenu><guimenuitem>取消安装</"
+"guimenuitem></menuchoice>。应用程序从装载点卸载分区，并在"
+"<application>gparted</application>窗口中刷新设备分区布局。"
+
+#: gparted.xml:971(para)
+msgid "To unmount a partition: <placeholder-1/>"
+msgstr "要卸载分区：<placeholder-1/>"
+
+#: gparted.xml:992(para)
+msgid ""
+"If <menuchoice><guimenu>Partition</guimenu><guimenuitem>Unmount</"
+"guimenuitem></menuchoice> does not succeed, then the partition is probably "
+"in use."
+msgstr ""
+"如果<menuchoice><guimenu>分区</guimenu><guimenuitem>卸载</guimenuitem></"
+"menuchoice>不成功，则分区可能正在使用中。"
+
+#: gparted.xml:997(para)
+msgid ""
+"To have all partitions unmounted and available for partition editing "
+"actions, boot from a Live CD and use <application>gparted</application>. See "
+"<xref linkend=\"gparted-acquire-livecd\"/>"
+msgstr ""
+"要卸载所有分区并可用于分区编辑操作，请使用实时 CD 启动并使用"
+"<application>gparted</application>。看到<xref linkend=\"gparted-acquire-"
+"livecd\"></xref>"
+
+#: gparted.xml:1008(title)
+msgid "Opening an Encrypted Partition"
+msgstr "打开加密分区"
+
+#: gparted.xml:1013(para)
+msgid ""
+"Select a closed LUKS encrypted partition. See <xref linkend=\"gparted-select-"
+"partition\"/>."
+msgstr ""
+"选择已关闭的 LUKS 加密分区。请参阅<xref linkend=\"gparted-select-partition\"/"
+">。"
+
+#: gparted.xml:1019(para)
+msgid ""
+"Choose: <menuchoice><guimenu>Partition</guimenu><guimenuitem>Open "
+"Encryption</guimenuitem></menuchoice>."
+msgstr ""
+"选择：<menuchoice><guimenu>分区</guimenu><guimenuitem>开放加密</"
+"guimenuitem></menuchoice>。"
+
+#: gparted.xml:1023(para)
+msgid ""
+"If <application>gparted</application> doesn't yet know the LUKS Passphrase "
+"it will open a <guilabel>LUKS Passphrase <replaceable>/path-to-partition</"
+"replaceable></guilabel> dialog. Type the LUKS Passphrase into the "
+"<guilabel>Passphrase</guilabel> text box and click <guibutton>Unlock</"
+"guibutton>."
+msgstr ""
+"如果<application>gparted</application>还不知道 LUKS 密码短语，它将打开"
+"<guilabel>LUKS 密码<replaceable>/路径到分区</replaceable></guilabel>对话框。"
+"在<guilabel>密码</guilabel>文本框中键入 LUKS 密码，然后单击\"<guibutton>解锁"
+"</guibutton>\"。"
+
+#: gparted.xml:1031(para)
+msgid ""
+"The application opens the encrypted partition and refreshes the device "
+"partition layout in the <application>gparted</application> window."
+msgstr ""
+"应用程序打开加密分区，并在<application>gparted</application>窗口中刷新设备分"
+"区布局。"
+
+#: gparted.xml:1009(para)
+msgid "To open a LUKS encrypted partition: <placeholder-1/>"
+msgstr "要打开 LUKS 加密分区：<placeholder-1/>"
+
+#: gparted.xml:1040(para)
+msgid ""
+"<application>gparted</application> remembers each LUKS Passphrase in the "
+"computer's memory for as long as it is running. This is so that it doesn't "
+"have to prompt when reopening the same encrypted partition again. When "
+"<application>gparted</application> is closed all remembered LUKS Passphrases "
+"are cleared from memory and forgotten."
+msgstr ""
+"<application>gparted</application>会记住计算机内存中的每个 LUKS 密码短语，只"
+"要它正在运行。这样，在重新打开同一加密分区时，就不必提示。当"
+"<application>gparted</application>被关闭时，所有记住的LUKS密码从内存中清除并"
+"被遗忘。"
+
+#: gparted.xml:1054(title)
+msgid "Closing an Encrypted Partition"
+msgstr "关闭加密分区"
+
+#: gparted.xml:1059(para)
+msgid ""
+"Select an unmounted and LUKS encrypted partition. See <xref linkend="
+"\"gparted-select-partition\"/>."
+msgstr ""
+"选择未安装的和 LUKS 加密分区。请参阅<xref linkend=\"gparted-select-partition"
+"\"/>。"
+
+#: gparted.xml:1065(para)
+msgid ""
+"Choose: <menuchoice><guimenu>Partition</guimenu><guimenuitem>Close "
+"Encryption</guimenuitem></menuchoice>. The application closed the LUKS "
+"encryption and refreshes the device partition layout in the "
+"<application>gparted</application> window."
+msgstr ""
+"选择：<menuchoice><guimenu>分区</guimenu><guimenuitem>关闭加密</"
+"guimenuitem></menuchoice>。应用程序关闭了 LUKS 加密，并在"
+"<application>gparted</application>窗口中刷新设备分区布局。"
+
+#: gparted.xml:1055(para)
+msgid "To close a LUKS encrypted partition: <placeholder-1/>"
+msgstr "要关闭 LUKS 加密分区，<placeholder-1/>"
+
+#: gparted.xml:1082(title)
+msgid "Intermediate Partition Actions"
+msgstr "中间分区操作"
+
+#: gparted.xml:1083(para)
+msgid ""
+"These actions will alter partitions on your disk device. These actions will "
+"not modify the start or end boundaries of your existing partitions."
+msgstr ""
+"这些操作将更改磁盘设备上的分区。这些操作不会修改现有分区的起始或结束边界。"
+
+#: gparted.xml:1091(title)
+msgid "Creating a New Partition"
+msgstr "创建新分区"
+
+#: gparted.xml:1096(para)
+msgid ""
+"Select an unallocated space on the disk device. See <xref linkend=\"gparted-"
+"select-unallocated\"/>."
+msgstr ""
+"选择磁盘设备上的未分配空间。请参阅<xref linkend=\"gparted-select-unallocated"
+"\"></xref>。"
+
+#: gparted.xml:1102(para)
+msgid ""
+"Choose: <menuchoice><guimenu>Partition</guimenu><guimenuitem>New</"
+"guimenuitem></menuchoice>. The application displays the <guilabel>Create new "
+"Partition</guilabel> dialog."
+msgstr ""
+"选择：<menuchoice><guimenu>分区</guimenu><guimenuitem>新建</guimenuitem></"
+"menuchoice>。应用程序将显示<guilabel>\"创建新分区</guilabel>\"对话框。"
+
+#: gparted.xml:1109(para)
+msgid ""
+"Specify the size and the location for the partition. See <xref linkend="
+"\"gparted-specify-partition-size-and-location\"/>."
+msgstr ""
+"指定分区的大小和位置。请参阅<xref linkend=\"gparted-specify-partition-size-"
+"and-location\"></xref>。"
+
+#: gparted.xml:1115(para)
+msgid ""
+"Specify the alignment for the partition. See <xref linkend=\"gparted-specify-"
+"partition-alignment\"/>."
+msgstr ""
+"指定分区的对齐方式。请参阅<xref linkend=\"gparted-specify-partition-alignment"
+"\"></xref>。"
+
+#: gparted.xml:1121(para)
+msgid ""
+"Specify the type of partition. See <xref linkend=\"gparted-specify-partition-"
+"type\"/>."
+msgstr ""
+"指定分区的类型。请参阅<xref linkend=\"gparted-specify-partition-type\"></"
+"xref>。"
+
+#: gparted.xml:1127(para)
+msgid ""
+"Specify the name of the partition when the field is enabled. See <xref "
+"linkend=\"gparted-specify-partition-name\"/>."
+msgstr ""
+"启用该字段时指定分区的名称。请参阅<xref linkend=\"gparted-specify-partition-"
+"name\"></xref>。"
+
+#: gparted.xml:1134(para)
+msgid ""
+"Specify the type of file system for the partition. See <xref linkend="
+"\"gparted-specify-partition-file-system\"/>."
+msgstr ""
+"指定分区的文件系统类型。请参阅<xref linkend=\"gparted-specify-partition-file-"
+"system\"></xref>。"
+
+#: gparted.xml:1140(para)
+msgid ""
+"Specify the label of the file system for the partition. See <xref linkend="
+"\"gparted-specify-partition-file-system-label\"/>."
+msgstr ""
+"指定分区的文件系统标签。请参阅<xref linkend=\"gparted-specify-partition-file-"
+"system-label\"></xref>。"
+
+#: gparted.xml:1146(para)
+msgid ""
+"Click <guibutton>Add</guibutton> to add the create partition operation to "
+"the operation queue. The application displays the create partition operation "
+"in the <guilabel>Pending Operations</guilabel> pane in the "
+"<application>gparted</application> window."
+msgstr ""
+"单击<guibutton>\"添加</guibutton>\"将创建分区操作添加到操作队列。应用程序在"
+"<application>gparted</application>窗口中的\"<guilabel>挂起操作</guilabel>\"窗"
+"格中显示创建分区操作。"
+
+#: gparted.xml:1092(para)
+msgid "To create a new partition: <placeholder-1/>"
+msgstr "要创建新分区，<placeholder-1/>"
+
+#: gparted.xml:1160(title)
+msgid "Deleting a Partition"
+msgstr "删除分区"
+
+#: gparted.xml:1171(para)
+msgid ""
+"Choose: <menuchoice><guimenu>Partition</guimenu><guimenuitem>Delete</"
+"guimenuitem></menuchoice>. The application displays the delete partition "
+"operation in the <guilabel>Pending Operations</guilabel> pane."
+msgstr ""
+"选择：<menuchoice><guimenu>分区</guimenu><guimenuitem>删除</guimenuitem></"
+"menuchoice>。应用程序在\"<guilabel>挂起的操作</guilabel>\"窗格中显示删除分区"
+"操作。"
+
+#: gparted.xml:1161(para)
+msgid "To delete a partition: <placeholder-1/>"
+msgstr "要删除分区：<placeholder-1/>"
+
+#: gparted.xml:1181(para)
+msgid ""
+"If you delete a logical partition, then all existing logical partitions "
+"after the deleted logical partition will experience changes in device names."
+msgstr ""
+"如果删除逻辑分区，则删除的逻辑分区后的所有现有逻辑分区都将在设备名称中遇到更"
+"改。"
+
+#: gparted.xml:1186(para)
+msgid ""
+"For example, an extended partition contains four logical partitions A, B, C, "
+"and D. These logical partitions are accessed by the operating system as "
+"follows:"
+msgstr ""
+"例如，扩展分区包含四个逻辑分区 A、B、C 和 D。这些逻辑分区由操作系统访问，如下"
+"所示："
+
+#: gparted.xml:1193(para) gparted.xml:1219(para)
+msgid "Partition A as /dev/sda5."
+msgstr "分区 A 为 /dev/sda5。"
+
+#: gparted.xml:1198(para)
+msgid "Partition B as /dev/sda6."
+msgstr "分区 B 为 /dev/sda6。"
+
+#: gparted.xml:1203(para)
+msgid "Partition C as /dev/sda7."
+msgstr "分区 C 为 /dev/sda7。"
+
+#: gparted.xml:1208(para)
+msgid "Partition D as /dev/sda8."
+msgstr "分区 D 为 /dev/sda8。"
+
+#: gparted.xml:1213(para)
+msgid ""
+"If partition B is deleted, then the remaining logical partitions will be "
+"accessed by the operating system as follows:"
+msgstr "如果删除分区 B，则操作系统将访问其余逻辑分区，如下所示："
+
+#: gparted.xml:1224(para)
+msgid "Partition C as /dev/sda6. Note the change in device name."
+msgstr "分区 C 为 /dev/sda6。请注意设备名称的更改。"
+
+#: gparted.xml:1229(para)
+msgid "Partition D as /dev/sda7. Note the change in device name."
+msgstr "分区 D 为 /dev/sda7。请注意设备名称的更改。"
+
+#: gparted.xml:1234(para)
+msgid ""
+"Changes in a device name can cause problems if a partition is mounted using "
+"a device name. You can avoid the problem by using the file system label or "
+"Universally Unique Identifier (UUID) of the partition when mounting the "
+"partition."
+msgstr ""
+"如果使用设备名称装载分区，则设备名称中的更改可能会导致问题。安装分区时，可以"
+"使用分区的文件系统标签或通用唯一标识符 （UUID） 来避免此问题。"
+
+#: gparted.xml:1246(para)
+msgid "/etc/fstab - Contains a list of file systems to mount."
+msgstr "/etc/fstab - 包含要装载的文件系统列表。"
+
+#: gparted.xml:1251(para)
+msgid ""
+"/boot/grub/menu.lst - Contains operating system boot instructions for the "
+"<application>grub</application> boot loader."
+msgstr ""
+"/引导/grub/菜单.lst - 包含<application>grub</application>引导加载程序的操作系"
+"统启动说明。"
+
+#: gparted.xml:1241(para)
+msgid ""
+"Changes in a device name might adversely affect the following files: "
+"<placeholder-1/>"
+msgstr "设备名称中的更改可能会对以下文件产生负面影响：<placeholder-1/>"
+
+#: gparted.xml:1261(para)
+msgid ""
+"Disks with <guimenuitem>loop</guimenuitem> or <guimenuitem>none</"
+"guimenuitem> partition tables do not contain a partition table, and do not "
+"contain partitions. A file system on a disk without a partition table is "
+"represented in GParted by a virtual partition."
+msgstr ""
+"具有<guimenuitem>循环</guimenuitem>或<guimenuitem>无</guimenuitem>分区表的磁"
+"盘不包含分区表，并且不包含分区。没有分区表的磁盘上的文件系统在 GParted 中由虚"
+"拟分区表示。"
+
+#: gparted.xml:1268(para)
+msgid ""
+"To delete the file system and virtual partition, choose format to "
+"<guimenuitem>cleared</guimenuitem>."
+msgstr ""
+"要删除文件系统和虚拟分区，请选择<guimenuitem>要清除</guimenuitem>的格式。"
+
+#: gparted.xml:1272(para)
+msgid "See <xref linkend=\"gparted-format-partition\"/>."
+msgstr "请参阅<xref linkend=\"gparted-format-partition\"></xref>。"
+
+#: gparted.xml:1280(title)
+msgid "Naming a Partition"
+msgstr "命名分区"
+
+#: gparted.xml:1282(para)
+msgid ""
+"Naming of partitions is only available with GUID partition tables (GPT)."
+msgstr "分区命名仅适用于 GUID 分区表 （GPT）。"
+
+#: gparted.xml:1286(para) gparted.xml:1623(para)
+msgid "Also see <xref linkend=\"gparted-create-partition-table\"/>."
+msgstr "另请参阅<xref linkend=\"gparted-create-partition-table\"></xref>。"
+
+#: gparted.xml:1290(para)
+msgid "To set a name of a partition:"
+msgstr "要设置分区的名称："
+
+#: gparted.xml:1301(para)
+msgid ""
+"Choose: <menuchoice><guimenu>Partition</guimenu><guimenuitem>Name Partition</"
+"guimenuitem></menuchoice>. The application opens a <guilabel>Set partition "
+"name on <replaceable>/path-to-partition</replaceable></guilabel> dialog."
+msgstr ""
+"选择：<menuchoice><guimenu>分区</guimenu><guimenuitem>名称分区</"
+"guimenuitem></menuchoice>。应用程序<guilabel>在<replaceable>/路径到分区</"
+"replaceable>对话框上打开 Set 分区名称</guilabel>。"
+
+#: gparted.xml:1310(para)
+msgid "Type a partition name in the <guilabel>Name</guilabel> text box."
+msgstr "在<guilabel>\"名称</guilabel>\"文本框中键入分区名称。"
+
+#: gparted.xml:1315(para)
+msgid ""
+"Click <guibutton>OK</guibutton>. The application displays the set partition "
+"name operation in the <guilabel>Operations Pending</guilabel> pane."
+msgstr ""
+"单击<guibutton>\"确定</guibutton>\"。应用程序在\"<guilabel>操作挂起</"
+"guilabel>\"窗格中显示设置分区名称操作。"
+
+#: gparted.xml:1326(title)
+msgid "Formatting a Partition"
+msgstr "设置分区的格式"
+
+#: gparted.xml:1337(para)
+msgid ""
+"Choose: <menuchoice><guimenu>Partition</guimenu><guimenuitem>Format to</"
+"guimenuitem></menuchoice>, and select a type of file system from the list. "
+"The application displays the format partition operation in the "
+"<guilabel>Operations Pending</guilabel> pane."
+msgstr ""
+"选择：<menuchoice><guimenu>分区</guimenu><guimenuitem>格式到</guimenuitem></"
+"menuchoice>，并从列表中选择文件系统类型。应用程序在\"<guilabel>操作挂起</"
+"guilabel>\"窗格中显示格式分区操作。"
+
+#: gparted.xml:1344(para)
+msgid ""
+"See <xref linkend=\"gparted-specify-partition-file-system\"/> for the "
+"meaning of the <guimenuitem>cleared</guimenuitem> file system type."
+msgstr ""
+"有关<xref linkend=\"gparted-specify-partition-file-system\"></"
+"xref><guimenuitem>已清除</guimenuitem>文件系统类型的含义，请参阅。"
+
+#: gparted.xml:1327(para)
+msgid "To format a partition: <placeholder-1/>"
+msgstr "要设置分区的格式：<placeholder-1/>"
+
+#: gparted.xml:1356(title)
+msgid "Setting a Partition File System Label"
+msgstr "设置分区文件系统标签"
+
+#: gparted.xml:1367(para)
+msgid ""
+"Choose: <menuchoice><guimenu>Partition</guimenu><guimenuitem>Label File "
+"System</guimenuitem></menuchoice>. The application opens a <guilabel>Set "
+"file system label on <replaceable>/path-to-partition</replaceable></"
+"guilabel> dialog."
+msgstr ""
+"选择：<menuchoice><guimenu>分区</guimenu><guimenuitem>标签文件系统</"
+"guimenuitem></menuchoice>。应用程序<guilabel>在<replaceable>/路径到分区</"
+"replaceable>对话框上打开\"设置文件系统\"标签</guilabel>。"
+
+#: gparted.xml:1376(para)
+msgid "Type a label name in the <guilabel>Label</guilabel> text box."
+msgstr "在<guilabel>\"标签</guilabel>\"文本框中键入标签名称。"
+
+#: gparted.xml:1381(para)
+msgid ""
+"Click <guibutton>OK</guibutton>. The application displays the set file "
+"system label operation in the <guilabel>Operations Pending</guilabel> pane."
+msgstr ""
+"单击<guibutton>\"确定</guibutton>\"。应用程序在\"<guilabel>操作挂起</"
+"guilabel>\"窗格中显示设置文件系统标签操作。"
+
+#: gparted.xml:1357(para)
+msgid ""
+"To set a label or a volume name of a file system in a partition: "
+"<placeholder-1/>"
+msgstr "要在分区中设置文件系统的标签或卷名称，应：<placeholder-1/>"
+
+#: gparted.xml:1393(title)
+msgid "Changing a Partition UUID"
+msgstr "更改分区 UUID"
+
+#: gparted.xml:1404(para)
+msgid ""
+"Choose: <menuchoice><guimenu>Partition</guimenu><guimenuitem>New UUID</"
+"guimenuitem></menuchoice>. The application displays the set a new random "
+"UUID operation in the <guilabel>Operations Pending</guilabel> pane."
+msgstr ""
+"选择：<menuchoice><guimenu>分区</guimenu><guimenuitem>新 UUID</guimenuitem></"
+"menuchoice>。应用程序在\"<guilabel>操作挂起</guilabel>\"窗格中显示该集新的随"
+"机 UUID 操作。"
+
+#: gparted.xml:1413(para)
+msgid ""
+"Changing the UUID might invalidate the Windows Product Activation key (WPA)."
+msgstr "更改 UUID 可能会使 Windows 产品激活密钥 （WPA） 失效。"
+
+#: gparted.xml:1417(para)
+msgid ""
+"On FAT and NTFS file systems, the Volume Serial Number is used as UUID. "
+"Changing the Volume Serial Number on the Windows system partition, normally "
+"C:, might invalidate the WPA key. An invalid WPA key will prevent login "
+"until you reactivate Windows."
+msgstr ""
+"在 FAT 和 NTFS 文件系统上，卷序列号用作 UUID。更改 Windows 系统分区上的卷序列"
+"号（通常为 C：）可能会使 WPA 密钥失效。无效的 WPA 密钥将阻止登录，直到您重新"
+"激活 Windows。"
+
+#: gparted.xml:1424(para)
+msgid ""
+"In an attempt to avoid invalidating the WPA key, on NTFS file systems only "
+"half of the UUID is set to a new random value. On FAT file systems, such a "
+"precaution is not possible."
+msgstr ""
+"为了避免 WPA 密钥无效，在 NTFS 文件系统上，只有一半的 UUID 设置为新的随机值。"
+"在 FAT 文件系统上，无法采取此类预防措施。"
+
+#: gparted.xml:1430(para)
+msgid ""
+"The WPA key should not be affected by changing the UUID of data partitions "
+"or removable media partitions. In rare cases, a partition that is present at "
+"boot time might be an exception to this rule."
+msgstr ""
+"不应更改数据分区或可移动媒体分区的 UUID 影响 WPA 密钥。在极少数情况下，启动时"
+"存在的分区可能是此规则的例外。"
+
+#: gparted.xml:1438(para)
+msgid ""
+"Changing the UUID when there is no need to do so might cause a GNU/Linux "
+"system to fail to boot, or to fail to mount a file system."
+msgstr ""
+"在不需要更改 UUID 时，更改 UUID 可能会导致 GNU/Linux 系统无法启动或无法装载文"
+"件系统。"
+
+#: gparted.xml:1443(para)
+msgid ""
+"Changing the UUID is only required after copying a partition. The UUID "
+"change is needed to prevent duplicate UUIDs when both the source and the "
+"copy of the partition are used on the same computer."
+msgstr ""
+"仅在复制分区后需要更改 UUID。当在同一台计算机上同时使用源和分区副本时，需要 "
+"UUID 更改以防止重复 UUID。"
+
+#: gparted.xml:1449(para)
+msgid ""
+"If boot or mount problems occur you might need to edit configuration files, "
+"such as /etc/fstab, and regenerate the grub menu to ensure that the correct "
+"UUID is specified."
+msgstr ""
+"如果出现引导或装载问题，您可能需要编辑配置文件（如 /etc/fstab）并重新生成 "
+"grub 菜单以确保指定了正确的 UUID。"
+
+#: gparted.xml:1394(para)
+msgid ""
+"To change the Universally Unique Identifier (UUID) of a partition: "
+"<placeholder-1/>"
+msgstr "要更改分区的通用唯一标识符 （UUID），应：<placeholder-1/>"
+
+#: gparted.xml:1463(title)
+msgid "Specifying Partition Details"
+msgstr "指定分区详细信息"
+
+#: gparted.xml:1464(para)
+msgid ""
+"Specifying partition details is useful when performing actions such as "
+"create, resize, and move."
+msgstr "指定分区详细信息在执行创建、调整大小和移动等操作时非常有用。"
+
+#: gparted.xml:1471(title)
+msgid "Specifying Partition Size and Location"
+msgstr "指定分区大小和位置"
+
+#: gparted.xml:1477(para)
+msgid ""
+"Click-and-hold the arrow at either end of the graphic area. Drag the arrow "
+"left or right within the display range."
+msgstr "单击并按住图形区域两端的箭头。在显示范围内向左或向右拖动箭头。"
+
+#: gparted.xml:1483(para)
+msgid ""
+"Click-and-hold the middle of the partition in the graphic area. Drag the "
+"partition left or right within the display range."
+msgstr "单击并按住图形区域中的分区中间。在显示范围内向左或向右拖动分区。"
+
+#: gparted.xml:1495(guilabel)
+msgid "Free Space Preceding"
+msgstr "前空空间"
+
+#: gparted.xml:1500(guilabel)
+msgid "New Size"
+msgstr "新尺寸"
+
+#: gparted.xml:1505(guilabel)
+msgid "Free Space Following"
+msgstr "自由空间关注"
+
+#: gparted.xml:1489(para)
+msgid ""
+"Click the spin button arrows, or type numeric values to adjust the following "
+"fields: <placeholder-1/>"
+msgstr "单击旋转按钮箭头，或键入数值以调整以下字段：<placeholder-1/>"
+
+#: gparted.xml:1472(para)
+msgid ""
+"To specify the size and the location of the partition, use one or a "
+"combination of the following: <placeholder-1/>"
+msgstr "要指定分区的大小和位置，请使用以下一种或组合：<placeholder-1/>"
+
+#: gparted.xml:1513(para)
+msgid ""
+"The application refreshes both the graphic area and the numbers beside the "
+"three field labels."
+msgstr "应用程序刷新图形区域和三个字段标签旁边的数字。"
+
+#: gparted.xml:1521(title)
+msgid "Specifying Partition Alignment"
+msgstr "指定分区对齐"
+
+#: gparted.xml:1522(para)
+msgid ""
+"To specify the alignment of the partition, click the <guilabel>Align to</"
+"guilabel> arrow button, and select from the list."
+msgstr ""
+"要指定分区的对齐方式，请单击\"<guilabel>对齐到</guilabel>箭头\"按钮，然后从列"
+"表中选择。"
+
+#: gparted.xml:1528(para)
+msgid ""
+"Use <guilabel>MiB</guilabel> alignment for modern operating systems. This "
+"setting aligns partitions to start and end on precise mebibyte (1,048,576 "
+"byte) boundaries. MiB alignment provides enhanced performance when used with "
+"RAID systems and with Solid State Drives, such as USB flash drives."
+msgstr ""
+"对现代操作系统使用<guilabel>MiB</guilabel>对齐。此设置对齐分区以在精确的字节 "
+"（1，048，576 字节） 边界上开始和结束。当与 RAID 系统和固态驱动器（如 USB 闪"
+"存驱动器）配合时，MiB 对齐可提供增强的性能。"
+
+#: gparted.xml:1538(para)
+msgid ""
+"Use <guilabel>Cylinder</guilabel> alignment to maintain compatibility with "
+"operating systems released before the year 2000, such as DOS. This setting "
+"aligns partitions to start and end on disk cylinder boundaries."
+msgstr ""
+"使用<guilabel>气缸</guilabel>对齐来保持与 2000 年之前发布的操作系统（如 DOS）"
+"的兼容性。此设置对齐分区以在磁盘圆柱体边界上开始和结束。"
+
+#: gparted.xml:1545(para)
+msgid ""
+"The Cylinder/Head/Sector values reported by modern disk devices no longer "
+"have a direct physical relationship to the data stored on the disk device. "
+"Hence it is no longer valid to use this alignment setting to achieve "
+"enhanced performance."
+msgstr ""
+"现代磁盘设备报告的圆柱形/头/扇区值不再与磁盘设备上存储的数据有直接的物理关"
+"系。因此，使用此对齐设置来增强性能不再有效。"
+
+#: gparted.xml:1555(para)
+msgid ""
+"Use <guilabel>None</guilabel> only if you have an in-depth knowledge of disk "
+"structure, partition tables, and boot records. This setting places partition "
+"boundaries relative to the end of any immediately preceding partition on the "
+"disk device. This setting is not guaranteed to reserve or respect space "
+"required for boot records."
+msgstr ""
+"仅当对磁盘结构、分区表和引导记录有深入的了解时，才使用<guilabel>\"无</"
+"guilabel>\"。此设置相对于磁盘设备上任何紧邻前面的分区的末尾放置分区边界。此设"
+"置不保证保留或尊重引导记录所需的空间。"
+
+#: gparted.xml:1570(title)
+msgid "Specifying Partition Type"
+msgstr "指定分区类型"
+
+#: gparted.xml:1571(para)
+msgid ""
+"To specify the partition type, click the <guilabel>Create as</guilabel> "
+"arrow button, and select from the list."
+msgstr ""
+"要指定分区类型，请单击<guilabel>\"创建为</guilabel>箭头\"按钮，然后从列表中选"
+"择。"
+
+#: gparted.xml:1580(para)
+msgid "Maximum of 4 primary partitions."
+msgstr "最多 4 个主分区。"
+
+#: gparted.xml:1585(para)
+msgid "Maximum of 3 primary partitions, and 1 extended partition."
+msgstr "最多 3 个主分区和 1 个扩展分区。"
+
+#: gparted.xml:1588(para)
+msgid ""
+"The extended partition can contain multiple logical partitions. Some GNU/"
+"Linux distributions support accessing at most 15 partitions on a disk device."
+msgstr ""
+"扩展分区可以包含多个逻辑分区。某些 GNU/Linux 发行版支持在磁盘设备上最多访问 "
+"15 个分区。"
+
+#: gparted.xml:1596(para)
+msgid ""
+"Maximum size of a partition is 2 Tebibytes using a sector size of 512 bytes. "
+"The partition must also start within the first 2 Tebibytes of the disk "
+"device."
+msgstr ""
+"分区的最大大小是 2 TB，扇区大小为 512 字节。分区还必须在磁盘设备的前 2 TB 内"
+"启动。"
+
+#: gparted.xml:1576(para)
+msgid ""
+"The msdos partition table limits partitions as follows: <placeholder-1/>"
+msgstr "msdos 分区表限制分区，如下所示：<placeholder-1/>"
+
+#: gparted.xml:1606(para)
+msgid ""
+"Primary partitions provide better data recoverability because the partition "
+"boundaries are stored at known locations on the disk device."
+msgstr "主分区提供更好的数据可恢复性，因为分区边界存储在磁盘设备上的已知位置。"
+
+#: gparted.xml:1616(title)
+msgid "Specifying Partition Name"
+msgstr "指定分区名称"
+
+#: gparted.xml:1618(para)
+msgid ""
+"Naming of partitions is only available with GUID partition tables (GPT). "
+"Therefore the field is only enabled on disk devices partitioned using GPT."
+msgstr ""
+"分区命名仅适用于 GUID 分区表 （GPT）。因此，仅在使用 GPT 分区的磁盘设备上启用"
+"该字段。"
+
+#: gparted.xml:1627(para)
+msgid ""
+"To specify the partition name, type the name in the <guilabel>Partition "
+"name</guilabel> text box."
+msgstr ""
+"要指定分区名称，请在<guilabel>\"分区名称</guilabel>文本\"框中键入该名称。"
+
+#: gparted.xml:1635(title)
+msgid "Specifying Partition File System"
+msgstr "指定分区文件系统"
+
+#: gparted.xml:1636(para)
+msgid ""
+"To specify the type of file system for the partition, click the "
+"<guilabel>File System</guilabel> arrow button, and select from the list."
+msgstr ""
+"要指定分区的文件系统类型，请单击<guilabel>\"文件系统</guilabel>\"箭头按钮，然"
+"后从列表中选择。"
+
+#: gparted.xml:1645(para)
+msgid ""
+"<guimenuitem>ext2</guimenuitem>, <guimenuitem>ext3</guimenuitem> and "
+"<guimenuitem>ext4</guimenuitem> file systems can be used for installing GNU/"
+"Linux, and for data."
+msgstr ""
+"<guimenuitem>ext2，ext3</guimenuitem><guimenuitem></guimenuitem>和"
+"<guimenuitem>ext4</guimenuitem>文件系统可用于安装GNU/Linux和数据。"
+
+#: gparted.xml:1653(para)
+msgid ""
+"<guimenuitem>linux-swap</guimenuitem> can be used with GNU/Linux to increase "
+"the virtual memory of your computer."
+msgstr ""
+"<guimenuitem>linux交换</guimenuitem>可以与GNU/Linux一起使用，以增加计算机的虚"
+"拟内存。"
+
+#: gparted.xml:1660(para)
+msgid ""
+"<guimenuitem>fat16</guimenuitem> and <guimenuitem>fat32</guimenuitem> file "
+"systems can be used to share data between free and commercial operating "
+"systems."
+msgstr ""
+"<guimenuitem>fat16</guimenuitem>和<guimenuitem>fat32</guimenuitem>文件系统可"
+"用于在自由操作系统和商业操作系统之间共享数据。"
+
+#: gparted.xml:1668(para)
+msgid ""
+"<guimenuitem>cleared</guimenuitem> can be used to clear any existing file "
+"system signatures and ensure that the partition is recognised as empty."
+msgstr ""
+"<guimenuitem>清除</guimenuitem>可用于清除任何现有的文件系统签名，并确保分区被"
+"识别为空。"
+
+#: gparted.xml:1675(para)
+msgid ""
+"<guimenuitem>unformatted</guimenuitem> can be used to just create a "
+"partition without writing a file system."
+msgstr "<guimenuitem>未格式化</guimenuitem>可用于仅创建分区而不写入文件系统。"
+
+#: gparted.xml:1641(para)
+msgid "Examples of uses for some file systems are as follows: <placeholder-1/>"
+msgstr "某些文件系统的使用示例如下：<placeholder-1/>"
+
+#: gparted.xml:1687(title)
+msgid "Specifying Partition File System Label"
+msgstr "指定分区文件系统标签"
+
+#: gparted.xml:1688(para)
+msgid ""
+"To specify the file system label in the partition, also known as a volume "
+"label, type a label name in the <guilabel>Label</guilabel> text box."
+msgstr ""
+"要在分区中指定文件系统标签（也称为卷标签），请在<guilabel>Label</guilabel>文"
+"本框中键入标签名称。"
+
+#: gparted.xml:1694(para)
+msgid ""
+"File system labels can be used to help you remember what is stored in the "
+"partition."
+msgstr "文件系统标签可用于帮助您记住分区中存储的内容。"
+
+#: gparted.xml:1698(para)
+msgid ""
+"Unique labels can be used to mount file systems with the GNU/Linux operating "
+"system."
+msgstr "独特的标签可用于将文件系统与 GNU/Linux 操作系统一起安装。"
+
+#: gparted.xml:1713(title)
+msgid "Advanced Partition Actions"
+msgstr "高级分区操作"
+
+#: gparted.xml:1714(para)
+msgid ""
+"These actions will alter partitions on your disk device. These actions might "
+"modify the start or end boundaries of your existing partitions. These "
+"actions might cause operating systems to fail to boot."
+msgstr ""
+"这些操作将更改磁盘设备上的分区。这些操作可能会修改现有分区的起始或结束边界。"
+"这些操作可能导致操作系统无法启动。"
+
+#: gparted.xml:1723(title)
+msgid "Resizing a Partition"
+msgstr "调整分区大小"
+
+#: gparted.xml:1724(para)
+msgid ""
+"Resizing and moving a partition can be performed by a single "
+"<application>gparted</application> operation."
+msgstr ""
+"调整分区大小和移动分区可以由单个<application>gparted</application>操作执行。"
+
+#: gparted.xml:1737(para)
+msgid "Unmounted or inactive partitions enable the most resize options."
+msgstr "未安装或非活动分区启用最多调整大小的选项。"
+
+#: gparted.xml:1741(para)
+msgid ""
+"Support is available for online resize of some mounted or otherwise active "
+"partitions. However this support is often limited to grow only."
+msgstr ""
+"支持可以在线调整某些已装载或其他活动分区的大小。然而，这种支持往往仅限于增"
+"长。"
+
+#: gparted.xml:1749(para) gparted.xml:1929(para)
+msgid ""
+"Choose: <menuchoice><guimenu>Partition</guimenu><guimenuitem>Resize/Move</"
+"guimenuitem></menuchoice>. The application displays the <guilabel>Resize/"
+"Move <replaceable>/path-to-partition</replaceable></guilabel> dialog."
+msgstr ""
+"选择：<menuchoice><guimenu>分区</guimenu><guimenuitem>调整大小/移动</"
+"guimenuitem></menuchoice>。应用程序显示<guilabel>\"调整大小/移动"
+"<replaceable>/路径到分区\"</replaceable></guilabel>对话框。"
+
+#: gparted.xml:1758(para)
+msgid ""
+"Adjust the size of the partition. See <xref linkend=\"gparted-specify-"
+"partition-size-and-location\"/>."
+msgstr ""
+"调整分区的大小。请参阅<xref linkend=\"gparted-specify-partition-size-and-"
+"location\"></xref>。"
+
+#: gparted.xml:1763(para)
+msgid ""
+"If you do not want the start of an existing partition to move, then do not "
+"change the <guilabel>free space preceding</guilabel> value. If the partition "
+"is mounted or otherwise active, then you will not be able to change the "
+"<guilabel>free space preceding</guilabel> value."
+msgstr ""
+"如果不希望移动现有分区的开头，则不要更改值<guilabel>前面的可用空间</"
+"guilabel>。如果分区已装载或以其他方式处于活动状态，则您将无法更改<guilabel>值"
+"前面的可用空间</guilabel>。"
+
+#: gparted.xml:1774(para) gparted.xml:1944(para)
+msgid ""
+"Specify the alignment of the partition. See <xref linkend=\"gparted-specify-"
+"partition-alignment\"/>."
+msgstr ""
+"指定分区的对齐方式。请参阅<xref linkend=\"gparted-specify-partition-alignment"
+"\"></xref>。"
+
+#: gparted.xml:1780(para) gparted.xml:1950(para)
+msgid ""
+"Click <guibutton>Resize/Move</guibutton>. The application displays the "
+"resize/move partition operation in the <guilabel>Pending Operations</"
+"guilabel> pane."
+msgstr ""
+"单击<guibutton>\"调整大小/移动</guibutton>\"。应用程序在\"<guilabel>挂起的操"
+"作</guilabel>\"窗格中显示调整大小/移动分区操作。"
+
+#: gparted.xml:1787(para)
+msgid ""
+"Examine the operation that was added to the <guilabel>Pending Operations</"
+"guilabel> pane."
+msgstr "检查已添加到\"<guilabel>挂起的操作</guilabel>\"窗格中的操作。"
+
+#: gparted.xml:1796(para)
+msgid "A move step might take a long time to complete."
+msgstr "移动步骤可能需要很长时间才能完成。"
+
+#: gparted.xml:1802(para)
+msgid ""
+"If the partition is an operating system boot partition, then a move step "
+"might cause the operating system to fail to boot."
+msgstr "如果分区是操作系统引导分区，则移动步骤可能会导致操作系统无法启动。"
+
+#: gparted.xml:1791(para)
+msgid ""
+"If the operation involves a move step, then consider the following: "
+"<placeholder-1/>"
+msgstr "如果操作涉及移动步骤，请考虑以下事项：<placeholder-1/>"
+
+#: gparted.xml:1810(para)
+msgid ""
+"If you are not prepared to wait or to fix potential operating system boot "
+"problems, then you might want to undo the operation. See <xref linkend="
+"\"gparted-undo-last-operation\"/>."
+msgstr ""
+"如果不准备等待或修复潜在的操作系统启动问题，则可能需要撤消操作。请参阅<xref "
+"linkend=\"gparted-undo-last-operation\"></xref>。"
+
+#: gparted.xml:1728(para)
+msgid "To resize a partition: <placeholder-1/>"
+msgstr "要调整分区的大小：<placeholder-1/>"
+
+#: gparted.xml:1820(para)
+msgid ""
+"To grow or move a partition, unallocated space must be available adjacent to "
+"the partition."
+msgstr "要增大或移动分区，未分配的空间必须在分区旁边可用。"
+
+#: gparted.xml:1824(para)
+msgid ""
+"If you are growing a logical partition, then the unallocated space must be "
+"within the extended partition."
+msgstr "如果要增长逻辑分区，则未分配的空间必须位于扩展分区内。"
+
+#: gparted.xml:1828(para)
+msgid ""
+"If you are growing a primary partition, then the unallocated space must not "
+"be within the extended partition."
+msgstr "如果要种植主分区，则未分配的空间不得位于扩展分区内。"
+
+#: gparted.xml:1832(para)
+msgid ""
+"You can move unallocated space to be inside or outside of the extended "
+"partition by resizing the extended partition boundaries."
+msgstr "通过调整扩展分区边界大小，可以将未分配的空间移动到扩展分区内部或外部。"
+
+#: gparted.xml:1838(para)
+msgid ""
+"A LUKS encrypted partition and the file system within can only be resized "
+"when the encryption mapping is open."
+msgstr "仅当加密映射打开时，才能调整 LUKS 加密分区和 中的文件系统的大小。"
+
+#: gparted.xml:1849(para)
+msgid "Defragment the file system."
+msgstr "对文件系统进行碎片整理。"
+
+#: gparted.xml:1852(para)
+msgid ""
+"Booting into Safe Mode with the commercial operating system that uses NTFS "
+"can improve the ability to defragment the file system. To enter Safe Mode "
+"press <keycap>F8</keycap> while your computer is booting the operating "
+"system."
+msgstr ""
+"使用使用 NTFS 的商业操作系统引导到安全模式可以提高对文件系统进行碎片整理的能"
+"力。要进入安全模式，请在计算机启动操作系统时按<keycap>F8</keycap>。"
+
+#: gparted.xml:1863(para)
+msgid ""
+"Check the partition for errors with the following command: <screen><prompt>C:"
+"&gt; </prompt><command>chkdsk</command> /f /r</screen> Remember to reboot "
+"back into the commercial operating system that uses NTFS to allow the "
+"<command>chkdsk</command> command to execute."
+msgstr ""
+"使用以下命令检查分区是否存在错误<screen><prompt>：C：&gt; </prompt> "
+"<command>chkdsk</command> /f /r</screen>记住重新启动回使用 NTFS 以允许"
+"<command>chkdsk</command>命令执行的商业操作系统。"
+
+#: gparted.xml:1872(para)
+msgid ""
+"Temporarily disable the paging file. The paging file occupies a fixed "
+"location in the partition that the defragmentation process is unable to move."
+msgstr "暂时禁用分页文件。分页文件在分区中占用碎片整理进程无法移动的固定位置。"
+
+#: gparted.xml:1880(para)
+msgid ""
+"Temporarily move large files to another partition or disk device. Large "
+"files are defined as greater than a few hundred Megabytes (MB)."
+msgstr ""
+"临时将大文件移动到其他分区或磁盘设备。大型文件定义为大于几百兆字节 （MB）。"
+
+#: gparted.xml:1887(para)
+msgid ""
+"Ensure a proper shut down of the commercial operating system that uses NTFS "
+"before you resize the NTFS partition"
+msgstr "在调整 NTFS 分区大小之前，确保正确关闭使用 NTFS 的商业操作系统"
+
+#: gparted.xml:1894(para)
+msgid ""
+"Leave at least 10 percent unused space in the NTFS partition. If you shrink "
+"the partition too much, then the commercial operating system might have "
+"difficulty functioning properly."
+msgstr ""
+"在 NTFS 分区中保留至少 10% 的未使用空间。如果分区收缩过多，则商业操作系统可能"
+"无法正常运行。"
+
+#: gparted.xml:1902(para)
+msgid ""
+"Reboot twice into the commercial operating system that uses NTFS after "
+"shrinking the NTFS partition."
+msgstr "在收缩 NTFS 分区后，重新启动两次到使用 NTFS 的商业操作系统。"
+
+#: gparted.xml:1844(para)
+msgid ""
+"To improve the ability to shrink NTFS partitions, you might consider one or "
+"more of the following: <placeholder-1/>"
+msgstr "为了提高收缩 NTFS 分区的能力，可以考虑以下一项或多项：<placeholder-1/>"
+
+#: gparted.xml:1914(title)
+msgid "Moving a Partition"
+msgstr "移动分区"
+
+#: gparted.xml:1915(para)
+msgid ""
+"Moving and resizing a partition can be performed by a single "
+"<application>gparted</application> operation."
+msgstr ""
+"移动分区并调整分区大小，可以由单个<application>gparted</application>操作执"
+"行。"
+
+#: gparted.xml:1938(para)
+msgid ""
+"Adjust the location of the partition. See <xref linkend=\"gparted-specify-"
+"partition-size-and-location\"/>."
+msgstr ""
+"调整分区的位置。请参阅<xref linkend=\"gparted-specify-partition-size-and-"
+"location\"></xref>。"
+
+#: gparted.xml:1919(para)
+msgid "To move a partition: <placeholder-1/>"
+msgstr "要移动分区：<placeholder-1/>"
+
+#: gparted.xml:1959(para)
+msgid ""
+"If the partition is an operating system boot partition, then the operating "
+"system might not boot after the move operation is applied."
+msgstr "如果分区是操作系统启动分区，则操作系统在应用移动操作后可能无法启动。"
+
+#: gparted.xml:1964(para)
+msgid ""
+"If the operating system fails to boot, see <xref linkend=\"gparted-fix-"
+"operating-system-boot-problems\"/>."
+msgstr ""
+"如果操作系统无法启动，请参阅<xref linkend=\"gparted-fix-operating-system-"
+"boot-problems\"></xref>。"
+
+#: gparted.xml:1970(para)
+msgid ""
+"A LUKS encrypted partition can only be moved when the encryption mapping is "
+"closed."
+msgstr "仅当加密映射关闭时，才能移动 LUKS 加密分区。"
+
+#: gparted.xml:1979(title)
+msgid "Copying and Pasting a Partition"
+msgstr "复制和粘贴分区"
+
+#: gparted.xml:1990(para)
+msgid ""
+"Choose: <menuchoice><guimenu>Partition</guimenu><guimenuitem>Copy</"
+"guimenuitem></menuchoice>. The application marks the partition as the source "
+"partition."
+msgstr ""
+"选择：<menuchoice><guimenu>分区</guimenu><guimenuitem>复制</guimenuitem></"
+"menuchoice>。应用程序将分区标记为源分区。"
+
+#: gparted.xml:1980(para)
+msgid "To copy a partition: <placeholder-1/>"
+msgstr "要复制分区：<placeholder-1/>"
+
+#: gparted.xml:2003(para)
+msgid ""
+"Select an unallocated space on a disk device. See <xref linkend=\"gparted-"
+"select-unallocated\"/>."
+msgstr ""
+"选择磁盘设备上的未分配空间。请参阅<xref linkend=\"gparted-select-unallocated"
+"\"></xref>。"
+
+#: gparted.xml:2009(para)
+msgid ""
+"Choose: <menuchoice><guimenu>Partition</guimenu><guimenuitem>Paste</"
+"guimenuitem></menuchoice>. The application displays the <guilabel>Paste "
+"<replaceable>/path-to-partition</replaceable></guilabel> dialog."
+msgstr ""
+"选择：<menuchoice><guimenu>分区</guimenu><guimenuitem>粘贴</guimenuitem></"
+"menuchoice>。应用程序显示粘贴<guilabel><replaceable>/路径到分区</"
+"replaceable></guilabel>对话框。"
+
+#: gparted.xml:2018(para)
+msgid ""
+"If you want you can adjust the size and location of the partition. See <xref "
+"linkend=\"gparted-specify-partition-size-and-location\"/>."
+msgstr ""
+"如果需要，可以调整分区的大小和位置。请参阅<xref linkend=\"gparted-specify-"
+"partition-size-and-location\"></xref>。"
+
+#: gparted.xml:2024(para)
+msgid ""
+"If you want you can specify the alignment of partition. See <xref linkend="
+"\"gparted-specify-partition-alignment\"/>."
+msgstr ""
+"如果需要，可以指定分区的对齐方式。请参阅<xref linkend=\"gparted-specify-"
+"partition-alignment\"></xref>。"
+
+#: gparted.xml:2030(para)
+msgid ""
+"Click <guibutton>Paste</guibutton>. The application displays the copy "
+"partition operation in the <guilabel>Pending Operations</guilabel> pane."
+msgstr ""
+"单击<guibutton>\"粘贴</guibutton>\"。应用程序在\"<guilabel>挂起的操作</"
+"guilabel>\"窗格中显示复制分区操作。"
+
+#: gparted.xml:1999(para)
+msgid "To Paste a partition: <placeholder-1/>"
+msgstr "要粘贴分区：<placeholder-1/>"
+
+#: gparted.xml:2039(para)
+msgid ""
+"The copy of the partition has the same file system label and Universally "
+"Unique Identifier (UUID) as the source partition. This can cause a problem "
+"when booting, or when mount actions use the file system label or UUID to "
+"identify the partition."
+msgstr ""
+"分区的副本与源分区具有相同的文件系统标签和通用唯一标识符 （UUID）。这可能导致"
+"在引导时出现问题，或者装载操作时使用文件系统标签或 UUID 标识分区。"
+
+#: gparted.xml:2046(para)
+msgid ""
+"The problem is that the operating system will randomly select to mount "
+"either the source, or the copy of the partition. For example, on the first "
+"mount action the source partition might be mounted. On the next mount action "
+"the copy of the partition might be mounted. Over time this random nature of "
+"partition mounting might make files seem to mysteriously appear or disappear "
+"depending upon which partition is mounted. Random mounting of the source or "
+"the copy of the partition might also cause severe data corruption or loss."
+msgstr ""
+"问题是操作系统将随机选择装载源或分区副本。例如，在第一个装载操作中，可能会装"
+"载源分区。在下一个装载操作中，可能会装载分区的副本。随着时间的推移，分区安装"
+"的这种随机性质可能会使文件似乎神秘地出现或消失，具体取决于安装哪个分区。随机"
+"安装源或分区副本也可能导致严重的数据损坏或丢失。"
+
+#: gparted.xml:2067(para)
+msgid ""
+"Change the UUID of either the source, or the copy of the partition. See "
+"<xref linkend=\"gparted-changing-partition-uuid\"/>."
+msgstr ""
+"更改源或分区副本的 UUID。请参阅<xref linkend=\"gparted-changing-partition-"
+"uuid\"></xref>。"
+
+#: gparted.xml:2074(para)
+msgid ""
+"If the file system label is not blank then change the file system label of "
+"either the source, or the copy of the partition. See <xref linkend=\"gparted-"
+"setting-partition-file-system-label\"/>."
+msgstr ""
+"如果文件系统标签不为空，请更改源或分区副本的文件系统标签。请参阅<xref "
+"linkend=\"gparted-setting-partition-file-system-label\"></xref>。"
+
+#: gparted.xml:2063(para)
+msgid "After you have queued or applied the copy operation: <placeholder-1/>"
+msgstr "排队或应用复制操作后：<placeholder-1/>"
+
+#: gparted.xml:2085(para)
+msgid ""
+"After you have applied the copy operation, delete or reformat the source "
+"partition."
+msgstr "应用复制操作后，请删除或重新格式化源分区。"
+
+#: gparted.xml:2091(para)
+msgid ""
+"Use some other method to ensure that the source partition and the copy of "
+"the partition are not used on the same computer at the same time. For "
+"example, if the copy of the partition is on a separate drive then remove the "
+"drive from the computer."
+msgstr ""
+"使用其他方法确保源分区和分区副本不在同一台计算机上同时使用。例如，如果分区的"
+"副本位于单独的驱动器上，则从计算机中删除该驱动器。"
+
+#: gparted.xml:2058(para)
+msgid ""
+"To avoid the problem you are advised to do one of the following: "
+"<placeholder-1/>"
+msgstr "为了避免此问题，建议您执行以下操作之一：<placeholder-1/>"
+
+#: gparted.xml:2103(para)
+msgid ""
+"The file system within a LUKS encrypted partition can only be copied when "
+"the encryption mapping is open."
+msgstr "仅当加密映射打开时，才能复制 LUKS 加密分区中的文件系统。"
+
+#: gparted.xml:2109(para)
+msgid ""
+"To prevent unintended decryption of data, pasting into unallocated space "
+"creating a new partition is not permitted. However a LUKS encrypted "
+"partition can be pasted into an existing open LUKS encrypted partition "
+"maintaining an encrypted, or pasted into a plain partition making an "
+"unencrypted copy of the file system."
+msgstr ""
+"为了防止意外解密数据，不允许粘贴到创建新分区的未分配空间。但是，可以将 LUKS "
+"加密分区粘贴到维护加密的现有打开的 LUKS 加密分区中，也可以粘贴到纯分区中，从"
+"而创建文件系统的未加密副本。"
+
+#: gparted.xml:2122(title)
+msgid "Managing Partition Flags"
+msgstr "管理分区标志"
+
+#: gparted.xml:2133(para)
+msgid ""
+"Choose: <menuchoice><guimenu>Partition</guimenu><guimenuitem>Manage Flags</"
+"guimenuitem></menuchoice>. The application opens a <guilabel>Manage flags on "
+"<replaceable>/path-to-partition</replaceable></guilabel> dialog."
+msgstr ""
+"选择：<menuchoice><guimenu>分区</guimenu><guimenuitem>管理标志</"
+"guimenuitem></menuchoice>。应用程序<guilabel>在<replaceable>/path 到分区</"
+"replaceable>对话框上打开\"管理\"标志</guilabel>。"
+
+#: gparted.xml:2142(para)
+msgid ""
+"To enable a flag, select the check box beside the flag. The application "
+"writes the enabled flag to the partition and refreshes the <guilabel>Manage "
+"flags on <replaceable>/path-to-partition</replaceable></guilabel> dialog."
+msgstr ""
+"要启用标志，请选择标志旁边的复选框。应用程序将启用的标志写入分区，并在"
+"<guilabel><replaceable>/path 到分区</replaceable>对话框上刷新\"管理\"标志</"
+"guilabel>。"
+
+#: gparted.xml:2150(para)
+msgid ""
+"To disable a flag, deselect the check box beside the flag. The application "
+"writes the disabled flag to the partition and refreshes the <guilabel>Manage "
+"flags on <replaceable>/path-to-partition</replaceable></guilabel> dialog."
+msgstr ""
+"要禁用标志，请取消选中标志旁边的复选框。应用程序将禁用的标志写入分区，并刷新"
+"<guilabel><replaceable>/路径到分区</replaceable>对话框上的\"管理\"标志</"
+"guilabel>。"
+
+#: gparted.xml:2160(para)
+msgid ""
+"<guimenuitem>Manage Flags</guimenuitem> is only available for disks with "
+"partition tables. Disks with <guimenuitem>loop</guimenuitem> or "
+"<guimenuitem>none</guimenuitem> partition tables do not contain a partition "
+"table, and do not have partition flags."
+msgstr ""
+"<guimenuitem>管理标志</guimenuitem>仅适用于具有分区表的磁盘。具有"
+"<guimenuitem>循环</guimenuitem>或<guimenuitem>无</guimenuitem>分区表的磁盘不"
+"包含分区表，并且没有分区标志。"
+
+#: gparted.xml:2168(para)
+msgid ""
+"See <xref linkend=\"gparted-view-device-information\"/> to view the type of "
+"partition table."
+msgstr ""
+"请参阅<xref linkend=\"gparted-view-device-information\"></xref>查看分区表的类"
+"型。"
+
+#: gparted.xml:2123(para)
+msgid "To manage partition flags: <placeholder-1/>"
+msgstr "要管理分区标志：<placeholder-1/>"
+
+#: gparted.xml:2176(para)
+msgid ""
+"To close the <guilabel>Manage flags on <replaceable>/path-to-partition</"
+"replaceable></guilabel> dialog, click <guibutton>Close</guibutton>."
+msgstr ""
+"要关闭<guilabel><replaceable>/路径到分区</replaceable>对话框上的\"管理\"标志"
+"</guilabel>，请单击\"<guibutton>关闭</guibutton>\"。"
+
+#: gparted.xml:2187(para) gparted.xml:2277(para)
+msgid ""
+"Boot is used by some commercial operating system boot loaders. The boot flag "
+"indicates the partition is active or bootable. Only one partition on a disk "
+"device can be active."
+msgstr ""
+"引导由某些商业操作系统引导加载程序使用。引导标志指示分区处于活动状态或可启"
+"动。磁盘设备上的一个分区只能处于活动状态。"
+
+#: gparted.xml:2196(para)
+msgid ""
+"Diag is used to indicate the partition is used for diagnostics / recovery."
+msgstr "诊断用于指示分区用于诊断/恢复。"
+
+#: gparted.xml:2202(para)
+msgid ""
+"ESP indicates an EFI System Partition used to boot computers with the "
+"Unified Extensible Firmware Interface (UEFI) class 2 that includes "
+"compatibility support for BIOS functions including the MBR partition "
+"structure."
+msgstr ""
+"ESP 表示用于启动具有统一可扩展固件接口 （UEFI） 类 2 的计算机的 EFI 系统分"
+"区，该接口包括对 BIOS 功能（包括 MBR 分区结构）的兼容性支持。"
+
+#: gparted.xml:2211(para) gparted.xml:2300(para)
+msgid ""
+"Hidden is used by some commercial operating systems. The hidden flag makes "
+"the partition invisible to the operating system."
+msgstr "隐藏被一些商业操作系统使用。隐藏标志使分区对操作系统不可见。"
+
+#: gparted.xml:2218(para) gparted.xml:2313(para)
+msgid "Irst identifies an Intel Rapid Start Technology partition."
+msgstr "Irst 标识英特尔快速启动技术分区。"
+
+#: gparted.xml:2224(para)
+msgid ""
+"LBA is used by some commercial operating system boot loaders. The LBA flag "
+"indicates the partition should be accessed using Logical Block Addressing "
+"(LBA), instead of Cylinder-Head-Sector (CHS) addressing."
+msgstr ""
+"LBA 由某些商业操作系统引导加载程序使用。LBA 标志指示应使用逻辑块寻址 （LBA） "
+"而不是气缸头扇区 （CHS） 寻址访问分区。"
+
+#: gparted.xml:2233(para)
+msgid ""
+"LVM is used to indicate the partition is used by a Logical Volume Manager "
+"(LVM)."
+msgstr "LVM 用于指示分区由逻辑卷管理器 （LVM） 使用。"
+
+#: gparted.xml:2239(para)
+msgid ""
+"Palo is used by the Precision Architecture - Reduced Instruction Set "
+"Computing (PA-RISC) boot loader, palo."
+msgstr "帕洛由精密架构 - 减少指令集计算 （PA-RISC） 引导加载程序使用， 帕洛."
+
+#: gparted.xml:2246(para) gparted.xml:2343(para)
+msgid ""
+"Prep is used to indicate the boot partition on Power Performance Computing "
+"(PowerPC) hardware."
+msgstr "准备用于指示电源性能计算 （PowerPC） 硬件上的启动分区。"
+
+#: gparted.xml:2252(para)
+msgid ""
+"RAID is used to indicate the partition is used in a Redundant Array of "
+"Inexpensive Disks (RAID)."
+msgstr "RAID 用于指示分区用于廉价磁盘的冗余阵列 （RAID）。"
+
+#: gparted.xml:2182(para)
+msgid ""
+"A description of flags in an msdos partition table follows: <placeholder-1/>"
+msgstr "msdos 分区表中的标志描述如下：<placeholder-1/>"
+
+#: gparted.xml:2265(para)
+msgid "Atvrecv is used to indicate an Apple TV Recovery partition."
+msgstr "Atvrecv 用于指示 Apple TV 恢复分区。"
+
+#: gparted.xml:2271(para)
+msgid ""
+"BIOS_GRUB indicates a BIOS boot partition often used by the GRUB 2 boot "
+"loader."
+msgstr "BIOS_GRUB指示 GRUB 2 引导加载程序经常使用的 BIOS 引导分区。"
+
+#: gparted.xml:2286(para)
+msgid "Diag indicates the partition is used for diagnostics or recovery."
+msgstr "诊断表示分区用于诊断或恢复。"
+
+#: gparted.xml:2292(para)
+msgid ""
+"ESP indicates an EFI System Partition used to boot computers with Extensible "
+"Firmware Interface (EFI) class 1 or Unified Extensible Firmware Interface "
+"(UEFI) class 2 or UEFI class 3."
+msgstr ""
+"ESP 表示用于启动具有可扩展固件接口 （EFI） 类 1 或统一可扩展固件接口 "
+"（UEFI） 类 2 或 UEFI 类 3 的计算机的 EFI 系统分区。"
+
+#: gparted.xml:2307(para)
+msgid "HP-service is used to indicate a Hewlett Packard service partition."
+msgstr "HP 服务用于指示惠普服务分区。"
+
+#: gparted.xml:2319(para)
+msgid ""
+"Legacy_boot is used by some special purpose software to indicate the "
+"partition might be bootable."
+msgstr "Legacy_boot被一些特殊用途的软件用于指示分区可能是可启动的。"
+
+#: gparted.xml:2325(para)
+msgid "LVM indicates the partition is used by a Logical Volume Manager (LVM)."
+msgstr "LVM 表示分区由逻辑卷管理器 （LVM） 使用。"
+
+#: gparted.xml:2331(para)
+msgid ""
+"Msftdata identifies partitions that contain Microsoft file systems such as "
+"NTFS or FAT."
+msgstr "Msftdata 标识包含 Microsoft 文件系统（如 NTFS 或 FAT）的分区。"
+
+#: gparted.xml:2337(para)
+msgid "Msftres is used to indicate a Microsoft Reserved partition."
+msgstr "Msftres 用于指示 Microsoft 保留分区。"
+
+#: gparted.xml:2349(para)
+msgid ""
+"RAID indicates the partition is used in a Redundant Array of Inexpensive "
+"Disks (RAID)."
+msgstr "RAID 指示分区用于廉价磁盘的冗余阵列 （RAID）。"
+
+#: gparted.xml:2261(para)
+msgid ""
+"A description of flags in a gpt partition table follows: <placeholder-1/>"
+msgstr "以下是 gpt 分区表中的标志的说明：<placeholder-1/>"
+
+#: gparted.xml:2361(title)
+msgid "Checking a Partition"
+msgstr "检查分区"
+
+#: gparted.xml:2362(para)
+msgid ""
+"Checking a partition will attempt to find and fix problems in the file "
+"system. Checking a partition will attempt to grow the file system to fill "
+"the partition."
+msgstr ""
+"检查分区将尝试查找并修复文件系统中的问题。检查分区将尝试使文件系统增大以填充"
+"分区。"
+
+#: gparted.xml:2378(para)
+msgid ""
+"Choose: <menuchoice><guimenu>Partition</guimenu><guimenuitem>Check</"
+"guimenuitem></menuchoice>. The application displays the check partition "
+"operation in the <guilabel>Pending Operations</guilabel> pane."
+msgstr ""
+"选择：<menuchoice><guimenu>分区</guimenu><guimenuitem>检查</guimenuitem></"
+"menuchoice>。应用程序在\"<guilabel>挂起的操作</guilabel>\"窗格中显示检查分区"
+"操作。"
+
+#: gparted.xml:2368(para)
+msgid "To check a partition: <placeholder-1/>"
+msgstr "要检查分区：<placeholder-1/>"
+
+#: gparted.xml:2394(title)
+msgid "Working with the Operation Queue"
+msgstr "使用操作队列"
+
+#: gparted.xml:2398(title)
+msgid "Undoing Last Operation"
+msgstr "撤消上次操作"
+
+#: gparted.xml:2399(para)
+msgid ""
+"To undo the last operation in the operation queue, choose: "
+"<menuchoice><guimenu>Edit</guimenu><guimenuitem>Undo Last Operation</"
+"guimenuitem></menuchoice>. The application removes the last operation from "
+"the queue displayed in the <guilabel>Pending Operations</guilabel> pane. If "
+"there are no operations remaining in the queue, the application closes the "
+"<guilabel>Pending Operations</guilabel> pane."
+msgstr ""
+"要撤消操作队列中的最后一个操作，请选择：<menuchoice><guimenu>编辑</"
+"guimenu><guimenuitem>撤消上次操作</guimenuitem></menuchoice>。应用程序从"
+"\"<guilabel>挂起的操作</guilabel>\"窗格中显示的队列中删除最后一个操作。如果队"
+"列中未剩下任何操作，则应用程序将关闭<guilabel>\"挂起的操作\"</guilabel>窗格。"
+
+#: gparted.xml:2412(title)
+msgid "Clearing All Operations"
+msgstr "清除所有操作"
+
+#: gparted.xml:2413(para)
+msgid ""
+"To clear all operations in the operation queue, choose: "
+"<menuchoice><guimenu>Edit</guimenu><guimenuitem>Clear All Operations</"
+"guimenuitem></menuchoice>. The application removes all operations from the "
+"queue and closes the <guilabel>Pending Operations</guilabel> pane."
+msgstr ""
+"要清除操作队列中的所有操作，请选择：<menuchoice><guimenu>编辑</"
+"guimenu><guimenuitem>清除所有操作</guimenuitem></menuchoice>。应用程序从队列"
+"中删除所有操作并关闭<guilabel>\"挂起的操作</guilabel>\"窗格。"
+
+#: gparted.xml:2423(title)
+msgid "Applying All Operations"
+msgstr "应用所有操作"
+
+#: gparted.xml:2428(para)
+msgid ""
+"Choose: <menuchoice><guimenu>Edit</guimenu><guimenuitem>Apply All "
+"Operations</guimenuitem></menuchoice>. The application displays an "
+"<guilabel>Apply operations to device</guilabel> dialog."
+msgstr ""
+"选择：<menuchoice><guimenu>编辑</guimenu><guimenuitem>应用所有操作</"
+"guimenuitem></menuchoice>。应用程序显示\"<guilabel>应用于设备\"</guilabel>对"
+"话框。"
+
+#: gparted.xml:2435(para)
+msgid ""
+"Editing partitions has the potential to cause LOSS of DATA. You are advised "
+"to backup your data before applying your partition editing operations."
+msgstr "编辑分区有可能导致数据丢失。建议您在应用分区编辑操作之前备份数据。"
+
+#: gparted.xml:2453(para)
+msgid ""
+"To view more information, click <guibutton>Details</guibutton>. The "
+"application displays more details about operations."
+msgstr ""
+"要查看详细信息，请单击\"<guibutton>详细信息</guibutton>\"。应用程序显示有关操"
+"作的更多详细信息。"
+
+#: gparted.xml:2458(para)
+msgid ""
+"To view more information about the steps in each operation, click the arrow "
+"button beside each step."
+msgstr "要查看有关每个操作中的步骤的详细信息，请单击每个步骤旁边的箭头按钮。"
+
+#: gparted.xml:2464(para)
+msgid ""
+"To stop the operations while they are executing, click <guibutton>Cancel</"
+"guibutton>. The application displays a disabled <guibutton>Force Cancel (5)</"
+"guibutton> button and counts down for 5 seconds."
+msgstr ""
+"要在执行操作时停止操作，请单击\"<guibutton>取消</guibutton>\"。应用程序显示禁"
+"用<guibutton>的强制取消 （5）</guibutton>按钮，并倒计时 5 秒。"
+
+#: gparted.xml:2472(para)
+msgid ""
+"<guibutton>Cancel</guibutton> instructs the application to stop or roll back "
+"operations as necessary to ensure data integrity."
+msgstr ""
+"<guibutton>取消</guibutton>指示应用程序根据需要停止或回滚操作，以确保数据完整"
+"性。"
+
+#: gparted.xml:2478(para)
+msgid ""
+"If operations have not halted after 5 seconds the application enables the "
+"<guibutton>Force Cancel</guibutton> button."
+msgstr ""
+"如果操作在 5 秒后未停止，则应用程序启用<guibutton>强制取消</guibutton>按钮。"
+
+#: gparted.xml:2483(para)
+msgid ""
+"To force the operations to stop, click <guibutton>Force Cancel</guibutton>. "
+"The application displays a warning dialog."
+msgstr ""
+"要强制停止操作，请单击<guibutton>\"强制取消</guibutton>\"。应用程序将显示一个"
+"警告对话框。"
+
+#: gparted.xml:2488(para)
+msgid ""
+"Click <guibutton>Continue Operation</guibutton> to allow the roll back "
+"operations to complete, or click <guibutton>Cancel Operation</guibutton> to "
+"cancel the roll back operations."
+msgstr ""
+"单击\"<guibutton>继续操作</guibutton>\"以允许回滚操作完成，或单击"
+"\"<guibutton>取消操作</guibutton>\"以取消回滚操作。"
+
+#: gparted.xml:2495(para)
+msgid ""
+"<guibutton>Cancel Operation</guibutton> terminates the safe roll back of "
+"operations and might cause SEVERE file system damage and data loss. You are "
+"advised to click <guibutton>Continue Operation</guibutton> to allow the roll "
+"back to complete."
+msgstr ""
+"<guibutton>取消操作</guibutton>将终止操作的安全回滚，并可能导致 SEVERE 文件系"
+"统损坏和数据丢失。建议您单击\"<guibutton>继续操作</guibutton>\"以允许回滚完"
+"成。"
+
+#: gparted.xml:2504(para)
+msgid ""
+"When the application finishes performing operations, the application "
+"displays the <guibutton>Save Details</guibutton> button and the "
+"<guibutton>Close</guibutton> button."
+msgstr ""
+"当应用程序完成执行操作时，应用程序将显示<guibutton>\"保存详细信息</guibutton>"
+"\"按钮和<guibutton>\"关闭</guibutton>\"按钮。"
+
+#: gparted.xml:2443(para)
+msgid ""
+"Click <guibutton>Apply</guibutton>. The application displays an "
+"<guilabel>Applying pending operations</guilabel> dialog. The application "
+"applies each pending operation in the order you created the operations. The "
+"application displays a status update when each operation is completed. "
+"<placeholder-1/>"
+msgstr ""
+"单击<guibutton>\"应用</guibutton>\"。应用程序显示<guilabel>\"应用挂起的操作</"
+"guilabel>\"对话框。应用程序按您创建操作的顺序应用每个挂起的操作。每个操作完成"
+"后，应用程序都会显示状态更新。<placeholder-1/>"
+
+#: gparted.xml:2522(para)
+msgid ""
+"If you want to change the default file name, then type a file name in the "
+"<guilabel>Name</guilabel> text box."
+msgstr ""
+"如果要更改默认文件名，则在<guilabel>\"名称</guilabel>\"文本框中键入文件名。"
+
+#: gparted.xml:2529(para)
+msgid ""
+"If you want to save the file in a folder different than /root, Click "
+"<guibutton>Browse for other folders</guibutton>. The application displays a "
+"file system navigator."
+msgstr ""
+"如果要将文件保存在与 /root 不同的文件夹中，请单击\"<guibutton>浏览\"其他文件"
+"夹</guibutton>。应用程序显示文件系统导航器。"
+
+#: gparted.xml:2535(para)
+msgid "Use the file system navigator to select a folder."
+msgstr "使用文件系统导航器选择文件夹。"
+
+#: gparted.xml:2540(para)
+msgid ""
+"Click <guibutton>Save</guibutton> to save the file. The application saves "
+"the details file."
+msgstr ""
+"单击<guibutton>\"保存</guibutton>\"以保存文件。应用程序保存详细信息文件。"
+
+#: gparted.xml:2515(para)
+msgid ""
+"If you want to save the details from applying all operations, then click "
+"<guibutton>Save Details</guibutton>. The application displays a "
+"<guilabel>Save Details</guilabel> dialog. <placeholder-1/>"
+msgstr ""
+"如果要从应用所有操作中保存详细信息，请单击\"<guibutton>保存详细信息</"
+"guibutton>\"。应用程序显示<guilabel>\"保存详细信息</guilabel>\"对话框。"
+"<placeholder-1/>"
+
+#: gparted.xml:2548(para)
+msgid ""
+"If you use <application>gparted</application> from a Live CD, then the root "
+"file system exists in RAM memory. All files saved to the Live CD root file "
+"system will be lost when you shut down the computer."
+msgstr ""
+"如果使用来自实时 CD 的<application>gparted，</application>则根文件系统存在于 "
+"RAM 内存中。关闭计算机后，保存到实时 CD 根文件系统的所有文件都将丢失。"
+
+#: gparted.xml:2554(para)
+msgid ""
+"If you saved the gparted details to the Live CD root file system, then you "
+"need to copy the file to more permanent storage. Examples of more permanent "
+"storage are a hard disk drive or a USB flash memory drive."
+msgstr ""
+"如果将 gparted 详细信息保存到 Live CD 根文件系统，则需要将文件复制到更永久的"
+"存储。更永久存储的示例包括硬盘驱动器或 USB 闪存驱动器。"
+
+#: gparted.xml:2563(para)
+msgid ""
+"Click <guibutton>Close</guibutton>. The application closes the "
+"<guilabel>Applying pending operations</guilabel> dialog. The application "
+"rescans all the disk devices and refreshes the device partition layout in "
+"the <application>gparted</application> window."
+msgstr ""
+"单击<guibutton>\"关闭</guibutton>\"。应用程序将关闭<guilabel>\"应用挂起的操作"
+"</guilabel>\"对话框。应用程序重新扫描所有磁盘设备，并在<application>gparted</"
+"application>窗口中刷新设备分区布局。"
+
+#: gparted.xml:2424(para)
+msgid "To apply all operations: <placeholder-1/>"
+msgstr "要应用所有操作：<placeholder-1/>"
+
+#: gparted.xml:2582(title)
+msgid "Acquiring GParted on Live CD"
+msgstr "在实时 CD 上获取 Gparted"
+
+#: gparted.xml:2583(para)
+msgid ""
+"A Live CD is a Compact Disc that contains a bootable operating system. A "
+"Live CD enables you to boot your computer from the CD."
+msgstr "实时 CD 是包含可引导操作系统的光盘。使用实时 CD 可以从 CD 启动计算机。"
+
+#: gparted.xml:2592(para)
+msgid ""
+"You can edit all of your partitions because the partitions are not mounted."
+msgstr "您可以编辑所有分区，因为分区未装载。"
+
+#: gparted.xml:2598(para)
+msgid ""
+"You can edit partitions on computers that do not have a bootable operating "
+"system."
+msgstr "您可以在没有可引导操作系统的计算机上编辑分区。"
+
+#: gparted.xml:2587(para)
+msgid ""
+"Using <application>gparted</application> from a Live CD has the following "
+"advantages: <placeholder-1/>"
+msgstr ""
+"使用从实时 CD<application>中分离</application>具有以下优点：<placeholder-1/>"
+
+#: gparted.xml:2605(para)
+msgid ""
+"The <application>gparted</application> application is available on many Live "
+"CD distributions."
+msgstr "<application>Gparted</application>应用程序在许多实时 CD 发行版上可用。"
+
+#: gparted.xml:2614(para)
+msgid ""
+"GParted Live CD <ulink type=\"http\" url=\"https://gparted.org/livecd.php\"/>"
+msgstr ""
+"GParted 生活 CD<ulink type=\"http\" url=\"https://gparted.org/livecd.php\"></"
+"ulink>"
+
+#: gparted.xml:2620(para)
+msgid ""
+"System Rescue CD <ulink type=\"http\" url=\"http://www.system-rescue-cd.org"
+"\"/>"
+msgstr ""
+"系统救援 CD<ulink type=\"http\" url=\"http://www.system-rescue-cd.org\"></"
+"ulink>"
+
+#: gparted.xml:2609(para)
+msgid ""
+"You can download a Live CD image containing <application>gparted</"
+"application> from the following web sites: <placeholder-1/>"
+msgstr ""
+"可以从以下网站下载包含<application>gparted</application>的实时 CD 映像："
+"<placeholder-1/>"
+
+#: gparted.xml:2628(para)
+msgid "The GParted Live CD image can be written to a USB flash drive."
+msgstr "GParted 实时 CD 映像可以写入 USB 闪存驱动器。"
+
+#: gparted.xml:2631(para)
+msgid ""
+"If your computer can boot from Universal Serial Bus (USB) then you might "
+"prefer to boot and use <application>gparted</application> from a USB flash "
+"drive."
+msgstr ""
+"如果您的计算机可以从通用串行总线 （USB） 启动，那么您可能更喜欢从 USB 闪存驱"
+"动器启动和使用<application>gparted</application>。"
+
+#: gparted.xml:2638(para)
+msgid ""
+"To avoid wasting a blank CD when burning a CD image file, use the following "
+"tips:"
+msgstr "为避免在刻录 CD 映像文件时浪费空白 CD，请使用以下提示："
+
+#: gparted.xml:2644(para)
+msgid ""
+"Ensure the checksum of the downloaded file matches the checksum posted on "
+"the download page."
+msgstr "确保下载文件的校验和与在下载页上发布的校验和匹配。"
+
+#: gparted.xml:2650(para)
+msgid ""
+"Be sure to burn the .iso file as an image to the blank CD. If you burn the ."
+"iso file as data to a blank CD then the CD will not boot in your computer."
+msgstr ""
+"请确保将 .iso 文件作为映像刻录到空白 CD。如果将 .iso 文件作为数据刻录到空白 "
+"CD，则 CD 将不会在计算机中启动。"
+
+#: gparted.xml:2662(title)
+msgid "Fixing Operating System Boot Problems"
+msgstr "修复操作系统启动问题"
+
+#: gparted.xml:2668(para)
+msgid "Delete a partition."
+msgstr "删除分区。"
+
+#: gparted.xml:2673(para)
+msgid "Move a partition."
+msgstr "移动分区。"
+
+#: gparted.xml:2678(para)
+msgid ""
+"Install another operating system and overwrite the Master Boot Record (MBR)."
+msgstr "安装其他操作系统并覆盖主引导记录 （MBR）。"
+
+#: gparted.xml:2663(para)
+msgid ""
+"Your computer might fail to boot an operating system when you perform one of "
+"the following actions: <placeholder-1/>"
+msgstr "执行以下操作之一时，计算机可能无法启动操作系统：<placeholder-1/>"
+
+#: gparted.xml:2685(para)
+msgid "Fortunately the failure to boot can be often be fixed."
+msgstr "幸运的是，启动失败经常被修复。"
+
+#: gparted.xml:2688(para)
+msgid ""
+"If your computer uses the GRUB boot loader, see <xref linkend=\"gparted-fix-"
+"grub-boot-problem\"/> to restore the ability to boot."
+msgstr ""
+"如果您的计算机使用 GRUB 引导加载程序，<xref linkend=\"gparted-fix-grub-boot-"
+"problem\"></xref>请参阅还原引导功能。"
+
+#: gparted.xml:2693(para)
+msgid ""
+"If your computer does not use GRUB then you are advised to consult "
+"documentation for your boot loader to learn how to fix the problem. You "
+"might consult the <ulink type=\"http\" url=\"https://gparted.org/faq.php"
+"\">GParted FAQ</ulink>, or the <ulink type=\"http\" url=\"https://gparted."
+"org/forum.php\">GParted forum</ulink>. You might also search the Internet to "
+"learn how other people have solved similar problems."
+msgstr ""
+"如果您的计算机不使用 GRUB，则建议您查阅引导加载程序的文档，了解如何解决问题。"
+"你可以查阅<ulink type=\"http\" url=\"https://gparted.org/faq.php\">\"GParted"
+"常见问题解答</ulink>\"或<ulink type=\"http\" url=\"https://gparted.org/forum."
+"php\">\"GParted论坛</ulink>\"。您也可以搜索互联网，了解其他人如何解决类似的问"
+"题。"
+
+#: gparted.xml:2707(title)
+msgid "Fixing GRUB boot problem"
+msgstr "修复 GRUB 启动问题"
+
+#: gparted.xml:2708(para)
+msgid ""
+"The Grand Unified Boot loader (GRUB) is used by many GNU/Linux "
+"distributions. To fix GRUB boot problems you start by determining which "
+"major version of GRUB was used."
+msgstr ""
+"大统一引导加载程序 （GRUB） 被许多 GNU/Linux 发行版使用。要修复 GRUB 引导问"
+"题，请首先确定使用了 GRUB 的主要版本。"
+
+#: gparted.xml:2717(para)
+msgid ""
+"GRUB, also known as GRUB 2, covers versions 1.98 and higher. GRUB 2 works "
+"with both GUID partition tables (GPT) and msdos partition tables."
+msgstr ""
+"GRUB，也称为 GRUB 2，涵盖版本 1.98 及更高版本。GRUB 2 适用于 GUID 分区表 "
+"（GPT） 和 msdos 分区表。"
+
+#: gparted.xml:2724(para)
+msgid ""
+"GRUB Legacy, traditionally known as GRUB, covers versions 0.9x and earlier. "
+"GRUB Legacy works with msdos partition tables only."
+msgstr ""
+"GRUB 遗产，传统上称为 GRUB，涵盖版本 0.9x 及更早版本。GRUB 旧版仅适用于 "
+"msdos 分区表。"
+
+#: gparted.xml:2713(para)
+msgid "There are two major versions of GRUB: <placeholder-1/>"
+msgstr "GRUB 有两个主要版本：<placeholder-1/>"
+
+#: gparted.xml:2737(para)
+msgid "CentOS 7 and higher"
+msgstr "CentOS 7 及更高版本"
+
+#: gparted.xml:2742(para)
+msgid "Debian 6 (Squeeze) and higher"
+msgstr "Debian 6 （挤压） 和更高"
+
+#: gparted.xml:2747(para)
+msgid "Fedora 16 (Verne) and higher"
+msgstr "费多拉 16 （凡尔纳） 及以上"
+
+#: gparted.xml:2752(para)
+msgid "openSUSE 12.2 and higher"
+msgstr "打开SUSE 12.2及以上"
+
+#: gparted.xml:2757(para)
+msgid "Ubuntu 9.10 (Karmic Koala) and higher"
+msgstr "乌本图 9.10 （卡米奇考拉） 及更高"
+
+#: gparted.xml:2732(para)
+msgid ""
+"GRUB 2 is used as the default boot loader in the following GNU/Linux "
+"distributions: <placeholder-1/>"
+msgstr "GRUB 2 用作以下 GNU/Linux 发行版中的默认引导加载程序：<placeholder-1/>"
+
+#: gparted.xml:2763(para)
+msgid ""
+"If you are unsure whether your computer uses GRUB 2 or GRUB Legacy, you "
+"might try searching for the answer on the Internet."
+msgstr ""
+"如果您不确定您的计算机是使用 GRUB 2 还是 GRUB 旧版，可以尝试在互联网上搜索答"
+"案。"
+
+#: gparted.xml:2770(title)
+msgid "Restoring GRUB 2 Boot Loader"
+msgstr "还原 GRUB 2 引导加载程序"
+
+#: gparted.xml:2775(para)
+msgid ""
+"Boot from Live media such as GParted Live or your GNU/Linux distribution "
+"image. Open a terminal window."
+msgstr ""
+"从实时媒体（如 GParted Live 或 GNU/Linux 分发映像）启动。打开终端窗口。"
+
+#: gparted.xml:2781(para)
+msgid ""
+"Determine which partition contains the / file system for your GNU/Linux "
+"distribution."
+msgstr "确定哪个分区包含 GNU/Linux 分发的 / 文件系统。"
+
+#: gparted.xml:2785(para)
+msgid ""
+"Use GParted to list the partitions on your disk device. Look for a partition "
+"that contains your GNU/Linux / file system. This Linux partition will likely "
+"use a file system such as ext2, ext3, ext4, or btrfs."
+msgstr ""
+"使用\"选择\"列出磁盘设备上的分区。查找包含 GNU/Linux /文件系统的分区。此 "
+"Linux 分区可能会使用文件系统，如 ext2、ext3、ext4 或 btrfs。"
+
+#: gparted.xml:2792(para)
+msgid ""
+"If the / partition is on LVM then the Logical Volume Manager must be active. "
+"LVM can be started with the command: <screen><prompt># </"
+"prompt><command>vgchange</command> -a y</screen>"
+msgstr ""
+"如果 /分区位于 LVM 上，则逻辑卷管理器必须处于活动状态。LVM 可以使用以下命令启"
+"动： <screen> <prompt>= </prompt> <command>vgchange</command> -a y</screen>"
+
+#: gparted.xml:2798(para)
+msgid ""
+"With LVM, the equivalent of a disk partition is a Logical Volume. Logical "
+"Volumes can be listed with the command: <screen><prompt># </"
+"prompt><command>lvscan</command></screen>"
+msgstr ""
+"对于 LVM，磁盘分区的等效项是逻辑卷。逻辑卷可以使用以下命令列出： <screen> "
+"<prompt>@ </prompt> <command>lvscan</command></screen>"
+
+#: gparted.xml:2806(para)
+msgid ""
+"If the / partition is on RAID, then the RAID must be active. Linux Software "
+"RAID can be started with the command: <screen><prompt># </"
+"prompt><command>mdadm</command> --assemble --scan</screen>"
+msgstr ""
+"如果 / 分区位于 RAID 上，则 RAID 必须处于活动状态。Linux 软件 RAID 可以使用以"
+"下命令启动<screen><command>：@mdadm</command> --组装 --扫描<prompt></"
+"prompt></screen>"
+
+#: gparted.xml:2815(para)
+msgid ""
+"Create a mount point directory by entering (as root): <screen><prompt># </"
+"prompt><command>mkdir</command> /tmp/mydir</screen>"
+msgstr ""
+"通过输入（作为根）创建装载点目录： <screen> <prompt>= </prompt> "
+"<command>mkdir</command> /tmp/mydir</screen>"
+
+#: gparted.xml:2821(para)
+msgid ""
+"Mount the / partition on the mount point directory. For example assume the / "
+"file system is contained in the /dev/sda5 partition. Enter (as root): "
+"<screen><prompt># </prompt><command>mount</command> <replaceable>/dev/sda5</"
+"replaceable> /tmp/mydir</screen>"
+msgstr ""
+"将 /分区装载到装载点目录上。例如，假设 /文件系统包含在 /dev/sda5 分区中。输入"
+"（作为根）： <screen> <prompt>= </prompt><command>装载</command> "
+"<replaceable>/dev/sda5</replaceable> /tmp/mydir</screen>"
+
+#: gparted.xml:2829(para)
+msgid ""
+"If you have a separate /boot partition, for example at /dev/sda3, then an "
+"extra step is required. Mount the /boot partition at /tmp/mydir/boot by "
+"entering (as root): <screen><prompt># </prompt><command>mount</command> "
+"<replaceable>/dev/sda3</replaceable> /tmp/mydir/boot</screen>"
+msgstr ""
+"如果您有单独的 /boot 分区（例如在 /dev/sda3），则需要执行额外的步骤。通过输入"
+"（作为根）在 /tmp/mydir/boot 处安装 /引导分区： <screen> <prompt>= </"
+"prompt><command>装载</command> <replaceable>/dev/sda3</replaceable> /tmp/"
+"mydir/引导</screen>"
+
+#: gparted.xml:2837(para)
+msgid ""
+"If you do not know whether you have a separate boot partition then you "
+"probably do not and can ignore this step."
+msgstr "如果您不知道是否有单独的引导分区，则可能没有，可以忽略此步骤。"
+
+#: gparted.xml:2845(para)
+msgid ""
+"Prepare to change the root environment by entering (as root): "
+"<screen><prompt># </prompt><command>mount</command> --bind /dev /tmp/mydir/"
+"dev</screen><screen><prompt># </prompt><command>mount</command> --bind /"
+"proc /tmp/mydir/proc</screen><screen><prompt># </prompt><command>mount</"
+"command> --bind /sys /tmp/mydir/sys</screen>"
+msgstr ""
+"准备通过输入（作为根）来更改根环境： <screen> <prompt>_ </prompt><command>装"
+"载</command>- 绑定 /dev /tmp/mydir/dev</screen><screen><prompt>= </"
+"prompt><command>装载</command>- 绑定 /proc /tmp/mydir/proc</"
+"screen><screen><prompt>= </prompt><command>装载</command>-- 绑定 /sys /tmp/"
+"mydir/sys</screen>"
+
+#: gparted.xml:2854(para)
+msgid ""
+"Change the root environment by entering (as root): <screen><prompt># </"
+"prompt><command>chroot</command> /tmp/mydir</screen>"
+msgstr ""
+"通过输入（作为根）更改根环境： <screen> <prompt>= </prompt> <command>chroot</"
+"command> /tmp/mydir</screen>"
+
+#: gparted.xml:2860(para)
+msgid ""
+"Reinstall GRUB 2 on the boot device. Note that the device name is used and "
+"not the partition name. For example, if the / partition is /dev/sda5 then "
+"the device is /dev/sda."
+msgstr ""
+"在引导设备上重新安装 GRUB 2。请注意，使用设备名称而不是分区名称。例如，如果 /"
+"分区是 /dev/sda5，则设备为 /dev/sda。"
+
+#: gparted.xml:2866(para)
+msgid ""
+"For Debian, Ubuntu, and other offshoot GNU/Linux distributions, enter the "
+"command (as root): <screen><prompt># </prompt><command>grub-install</"
+"command> <replaceable>/dev/sda</replaceable></screen>"
+msgstr ""
+"对于 Debian、Ubuntu 和其他分支 GNU/Linux 发行版，输入命令（作为根）： "
+"<screen> <prompt>= </prompt> <command>grub 安装</command> <replaceable>/dev/"
+"sda</replaceable></screen>"
+
+#: gparted.xml:2871(para)
+msgid ""
+"For CentOS, Fedora, openSUSE and other offshoot GNU/Linux distributions, "
+"enter the command (as root): <screen><prompt># </prompt><command>grub2-"
+"install</command> <replaceable>/dev/sda</replaceable></screen>"
+msgstr ""
+"对于 CentOS、Fedora、openSUSE 和其他分支 GNU/Linux 发行版，输入命令（作为"
+"根）： <screen> <prompt># </prompt> <command>grub2 安装</command> "
+"<replaceable>/dev/sda</replaceable></screen>"
+
+#: gparted.xml:2878(para)
+msgid ""
+"Exit the chroot environment by entering (as root): <screen><prompt># </"
+"prompt><command>exit</command></screen>"
+msgstr ""
+"通过输入（作为根）退出 chroot 环境： <screen> <prompt>= </prompt><command>退"
+"出</command></screen>"
+
+#: gparted.xml:2884(para) gparted.xml:2972(para)
+msgid "Reboot your computer."
+msgstr "重新启动计算机。"
+
+#: gparted.xml:2771(para)
+msgid ""
+"Use the following steps to restore the GRUB 2 boot loader: <placeholder-1/>"
+msgstr "使用以下步骤还原 GRUB 2 引导加载程序：<placeholder-1/>"
+
+#: gparted.xml:2894(title)
+msgid "Restoring GRUB Legacy Boot Loader"
+msgstr "还原 GRUB 旧引导加载程序"
+
+#: gparted.xml:2900(para)
+msgid ""
+"Boot from Live media such as your GNU/Linux distribution image. Open a "
+"terminal window."
+msgstr "从实时媒体（如 GNU/Linux 分发映像）启动。打开终端窗口。"
+
+#: gparted.xml:2905(para)
+msgid ""
+"The Live media must contain the GRUB Legacy boot loader. If your GNU/Linux "
+"distribution uses GRUB Legacy, then the distribution Live media will also "
+"contain GRUB Legacy."
+msgstr ""
+"实时媒体必须包含 GRUB 旧版引导加载程序。如果您的 GNU/Linux 发行版使用 GRUB 旧"
+"版，则分发实时媒体也将包含 GRUB 旧版。"
+
+#: gparted.xml:2914(para)
+msgid ""
+"Start the <application>grub</application> application from the command line "
+"(as root). <screen><prompt># </prompt><command>grub</command></screen>"
+msgstr ""
+"从命令行启动<application>grub</application>应用程序（作为根）。<screen> "
+"<prompt>• </prompt> <command>grub</command> </screen>"
+
+#: gparted.xml:2921(para)
+msgid ""
+"Find where <application>grub</application> stage1 is located by using one of "
+"the following:"
+msgstr "使用以下之一查找<application>grub</application> stage1 的位置："
+
+#: gparted.xml:2925(para)
+msgid ""
+"If the /boot folder is stored in the / partition, use the command: "
+"<screen><prompt>grub&gt; </prompt><command>find</command> /boot/grub/stage1</"
+"screen> If the /boot folder is stored in a partition different than the / "
+"partition, use the command: <screen><prompt>grub&gt; </prompt><command>find</"
+"command> /grub/stage1</screen>"
+msgstr ""
+"如果 /boot 文件夹存储在 /分区中，请使用命令<screen><prompt>：grub&gt;</"
+"prompt><command>查找</command>/boot/grub/stage1</screen>如果 /boot 文件夹存储"
+"在与 /分区不同的分区中，请使用命令<screen><prompt>：grub&gt;</"
+"prompt><command>查找</command>/grub/stage1</screen>"
+
+#: gparted.xml:2933(para)
+msgid ""
+"The output from the <command>find</command> command might look like the "
+"following: <screen><computeroutput> <replaceable>(hd0,0)</replaceable></"
+"computeroutput></screen> If more than one line is listed in the command "
+"output, you will need to decide which device you use for <application>grub</"
+"application>."
+msgstr ""
+"<command>find</command>命令的输出可能如下所示"
+"<screen><computeroutput><replaceable>：（hd0，0）</replaceable></"
+"computeroutput></screen>如果命令输出中列出了多行，则需要决定用于"
+"<application>grub</application>的设备。"
+
+#: gparted.xml:2943(para)
+msgid ""
+"Set the <application>grub</application> root device by specifying the device "
+"returned by the <command>find</command> command. This should be the "
+"partition containing the boot directory. <screen><prompt>grub&gt; </"
+"prompt>root <replaceable>(hd0,0)</replaceable></screen>"
+msgstr ""
+"通过指定<command>find</command>命令返回的设备来设置<application>grub</"
+"application>根设备。这应该是包含引导目录的分区。<screen> <prompt>grub&gt;</"
+"prompt>根<replaceable>（hd0，0）</replaceable> </screen>"
+
+#: gparted.xml:2952(para)
+msgid ""
+"Reinstall the <application>grub</application> boot loader into the Master "
+"Boot Record (MBR) with: <screen><prompt>grub&gt; </prompt>setup "
+"<replaceable>(hd0)</replaceable></screen>"
+msgstr ""
+"将<application>grub</application>引导加载程序重新安装到主引导记录 （MBR） "
+"中，使用<screen><prompt>：grub&gt;</prompt>设置<replaceable>（hd0）</"
+"replaceable> </screen>"
+
+#: gparted.xml:2957(para)
+msgid ""
+"If you want to install the <application>grub</application> boat loader into "
+"the boot sector of a partition, instead specify a partition with: "
+"<screen><prompt>grub&gt; </prompt>setup <replaceable>(hd0,0)</replaceable></"
+"screen>"
+msgstr ""
+"如果要将<application>Grub</application>船加载程序安装到分区的引导扇区，请改为"
+"指定具有<screen><prompt>：grub&gt;</prompt>设置<replaceable>（hd0，0）</"
+"replaceable></screen>的分区"
+
+#: gparted.xml:2966(para)
+msgid ""
+"Exit <application>grub</application>. <screen><prompt>grub&gt; </"
+"prompt>quit</screen>"
+msgstr ""
+"退出<application>grub</application>.<screen> <prompt>grub&gt;</prompt>退出</"
+"screen>"
+
+#: gparted.xml:2895(para)
+msgid ""
+"Use the following steps to restore the GRUB Legacy boot loader: "
+"<placeholder-1/>"
+msgstr "使用以下步骤还原 GRUB 旧版引导加载程序：<placeholder-1/>"
+
+#: gparted.xml:2986(title)
+msgid "Recovering Partition Tables"
+msgstr "正在恢复分区表"
+
+#: gparted.xml:2987(para)
+msgid ""
+"If you accidentally overwrite your partition table, there is a chance that "
+"you might be able to recover it."
+msgstr "如果您不小心覆盖了分区表，则有可能恢复分区表。"
+
+#: gparted.xml:2991(para)
+msgid ""
+"The <application>testdisk</application> application is designed to help "
+"recover lost partitions. For more information about <application>testdisk</"
+"application>, see <ulink type=\"http\" url=\"https://www.cgsecurity.org/wiki/"
+"TestDisk\"/>."
+msgstr ""
+"<application>testdisk</application>应用程序旨在帮助恢复丢失的分区。有关"
+"<application>testdisk</application>的详细信息，请参阅<ulink type=\"http\" "
+"url=\"https://www.cgsecurity.org/wiki/TestDisk\"></ulink>。"
+
+#: gparted.xml:2997(para)
+msgid ""
+"The <application>testdisk</application> application is included on each Live "
+"CD listed in <xref linkend=\"gparted-acquire-livecd\"/>"
+msgstr ""
+"<application>测试磁盘</application>应用程序包含在<xref linkend=\"gparted-"
+"acquire-livecd\"></xref>"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: gparted.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+"开源软件国际化之 GNOME 简体中文小组\n"
+" 甘露（Lu Gan）<rhythm.gan@gmail.com>, 2008.\n"
+" Funda Wang <fundawang@gmail.com>, 2008.\n"
+" Aron Xu <aronmalache@163.com>, 2008, 2009, 2011.\n"
+" YunQiang Su <wzssyqa@gmail.com>, 2011.\n"
+" Wylmer Wang <wantinghard@gmail.com>, 2011, 2012, 2013.\n"
+" Mingye Wang <arthur2e5@aosc.xyz>, 2015, 2016.\n"
+" Duanjun Li <liduanjun@uniontech.com>,2020"

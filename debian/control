@@ -11,7 +11,7 @@ Homepage: http://gparted.sourceforge.net
 
 Package: gparted
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: nvme-cli, ${shlibs:Depends}, ${misc:Depends}
 Breaks: udisks2 (<< 2.1.5)
 Suggests: xfsprogs, reiserfsprogs, reiser4progs, jfsutils, ntfs-3g,
  dosfstools, mtools, yelp, kpartx, dmraid, dmsetup, gpart, udftools, e2fsprogs

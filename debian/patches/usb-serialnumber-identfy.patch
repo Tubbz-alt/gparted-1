@@ -1,0 +1,36 @@
+--- gparted-0.32.0.orig/src/GParted_Core.cc
++++ gparted-0.32.0/src/GParted_Core.cc
+@@ -1034,6 +1034,33 @@ void GParted_Core::set_device_serial_num
+ 				device.serial_number = serial_number;
+ 		}
+ 	}
++
++
++	if(device.serial_number == "none")
++	{
++		Utils::execute_command( "smartctl -a -d scsi " + Glib::shell_quote( device.get_path() ), output, error, true );
++		if ( ! error.empty() )
++		{
++			// uos@uos-PC:~$ sudo nvme id-ctrl /dev/nvme0n1
++			// NVME Identify Controller:
++			// vid       : 0x1987
++			// ssvid     : 0x1987
++			// sn        : 8E460792140045001705
++			// mn        : 128GB NVMe SSD                          
++			// fr        : AP120PG0
++			device.serial_number = "none";
++		}
++		else
++		{
++			Glib::ustring serial_number = Utils::trim( Utils::regexp_label( output,
++					"^Serial number:[[:blank:]]*(.*)[[:blank:]]*$" ) );
++			if ( ! serial_number.empty() )
++				device.serial_number = serial_number;
++		}
++	}
++
++
++
+ }
+ 
+ /**

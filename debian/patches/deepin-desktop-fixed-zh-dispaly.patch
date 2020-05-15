@@ -1,0 +1,49 @@
+Index: gparted-0.32.0/gparted.desktop.in.in
+===================================================================
+--- gparted-0.32.0.orig/gparted.desktop.in.in
++++ gparted-0.32.0/gparted.desktop.in.in
+@@ -1,4 +1,5 @@
+ [Desktop Entry]
++X-Deepin-Vendor=deepin
+ _Name=GParted
+ _GenericName=Partition Editor
+ _X-GNOME-FullName=GParted Partition Editor
+Index: gparted-0.32.0/po/zh_CN.po
+===================================================================
+--- gparted-0.32.0.orig/po/zh_CN.po
++++ gparted-0.32.0/po/zh_CN.po
+@@ -53,7 +53,7 @@ msgstr ""
+ #: ../src/Win_GParted.cc:87 ../src/Win_GParted.cc:1514
+ #: ../src/Win_GParted.cc:1704
+ msgid "GParted"
+-msgstr "GParted"
++msgstr "分区编辑器"
+ 
+ #: ../gparted.desktop.in.in.h:2
+ msgid "Partition Editor"
+Index: gparted-0.32.0/po/zh_HK.po
+===================================================================
+--- gparted-0.32.0.orig/po/zh_HK.po
++++ gparted-0.32.0/po/zh_HK.po
+@@ -44,7 +44,7 @@ msgstr "GParted 可用於許多檔案系
+ #: ../src/Win_GParted.cc:75 ../src/Win_GParted.cc:1282
+ #: ../src/Win_GParted.cc:1473
+ msgid "GParted"
+-msgstr "GParted"
++msgstr "分割區編輯器"
+ 
+ #: ../gparted.desktop.in.in.h:2
+ msgid "Partition Editor"
+Index: gparted-0.32.0/po/zh_TW.po
+===================================================================
+--- gparted-0.32.0.orig/po/zh_TW.po
++++ gparted-0.32.0/po/zh_TW.po
+@@ -50,7 +50,7 @@ msgstr ""
+ #: ../src/Win_GParted.cc:87 ../src/Win_GParted.cc:1514
+ #: ../src/Win_GParted.cc:1704
+ msgid "GParted"
+-msgstr "GParted"
++msgstr "分割區編輯器"
+ 
+ #: ../gparted.desktop.in.in.h:2
+ msgid "Partition Editor"

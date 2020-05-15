@@ -2,3 +2,4 @@ update-chinese-translation.patch
 fix_desktop.patch
 fix-nvme-disk-serial-not-shown-bug.patch
 usb-serialnumber-identfy.patch
+deepin-desktop-fixed-zh-dispaly.patch

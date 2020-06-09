@@ -1,0 +1,36 @@
+Description: <short summary of the patch>
+ TODO: Put a short summary on the line above and replace this paragraph
+ with a longer explanation of this change. Complete the meta-information
+ with other relevant fields (see below for details). To make it easier, the
+ information below has been extracted from the changelog. Adjust it or drop
+ it.
+ .
+ gparted (0.32.0.7-1+deepin) unstable; urgency=low
+ .
+   * ['Autobuild release-candidate: 1c20c887a16b51560d73c9c76df8d82f9e031be9']
+Author: shuttle <shuttle@deepin.com>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: https://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: 2020-01-19
+
+--- gparted-0.32.0.7.orig/po/zh_CN.po
++++ gparted-0.32.0.7/po/zh_CN.po
+@@ -77,7 +77,7 @@ msgstr "以root用户运行GParted"
+ 
+ #: ../org.gnome.gparted.policy.in.in.h:2
+ msgid "Authentication is required to run the GParted Partition Editor as root"
+-msgstr "需要输入 root用户的密码来启动GParted 分区编辑器"
++msgstr "需要输入密码来启动GParted 分区编辑器"
+ 
+ #: ../include/Utils.h:55
+ msgid "(New UUID - will be randomly generated)"

@@ -4,3 +4,4 @@ fix-nvme-disk-serial-not-shown-bug.patch
 usb-serialnumber-identfy.patch
 deepin-desktop-fixed-zh-dispaly.patch
 fix-root-notice-msg.patch
+fix-root-en.patch

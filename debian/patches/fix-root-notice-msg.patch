@@ -28,7 +28,7 @@ Last-Update: 2020-01-19
 @@ -77,7 +77,7 @@ msgstr "以root用户运行GParted"
  
  #: ../org.gnome.gparted.policy.in.in.h:2
- msgid "Authentication is required to run the GParted Partition Editor as root"
+ msgid "Authentication is required to run the GParted Partition Editor"
 -msgstr "需要输入 root用户的密码来启动GParted 分区编辑器"
 +msgstr "需要输入密码来启动GParted 分区编辑器"
  
